@@ -1,4 +1,4 @@
-![Bitmoji of Eric waving](/img/laptop-wave.png)
+![Bitmoji of Eric waving](/img/laptop-wave.png){:height="360x" width="360px"}
 # Eric James Soltys
 
 ## Social Sites
