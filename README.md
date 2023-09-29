@@ -1,5 +1,5 @@
-![Bitmoji of Eric waving](/img/laptop-wave.png){:height="360x" width="360px"}
-# Eric James Soltys
+![Bitmoji of Eric waving](/img/laptop-wave-2023-09-29.png){:height="360x" width="360px"}
+# Eric James Soltys 
 Hello! I'm Eric, a software developer living in the Kootenay region in the southeast of British Columbia, Canada with my wife Nicole and our adventurous cat Lucy.
 ## Social Sites
 
