@@ -1,6 +1,6 @@
 ![Bitmoji of Eric waving](/img/laptop-wave-2023-09-29.png){:height="360x" width="360px"}
 # Eric James Soltys 
-Hello! I'm Eric, a software developer living in the Kootenay region in the southeast of British Columbia, Canada with my wife Nicole and our adventurous cat Lucy.
+I'm a Gen-X software developer living in the Kootenays with my wife Nicole and our cat Lucy. Enjoy scifi, fantasy, horror, games, books, movies.
 ## Social Sites
 
 - [Instagram](https://instagram.com/ericjamessoltys){:rel="me"}
