@@ -7,5 +7,3 @@ I'm a software developer living in the BC Kootenays with my wife Nicole and our 
 - [Instagram](https://instagram.com/ericjamessoltys){:rel="me"}
 - [Threads](https://www.threads.net/@ericjamessoltys){:rel="me"}
 - [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
-- [TikTok](https://www.tiktok.com/@esoltys)
-- [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
