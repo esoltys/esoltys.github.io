@@ -3,9 +3,9 @@
 I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
 ## Social Sites
-<i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@ericjamessoltys){:rel="me"}
+<i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
 
-<i class="fa-brands fa-instagram"></i> [Instagram](https://instagram.com/ericjamessoltys){:rel="me"}
+<i class="fa-brands fa-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
 <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
 
