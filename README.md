@@ -9,6 +9,8 @@ I'm a Canadian software developer living midway between Calgary and Vancouver in
 
 <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
 
+<i class="fa-brands fa-reddit"></i> [Reddit](https://new.reddit.com/user/kootenay_eric)
+
 ## Game Profiles
 <i class="fa-brands fa-steam"></i> [Steam](https://steamcommunity.com/id/esoltys)
 
