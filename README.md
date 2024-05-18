@@ -21,7 +21,7 @@ I'm a Canadian software developer living midway between Calgary and Vancouver in
 
 <i class="fa-brands fa-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="fa-brands fa-trophy"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨
+<i class="fa-solid fa-trophy"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨
 
 ## Other
 <i class="fa-solid fa-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
