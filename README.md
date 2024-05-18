@@ -2,21 +2,28 @@
 
 I'm a Canadian software developer living midway between Calgary and Vancouver in the Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
-## Social Sites
+## Personal
 <i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
 
 <i class="fa-brands fa-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
-<i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
-
 <i class="fa-brands fa-reddit"></i> [Reddit](https://new.reddit.com/user/kootenay_eric)
 
-## Game Profiles
+<i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/esoltys)
+
 <i class="fa-brands fa-steam"></i> [Steam](https://steamcommunity.com/id/esoltys)
 
 <i class="fa-brands fa-xbox"></i> [Xbox](https://account.xbox.com/en-ca/profile?gamertag=esoltys)
 
+## Professional
+
+<i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
+
+<i class="fa-brands fa-github"></i> [GitHub](https://github.com/esoltys)
+
+<!-- LeetCode -->
+<i class="fa-brands fa-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨
+
 ## Other
 <i class="fa-solid fa-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
 
-<i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/esoltys)
