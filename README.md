@@ -1,6 +1,8 @@
 ![Bitmoji of Eric](/static/2024-04-laptop-cat.png){:height="360x" width="360px"}
 
-I'm a Canadian software developer living midway between Calgary and Vancouver in the Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
+<i class="fa-solid fa-map-pin"></i> Castlegar, BC, Canada
+
+I'm a Canadian software developer living midway between Calgary and Vancouver in the BC Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
 ## Personal
 <i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
