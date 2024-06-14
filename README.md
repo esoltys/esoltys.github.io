@@ -17,8 +17,6 @@ I'm a Canadian software developer living midway between Calgary and Vancouver in
 
 <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
 
-<i class="fa-brands fa-github"></i> [GitHub](https://github.com/esoltys)
-
 <i class="fa-solid fa-trophy"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨
 
 ## Other
