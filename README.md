@@ -1,3 +1,7 @@
+![Bitmoji of Eric](/static/2024-04-laptop-cat.png){:height="360x" width="360px"}
+
+<i class="fa-solid fa-map-pin"></i> Castlegar, BC, Canada
+
 I'm a Canadian software developer living midway between Calgary and Vancouver in the BC Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
 ## Personal
@@ -16,6 +20,8 @@ I'm a Canadian software developer living midway between Calgary and Vancouver in
 ## Professional
 
 <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
+
+<i class="fa-brands fa-github"></i> [GitHub](https://github.com/esoltys)
 
 <i class="fa-solid fa-trophy"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨
 
