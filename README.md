@@ -1,7 +1,3 @@
-![Bitmoji of Eric](/static/2024-04-laptop-cat.png){:height="360x" width="360px"}
-
-<i class="fa-solid fa-map-pin"></i> Castlegar, BC, Canada
-
 I'm a Canadian software developer living midway between Calgary and Vancouver in the BC Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
 ## Personal
