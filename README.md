@@ -1,6 +1,6 @@
 ![Bitmoji of Eric](/static/2024-04-laptop-cat.png){:height="360x" width="360px"}
 
-<i class="fa-solid fa-map-pin"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6)
+<i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6)
 
 I'm a Canadian software developer living midway between Calgary and Vancouver in the BC Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
