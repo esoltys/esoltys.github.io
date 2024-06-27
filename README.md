@@ -9,13 +9,6 @@ I'm a Canadian software developer living midway between Calgary and Vancouver in
 
 <i class="fa-brands fa-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
-<i class="fa-brands fa-reddit"></i> [Reddit](https://new.reddit.com/user/kootenay_eric)
-
-<i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/user/esoltys)
-
-<i class="fa-brands fa-steam"></i> [Steam](https://steamcommunity.com/id/esoltys)
-
-<i class="fa-brands fa-xbox"></i> [Xbox](https://account.xbox.com/en-ca/profile?gamertag=esoltys)
 
 ## Professional
 
