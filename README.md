@@ -2,7 +2,6 @@
 
 <i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6)
 
-![Profile photo of Eric](https://avatars.githubusercontent.com/u/79716){:height="84px" width="84px" align="left"}
 I'm a Canadian software developer living midway between Calgary and Vancouver in the BC Kootenays with my wife Nicole and our cat Lucy. Enjoy art, science, games, books, movies, AI, and VR.
 
 ## Personal
