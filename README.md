@@ -1,4 +1,4 @@
-![Bitmoji of Eric](/static/2024-04-laptop-cat.png){:height="360px" width="360px"}
+![Bitmoji of Eric](static/2024-07-laptop%20wave.png){:height="360px" width="360px"}
 
 <i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6)
 
