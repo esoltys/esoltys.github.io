@@ -4,9 +4,6 @@ I'm a software developer living in the BC Kootenays with my wife Nicole and our 
 
 <i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) is midway between Vancouver and Calgary (Pacific Time)
 
-
-I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy. I'm also a hobbyist experimenting with art and music.
-
 ## Personal
 <i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
 
