@@ -1,10 +1,11 @@
-<img src="static/profile-square-01.jpg" alt="Profile photo of Eric James Soltys" style="border-radius: 50%; width: 128px; height: 128px; vertical-align: middle; margin-right: 10px; float: left; border: 2px solid grey;">
+<header>
+  <img src="static/profile-square-01.jpg" alt="Profile photo of Eric James Soltys" style="border-radius: 50%; width: 128px; height: 128px; vertical-align: middle; margin-right: 10px; float: left; border: 2px solid grey;">
 
-I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy. I'm also a hobbyist experimenting with art and music.
+  I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy. I'm also a hobbyist experimenting with art and music.
 
-<i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) is midway between Vancouver and Calgary (Pacific Time)
+  <i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) is midway between Vancouver and Calgary (Pacific Time)
 
-<br>
+</header>
 
 ## Personal
 <i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
