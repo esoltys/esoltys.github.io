@@ -2,7 +2,7 @@ I'm a software developer living in the BC Kootenays with my wife Nicole and our 
 
 I'm also a hobbyist creating art and music.
 
-<i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) is midway between Vancouver and Calgary (Pacific Time)
+<i class="fa-solid fa-location-dot"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary
 
 ## Personal
 <i class="fa-brands fa-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
@@ -19,4 +19,3 @@ I'm also a hobbyist creating art and music.
 
 ## Other
 <i class="fa-solid fa-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
-
