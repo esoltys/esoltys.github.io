@@ -11,7 +11,7 @@
 
 <i class="fa-brands fa-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA) ✨New✨ Verified Artist
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0j1XlBsuJAWVkLvYdps4lX?utm_source=generator&theme=0" width="500" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3p5aAUwo4Bv9N8fHNR7oll?utm_source=generator" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ## Professional
 
