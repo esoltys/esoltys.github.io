@@ -9,6 +9,8 @@
 
 <i class="fa-brands fa-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0j1XlBsuJAWVkLvYdps4lX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 ## Professional
 
 <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
@@ -16,6 +18,8 @@
 <i class="fa-brands fa-github"></i> [GitHub](https://github.com/esoltys)
 
 <i class="fa-solid fa-trophy"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨
+
+[![LeetCode Stats](https://leetcard.jacoblin.cool/esoltys?theme=light&font=Noto%20Sans&ext=heatmap)](https://leetcode.com/u/esoltys/)
 
 ## Other
 <i class="fa-solid fa-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
