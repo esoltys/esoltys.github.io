@@ -9,6 +9,8 @@
 
 <i class="fa-brands fa-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
+<i class="fa-brands fa-spotify"></i> [Spotify Verified Artist](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA) ✨New✨
+
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0j1XlBsuJAWVkLvYdps4lX?utm_source=generator&theme=0" width="500" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ## Professional
