@@ -1,32 +1,27 @@
-<div class="content">
-    <p><i class="ti ti-user"></i> I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy.</p>
+<i class="ti ti-user"></i> I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy.
 
-    <p><i class="ti ti-user-plus"></i> I'm also a hobbyist creating art and music.</p>
+<i class="ti ti-user-plus"></i> I'm also a hobbyist creating art and music.
 
-    <p><i class="ti ti-map-pin"></i> <a href="https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6">Castlegar, BC, Canada</a> (Pacific Time) is midway between Vancouver and Calgary</p>
+<i class="ti ti-map-pin"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary
 
-    <div class="box">
-        <h2>Personal</h2>
-        <p><i class="ti ti-brand-threads"></i> <a href="https://www.threads.net/@kootenay_eric" rel="me">Threads</a></p>
+## Personal
+<i class="ti ti-brand-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
 
-        <p><i class="ti ti-brand-instagram"></i> <a href="https://instagram.com/kootenay_eric" rel="me">Instagram</a></p>
+<i class="ti ti-brand-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
-        <p><i class="ti ti-brand-spotify"></i> <a href="https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA">Spotify</a> ✨New✨ I'm now a Verified Artist</p>
+<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA) ✨New✨ I'm now a Verified Artist
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3p5aAUwo4Bv9N8fHNR7oll?utm_source=generator" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3p5aAUwo4Bv9N8fHNR7oll?utm_source=generator" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-    <div class="box">
-        <h2>Professional</h2>
-        <p><i class="ti ti-brand-linkedin"></i> <a href="https://www.linkedin.com/in/ericjamessoltys/">LinkedIn</a></p>
-        <p><i class="ti ti-brand-github"></i> <a href="https://github.com/esoltys">GitHub</a></p>
-        <p><i class="ti ti-brand-leetcode"></i> <a href="https://leetcode.com/u/esoltys/">LeetCode</a> ✨New✨ I'm now ranked in the Top 7%</p>
+## Professional
 
-        <a href="https://leetcode.com/u/esoltys/">
-            <img src="https://leetcard.jacoblin.cool/esoltys?theme=light&font=Noto%20Sans&ext=heatmap" alt="LeetCode Stats">
-        </a>
-    </div>
+<i class="ti ti-brand-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
 
-    <h2>Other</h2>
-    <p><i class="ti ti-cat"></i> <a href="https://imgur.com/user/tuxedolucy">Lucy on Imgur</a></p>
-</div>
+<i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
+
+<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ I'm now ranked in the Top 7%
+
+[![LeetCode Stats](https://leetcard.jacoblin.cool/esoltys?theme=light&font=Noto%20Sans&ext=heatmap)](https://leetcode.com/u/esoltys/)
+
+## Other
+<i class="ti ti-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
