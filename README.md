@@ -9,7 +9,7 @@
 
 <i class="ti ti-brand-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
-<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA) ✨New✨ I'm now a Verified Artist
+<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA) ✨New✨ Verified Artist
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0j1XlBsuJAWVkLvYdps4lX?utm_source=generator&theme=0" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
@@ -19,7 +19,7 @@
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ I'm now ranked in the Top 7%
+<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ Ranked in the Top 7%
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/esoltys?theme=light&font=Noto%20Sans&ext=heatmap)](https://leetcode.com/u/esoltys/)
 
