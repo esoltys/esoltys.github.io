@@ -19,7 +19,7 @@
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ Ranked in the Top 7%
+<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ Ranked in the Top 6%
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/esoltys?theme=light&font=Noto%20Sans&ext=heatmap)](https://leetcode.com/u/esoltys/)
 
