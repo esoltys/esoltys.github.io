@@ -10,9 +10,7 @@
 <i class="ti ti-brand-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
 
-## Music
-
-✨New✨ Verified Artist
+## Verified Artist
 
 <i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA)
 
@@ -29,7 +27,7 @@
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ Ranked in the Top 6%
+<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) Ranked in the Top 6%
 
 ## Other
 <i class="ti ti-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
