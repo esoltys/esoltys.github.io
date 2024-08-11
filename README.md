@@ -29,6 +29,10 @@
 
 <i class="ti ti-brand-amazon"></i> [Amazon Music](https://music.amazon.ca/artists/B0D9V2MGQX/eric-soltys)
 
+## My Artwork
+
+<i class="ti ti-palette"></i> [Redbubble](esoltys.redbubble.com)
+
 
 ## Other
 <i class="ti ti-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
