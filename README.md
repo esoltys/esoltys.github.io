@@ -9,9 +9,19 @@
 
 <i class="ti ti-brand-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
-<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA) ✨New✨ Verified Artist
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0j1XlBsuJAWVkLvYdps4lX?utm_source=generator&theme=0" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+## Music
+
+✨New✨ Verified Artist
+
+<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA)
+
+<i class="ti ti-brand-youtube"></i> [YouTube Music](https://music.youtube.com/channel/UCmT8GyxF0nCasITpfHcaPmA)
+
+<i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
+
+<i class="ti ti-brand-amazon"></i> [Amazon Music](https://music.amazon.ca/artists/B0D9V2MGQX/eric-soltys)
+
 
 ## Professional
 
@@ -20,8 +30,6 @@
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
 <i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) ✨New✨ Ranked in the Top 6%
-
-[![LeetCode Stats](https://leetcard.jacoblin.cool/esoltys?theme=light&font=Noto%20Sans&ext=heatmap)](https://leetcode.com/u/esoltys/)
 
 ## Other
 <i class="ti ti-cat"></i> [Lucy on Imgur](https://imgur.com/user/tuxedolucy)
