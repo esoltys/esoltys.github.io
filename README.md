@@ -12,7 +12,7 @@
 
 ## Professional
 
-<i class="ti ti-brand-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
+<i class="ti ti-brand-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/) #OpenToWork
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
@@ -28,6 +28,7 @@
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
 
 <i class="ti ti-brand-amazon"></i> [Amazon Music](https://music.amazon.ca/artists/B0D9V2MGQX/eric-soltys)
+
 
 ## My Artwork
 
