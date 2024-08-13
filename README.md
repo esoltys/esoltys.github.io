@@ -29,10 +29,12 @@
 
 <i class="ti ti-brand-amazon"></i> [Amazon Music](https://music.amazon.ca/artists/B0D9V2MGQX/eric-soltys)
 
+<i class="ti ti-dots"></i> And many others
+
 
 ## My Artwork
 
-<i class="ti ti-palette"></i> [Redbubble](https://esoltys.redbubble.com)
+<i class="ti ti-palette"></i> [Redbubble](https://esoltys.redbubble.com) ✨Coming Soon✨
 
 
 ## Other
