@@ -2,12 +2,15 @@
 
 <i class="ti ti-user-plus"></i> I'm also a hobbyist creating art and music.
 
-<i class="ti ti-map-pin"></i> [Castlegar, BC, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary
+<i class="ti ti-map-pin"></i> [Castlegar, British Columbia, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary. It's in the SE corner of the province and part of the Columbia River Basin.
 
 ## Personal
+
 <i class="ti ti-brand-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
 
 <i class="ti ti-brand-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
+
+<i class="ti ti-brand-youtube"></i> [YouTube](https://www.youtube.com/@Kootenay_Eric)
 
 
 ## Professional
@@ -27,9 +30,7 @@
 
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
 
-<i class="ti ti-brand-amazon"></i> [Amazon Music](https://music.amazon.ca/artists/B0D9V2MGQX/eric-soltys)
-
-<i class="ti ti-dots"></i> And many others
+And many others
 
 
 ## My Artwork
