@@ -30,7 +30,8 @@
 
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
 
-And many others
+<i class="ti ti-music-check"></i> [Lyrics on Musixmatch](https://www.musixmatch.com/artist/Eric-Soltys)
+
 
 
 ## My Artwork
