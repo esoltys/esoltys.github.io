@@ -35,7 +35,7 @@ And many others
 
 ## My Artwork
 
-<i class="ti ti-palette"></i> [Redbubble](https://esoltys.redbubble.com) ✨Coming Soon✨
+<i class="ti ti-palette"></i> [Redbubble](https://esoltys.redbubble.com) ✨New✨
 
 
 ## Other
