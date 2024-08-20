@@ -35,7 +35,11 @@ And many others
 
 ## My Artwork
 
-<i class="ti ti-palette"></i> [Redbubble](https://esoltys.redbubble.com) ✨New✨
+<i class="ti ti-palette"></i> [Art Prints](https://www.redbubble.com/people/esoltys/shop?artistUserName=esoltys&asc=u&iaCode=u-print-art)
+
+<i class="ti ti-hanger"></i> [Clothing](https://www.redbubble.com/people/esoltys/shop?artistUserName=esoltys&asc=u&iaCode=u-clothing)
+
+<i class="ti ti-armchair-2"></i> [Home Decor](https://www.redbubble.com/people/esoltys/shop?artistUserName=esoltys&asc=u&iaCode=u-decor)
 
 
 ## Other
