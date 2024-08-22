@@ -1,6 +1,6 @@
 <i class="ti ti-user"></i> I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy.
 
-<i class="ti ti-user-plus"></i> I'm also a hobbyist creating art and music.
+<i class="ti ti-heart"></i> I'm also a hobbyist creating art and music.
 
 <i class="ti ti-map-pin"></i> [Castlegar, British Columbia, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary.
 
