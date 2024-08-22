@@ -1,6 +1,6 @@
 <i class="ti ti-user"></i> I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy.
 
-<i class="ti ti-user-plus"></i> I'm also a hobbyist creating art and music.
+<i class="ti ti-rosette-discount-check-filled"></i> I'm also a hobbyist creating art and music.
 
 <i class="ti ti-map-pin"></i> [Castlegar, British Columbia, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary.
 
@@ -19,7 +19,7 @@
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) Ranked in the Top 6%
+<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) Ranked in the Top 5%
 
 
 ## My Music
@@ -29,9 +29,6 @@
 <i class="ti ti-brand-youtube"></i> [YouTube Music](https://music.youtube.com/channel/UCmT8GyxF0nCasITpfHcaPmA)
 
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
-
-<i class="ti ti-music-check"></i> [Lyrics on Musixmatch](https://www.musixmatch.com/artist/Eric-Soltys)
-
 
 
 ## My Artwork
