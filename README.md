@@ -19,7 +19,7 @@
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) Ranked in the Top 5%
+<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) Ranked in the Top 4%
 
 
 ## My Music
@@ -29,6 +29,8 @@
 <i class="ti ti-brand-youtube"></i> [YouTube Music](https://music.youtube.com/channel/UCmT8GyxF0nCasITpfHcaPmA)
 
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
+
+<i class="ti ti-brand-bandcamp"></i> [BandCamp](https://ericsoltys.bandcamp.com/)
 
 
 ## My Artwork
