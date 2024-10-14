@@ -19,8 +19,6 @@
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
-<i class="ti ti-brand-leetcode"></i> [LeetCode](https://leetcode.com/u/esoltys/) Ranked in the Top 4%
-
 
 ## My Music
 
@@ -30,16 +28,10 @@
 
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
 
-<i class="ti ti-brand-bandcamp"></i> [BandCamp](https://ericsoltys.bandcamp.com/)
-
 
 ## My Artwork
 
-<i class="ti ti-palette"></i> [Art Prints](https://www.redbubble.com/people/esoltys/shop?artistUserName=esoltys&asc=u&iaCode=u-print-art)
-
-<i class="ti ti-hanger"></i> [Clothing](https://www.redbubble.com/people/esoltys/shop?artistUserName=esoltys&asc=u&iaCode=u-clothing)
-
-<i class="ti ti-armchair-2"></i> [Home Decor](https://www.redbubble.com/people/esoltys/shop?artistUserName=esoltys&asc=u&iaCode=u-decor)
+<i class="ti ti-palette"></i> [Art Prints, clothing, and more](http://esoltys.redbubble.com)
 
 
 ## Other
