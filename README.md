@@ -15,7 +15,7 @@
 
 ## Professional
 
-<i class="ti ti-brand-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/) #OpenToWork
+<i class="ti ti-brand-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/ericjamessoltys/)
 
 <i class="ti ti-brand-github"></i> [GitHub](https://github.com/esoltys)
 
