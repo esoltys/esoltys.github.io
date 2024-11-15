@@ -6,11 +6,13 @@
 
 ## Personal
 
-<i class="ti ti-brand-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
-
 <i class="ti ti-brand-instagram"></i> [Instagram](https://instagram.com/kootenay_eric){:rel="me"}
 
+<i class="ti ti-brand-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
+
 <i class="ti ti-brand-youtube"></i> [YouTube](https://www.youtube.com/@Kootenay_Eric)
+
+<i class="ti ti-brand-bluesky"></i> [Bluesky](https://bsky.app/profile/kootenay-eric.bsky.social)
 
 
 ## Professional
