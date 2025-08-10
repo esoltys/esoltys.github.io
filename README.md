@@ -1,6 +1,4 @@
-<i class="ti ti-user"></i> I'm a software developer living in the BC Kootenays with my wife Nicole and our cat Lucy.
-
-<i class="ti ti-heart"></i> I'm also a hobbyist creating art and music.
+<i class="ti ti-user"></i> I’m a Canadian software developer and a hobbyist creating art and music.
 
 <i class="ti ti-map-pin"></i> [Castlegar, British Columbia, Canada](https://www.bing.com/maps?osid=053c1577-c000-49e1-a8eb-703fdfa0b5e6) (Pacific Time) is midway between Vancouver and Calgary.
 
@@ -10,10 +8,9 @@
 
 <i class="ti ti-brand-threads"></i> [Threads](https://www.threads.net/@kootenay_eric){:rel="me"}
 
-<i class="ti ti-brand-youtube"></i> [YouTube](https://www.youtube.com/@Kootenay_Eric)
-
 <i class="ti ti-brand-bluesky"></i> [Bluesky](https://bsky.app/profile/kootenay-eric.bsky.social)
 
+<i class="ti ti-brand-substack"></i> [Substack](https://ericjamessoltys.substack.com/?r=3pq5kf&utm_campaign=github)
 
 ## Professional
 
@@ -24,9 +21,9 @@
 
 ## My Music
 
-<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA)
-
 <i class="ti ti-brand-youtube"></i> [YouTube Music](https://music.youtube.com/channel/UCmT8GyxF0nCasITpfHcaPmA)
+
+<i class="ti ti-brand-spotify"></i> [Spotify](https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA)
 
 <i class="ti ti-brand-apple"></i> [Apple Music](https://music.apple.com/ca/artist/eric-soltys/1758635096)
 
