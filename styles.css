@@ -1,0 +1,716 @@
+/* Linktree-inspired styles for Eric Soltys personal site */
+
+:root {
+    --bg-color: #32445A;
+    --bg-gradient: linear-gradient(135deg, #32445A 0%, #2a3b4f 50%, #1f2937 100%);
+    --text-primary: #EFDBC0;
+    --text-secondary: #D6E3E8;
+    --button-bg: rgba(214, 227, 232, 0.12);
+    --button-hover: rgba(214, 227, 232, 0.25);
+    --section-header: #EFDBC0;
+    --accent-glow: rgba(239, 219, 192, 0.3);
+    --spotify-green: #1DB954;
+    --youtube-red: #FF0000;
+    --apple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.5;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(239, 219, 192, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(214, 227, 232, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.profile-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--text-secondary), var(--text-primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    position: relative;
+    box-shadow: 
+        0 0 0 3px rgba(214, 227, 232, 0.3),
+        0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 0 3px rgba(214, 227, 232, 0.5),
+        0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.profile-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.5rem;
+    max-width: 400px;
+}
+
+.profile-location {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+    opacity: 0.8;
+}
+
+.profile-location i {
+    margin-right: 0.3rem;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--button-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(214, 227, 232, 0.2);
+}
+
+.social-icon:hover {
+    background: var(--button-hover);
+    transform: translateY(-1px);
+    border-color: rgba(214, 227, 232, 0.3);
+}
+
+/* Professional Links Section */
+.professional-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.professional-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.professional-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    background: var(--button-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(214, 227, 232, 0.15);
+    border-radius: 25px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.professional-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.professional-link:hover::before {
+    left: 100%;
+}
+
+.professional-link:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+    border-color: rgba(214, 227, 232, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Platform-specific professional link colors */
+.professional-link[href*="linkedin"]:hover {
+    border-color: #0077B5;
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.3);
+}
+
+.professional-link[href*="github"]:hover {
+    border-color: #6e5494;
+    box-shadow: 0 8px 20px rgba(110, 84, 148, 0.3);
+}
+
+.professional-link[href*="leetcode"]:hover {
+    border-color: #FFA116;
+    box-shadow: 0 8px 20px rgba(255, 161, 22, 0.3);
+}
+
+.professional-link .link-icon,
+.professional-link .blog-logo {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.professional-link .blog-logo {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.professional-link .blog-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Blog Section */
+.blog-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Substack-specific professional link styling */
+.professional-link[href*="substack"]:hover {
+    border-color: #FF6719;
+    box-shadow: 0 8px 20px rgba(255, 103, 25, 0.3);
+}
+
+/* Music Albums Section */
+.music-albums {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.albums-title {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 0 0 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.album-card {
+    display: block;
+    background: var(--button-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(214, 227, 232, 0.2);
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.album-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.album-card:hover::before {
+    left: 100%;
+}
+
+.album-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: rgba(214, 227, 232, 0.4);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(214, 227, 232, 0.2);
+}
+
+/* YouTube Music album hover effect */
+.album-card[href*="music.youtube"]:hover {
+    border-color: var(--youtube-red);
+    box-shadow: 
+        0 20px 40px rgba(255, 0, 0, 0.2),
+        0 0 20px rgba(255, 0, 0, 0.15);
+}
+
+.album-cover {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.album-card:hover .album-cover img {
+    transform: scale(1.05);
+}
+
+.album-info h3 {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.25rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.album-info p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Streaming Links */
+.streaming-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.streaming-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--button-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(214, 227, 232, 0.15);
+    border-radius: 25px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.streaming-link:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+    border-color: rgba(214, 227, 232, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.streaming-link[href*="spotify"]:hover {
+    border-color: var(--spotify-green);
+    box-shadow: 0 8px 20px rgba(29, 185, 84, 0.3);
+}
+
+.streaming-link[href*="youtube"]:hover {
+    border-color: var(--youtube-red);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+.streaming-link[href*="apple"]:hover {
+    border-color: #667eea;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.streaming-link i {
+    font-size: 1.1rem;
+}
+
+/* Links Container */
+.links-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-header {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--section-header);
+    margin: 1.5rem 0 0.5rem;
+    text-align: center;
+}
+
+.section-header:first-of-type {
+    margin-top: 0;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: var(--button-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(214, 227, 232, 0.15);
+    border-radius: 16px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 1rem;
+    min-height: 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.link-button:hover::before {
+    left: 100%;
+}
+
+.link-button:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(214, 227, 232, 0.3);
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(214, 227, 232, 0.1);
+}
+
+/* Platform-specific styling */
+.link-button[href*="spotify"]:hover {
+    border-color: var(--spotify-green);
+    box-shadow: 
+        0 8px 25px rgba(29, 185, 84, 0.3),
+        0 0 20px rgba(29, 185, 84, 0.2);
+}
+
+.link-button[href*="youtube"]:hover {
+    border-color: var(--youtube-red);
+    box-shadow: 
+        0 8px 25px rgba(255, 0, 0, 0.3),
+        0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+.link-button[href*="apple"]:hover {
+    border-color: #667eea;
+    box-shadow: 
+        0 8px 25px rgba(102, 126, 234, 0.3),
+        0 0 20px rgba(102, 126, 234, 0.2);
+}
+
+.link-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.profile-description {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.social-links {
+    animation: fadeInUp 1.2s ease-out 0.4s both;
+}
+
+.professional-section {
+    animation: fadeInUp 1.4s ease-out 0.6s both;
+}
+
+.blog-section {
+    animation: fadeInUp 1.6s ease-out 0.8s both;
+}
+
+.music-albums {
+    animation: fadeInUp 1.8s ease-out 1.0s both;
+}
+
+.links-container {
+    animation: fadeInUp 2.0s ease-out 1.2s both;
+}
+
+.link-button {
+    animation: slideInLeft 0.6s ease-out both;
+}
+
+.link-button:nth-child(1) { animation-delay: 0.1s; }
+.link-button:nth-child(2) { animation-delay: 0.2s; }
+.link-button:nth-child(3) { animation-delay: 0.3s; }
+.link-button:nth-child(4) { animation-delay: 0.4s; }
+.link-button:nth-child(5) { animation-delay: 0.5s; }
+.link-button:nth-child(6) { animation-delay: 0.6s; }
+.link-button:nth-child(7) { animation-delay: 0.7s; }
+.link-button:nth-child(8) { animation-delay: 0.8s; }
+
+/* Enhanced section headers */
+.section-header {
+    position: relative;
+    background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .professional-links {
+        gap: 0.75rem;
+    }
+    
+    .professional-link {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    
+    .albums-grid {
+        gap: 1rem;
+    }
+    
+    .album-card {
+        padding: 1.25rem;
+        border-radius: 16px;
+    }
+    
+    .streaming-links {
+        gap: 0.75rem;
+    }
+    
+    .streaming-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .profile-name {
+        font-size: 1.3rem;
+    }
+    
+    .profile-description {
+        font-size: 0.95rem;
+    }
+    
+    .social-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+    }
+    
+    .professional-links {
+        gap: 0.5rem;
+    }
+    
+    .professional-link {
+        padding: 0.625rem 1rem;
+        font-size: 0.85rem;
+        gap: 0.5rem;
+    }
+    
+    .professional-link .link-icon,
+    .professional-link .blog-logo {
+        width: 18px;
+        height: 18px;
+        font-size: 0.9rem;
+    }
+    
+    .albums-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .albums-grid {
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .album-card {
+        padding: 1rem;
+        border-radius: 14px;
+    }
+    
+    .album-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .album-info p {
+        font-size: 0.9rem;
+    }
+    
+    .streaming-links {
+        gap: 0.5rem;
+    }
+    
+    .streaming-link {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+    
+    .streaming-link span {
+        display: none;
+    }
+    
+    .streaming-link i {
+        font-size: 1.2rem;
+    }
+    
+    .link-button {
+        padding: 0.875rem 1rem;
+        min-height: 56px;
+        font-size: 0.95rem;
+        border-radius: 14px;
+    }
+    
+    .link-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 1.1rem;
+    }
+    
+}
