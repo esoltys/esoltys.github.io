@@ -102,11 +102,14 @@ body::before {
     animation: fadeInUp 0.8s ease-out;
 }
 
+h2.profile-name {
+    font-size: 1rem;
+}
+
 .profile-description {
     font-size: 1rem;
     color: var(--text-secondary);
     margin: 0 0 0.5rem;
-    max-width: 400px;
 }
 
 .profile-location {
