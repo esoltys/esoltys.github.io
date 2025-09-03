@@ -285,6 +285,15 @@ h2.profile-name {
     margin-bottom: 2rem;
 }
 
+.additional-music {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    opacity: 0.8;
+    font-style: italic;
+}
+
 .album-card {
     display: block;
     background: var(--button-bg);
