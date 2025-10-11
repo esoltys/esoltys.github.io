@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Capriola&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -32,11 +32,10 @@
             class="avatar-image"
           />
         </div>
-        <h1 class="profile-name">Eric Soltys</h1>
+        <h1 class="profile-name">Eric James Soltys</h1>
         <h2 class="profile-name">kootenay_eric</h2>
         <p class="profile-description">
-          I'm a Canadian software developer and a hobbyist creating art and
-          music.
+          Canadian software developer and musician creating ambient electronic music
         </p>
         <p class="profile-location">
           <i class="ti ti-map-pin"></i> Castlegar, BC, Canada
@@ -49,6 +48,7 @@
           href="https://instagram.com/kootenay_eric"
           rel="me"
           class="social-icon"
+          aria-label="Instagram"
         >
           <i class="ti ti-brand-instagram"></i>
         </a>
@@ -56,12 +56,14 @@
           href="https://www.threads.net/@kootenay_eric"
           rel="me"
           class="social-icon"
+          aria-label="Threads"
         >
           <i class="ti ti-brand-threads"></i>
         </a>
         <a
           href="https://bsky.app/profile/kootenay-eric.bsky.social"
           class="social-icon"
+          aria-label="Bluesky"
         >
           <i class="ti ti-brand-bluesky"></i>
         </a>
@@ -94,25 +96,32 @@
 
       <!-- Blog Section -->
 
+      <!-- Review Quote Section -->
+      <div class="quote-section">
+        <div class="quote-container">
+          <p class="quote-text">"Stitched together with a shockingly effective cello sound and no shortage of symphonic swells and dramatic dynamics play, it feels like sitting in lotus on a cliff at the edge of a majestic ravine—epic in scale, but tranquil in its overall vibe."</p>
+          <p class="quote-attribution">—<a href="https://www.grooveartuniverse.com/ericsoltys" class="quote-link">Groove Art Universe</a> on <em>Luminous</em></p>
+        </div>
+      </div>
+
       <!-- Music Albums Section -->
       <div class="music-albums">
         <h2 class="albums-title">Albums</h2>
         <div class="albums-grid">
-          <a
-            href="#"
-            class="album-card"
-          >
+          <div class="album-card coming-soon">
             <div class="album-cover">
               <img
                 src="./images/basin-cover.png"
                 alt="Basin Album Cover"
+                loading="lazy"
               />
+              <div class="coming-soon-badge">Coming Soon</div>
             </div>
             <div class="album-info">
               <h3>Basin</h3>
               <p>Oct 16, 2025</p>
             </div>
-          </a>
+          </div>
 
           <a
             href="https://music.youtube.com/playlist?list=OLAK5uy_nFB7et4xfvdOxH_Qpmas2QMuBIc70Z9cI"
@@ -122,6 +131,7 @@
               <img
                 src="./images/luminous-cover.png"
                 alt="Luminous Album Cover"
+                loading="lazy"
               />
             </div>
             <div class="album-info">
@@ -135,7 +145,7 @@
             class="album-card"
           >
             <div class="album-cover">
-              <img src="./images/horizon-cover.png" alt="Horizon Album Cover" />
+              <img src="./images/horizon-cover.png" alt="Horizon Album Cover" loading="lazy" />
             </div>
             <div class="album-info">
               <h3>Horizon</h3>
@@ -148,7 +158,7 @@
             class="album-card"
           >
             <div class="album-cover">
-              <img src="./images/contour-cover.png" alt="Contour EP Cover" />
+              <img src="./images/contour-cover.png" alt="Contour EP Cover" loading="lazy" />
             </div>
             <div class="album-info">
               <h3>Contour EP</h3>
@@ -187,10 +197,6 @@
           <a href="https://www.shazam.com/artist/eric-soltys/1758635096" class="streaming-link">
             <i class="ti ti-brand-shazam"></i>
             <span>Shazam</span>
-          </a>
-          <a href="https://www.grooveartuniverse.com/ericsoltys" class="streaming-link">
-            <i class="ti ti-vinyl"></i>
-            <span>Groove Art Universe</span>
           </a>
         </div>
       </div>
