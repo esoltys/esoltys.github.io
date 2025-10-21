@@ -889,11 +889,29 @@ a.album-card:hover .album-cover::before {
     .streaming-link span {
         display: none;
     }
-    
+
     .streaming-link i {
         font-size: 1.2rem;
     }
-    
+
+    .social-links {
+        gap: 0.5rem;
+    }
+
+    .social-link {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+
+    .social-link span {
+        display: none;
+    }
+
+    .social-link i {
+        font-size: 1.2rem;
+    }
+
     .link-button {
         padding: 0.875rem 1rem;
         min-height: 56px;
