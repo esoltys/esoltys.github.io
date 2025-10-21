@@ -133,25 +133,49 @@ h2.profile-name {
     flex-wrap: wrap;
 }
 
-.social-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: var(--button-bg);
+.social-link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--button-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(214, 227, 232, 0.15);
+    border-radius: 25px;
     color: var(--text-primary);
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: all 0.2s ease;
-    border: 1px solid rgba(214, 227, 232, 0.2);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
 }
 
-.social-icon:hover {
+.social-link:hover {
     background: var(--button-hover);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     border-color: rgba(214, 227, 232, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-link i {
+    font-size: 1.1rem;
+}
+
+/* Platform-specific social link colors */
+.social-link[href*="instagram"]:hover {
+    border-color: #E1306C;
+    box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
+}
+
+.social-link[href*="threads"]:hover {
+    border-color: #000000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.social-link[href*="bluesky"]:hover {
+    border-color: #1185FE;
+    box-shadow: 0 8px 20px rgba(17, 133, 254, 0.3);
 }
 
 /* Professional Links Section */
