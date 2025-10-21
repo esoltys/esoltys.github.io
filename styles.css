@@ -517,6 +517,7 @@ a.album-card:hover .album-cover::before {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 .streaming-link {
