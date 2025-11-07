@@ -611,6 +611,17 @@ a.album-card:hover .album-cover::before {
     margin-top: 0;
 }
 
+.section-subheading {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+    margin: 0.5rem 0 1rem;
+    opacity: 0.9;
+    letter-spacing: 0.03em;
+}
+
 .link-button {
     display: flex;
     align-items: center;
