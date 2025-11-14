@@ -275,6 +275,49 @@ h2.profile-name {
     object-fit: cover;
 }
 
+/* Project Info */
+.project-info {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-title {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+    line-height: 1.4;
+}
+
+.project-link {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(214, 227, 232, 0.4);
+    text-underline-offset: 3px;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--text-secondary);
+    text-decoration-color: var(--text-secondary);
+}
+
+.project-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    opacity: 0.85;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Blog Section */
 .blog-section {
     width: 100%;
@@ -597,7 +640,47 @@ a.album-card:hover .album-cover::before {
     max-width: 600px;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Simple Links List */
+.simple-links-list {
+    list-style: disc;
+    padding-left: 2rem;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+}
+
+.simple-links-list li {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.simple-link {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(214, 227, 232, 0.4);
+    text-underline-offset: 3px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.simple-link:hover {
+    color: var(--text-secondary);
+    text-decoration-color: var(--text-secondary);
+}
+
+.simple-link-description {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    opacity: 0.85;
+    margin-top: 0.25rem;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 .section-header {
@@ -605,13 +688,22 @@ a.album-card:hover .album-cover::before {
     font-size: 1.1rem;
     font-weight: 900;
     color: var(--section-header);
-    margin: 1.5rem 0 0.5rem;
+    margin: 1.5rem 0 1.5rem;
     text-align: center;
     letter-spacing: 0.02em;
 }
 
 .section-header:first-of-type {
     margin-top: 0;
+}
+
+.header-subtext {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    opacity: 0.9;
+    letter-spacing: 0.03em;
+    margin-left: 0.5rem;
 }
 
 .section-subheading {
@@ -625,82 +717,6 @@ a.album-card:hover .album-cover::before {
     letter-spacing: 0.03em;
 }
 
-.link-button {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 1.25rem;
-    background: var(--button-bg);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(214, 227, 232, 0.15);
-    border-radius: 16px;
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    gap: 1rem;
-    min-height: 64px;
-    position: relative;
-    overflow: hidden;
-}
-
-.link-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.6s ease;
-}
-
-.link-button:hover::before {
-    left: 100%;
-}
-
-.link-button:hover {
-    background: var(--button-hover);
-    transform: translateY(-2px) scale(1.02);
-    border-color: rgba(214, 227, 232, 0.3);
-    box-shadow: 
-        0 8px 25px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(214, 227, 232, 0.1);
-}
-
-/* Platform-specific styling */
-.link-button[href*="spotify"]:hover {
-    border-color: var(--spotify-green);
-    box-shadow: 
-        0 8px 25px rgba(29, 185, 84, 0.3),
-        0 0 20px rgba(29, 185, 84, 0.2);
-}
-
-.link-button[href*="youtube"]:hover {
-    border-color: var(--youtube-red);
-    box-shadow: 
-        0 8px 25px rgba(255, 0, 0, 0.3),
-        0 0 20px rgba(255, 0, 0, 0.2);
-}
-
-.link-button[href*="apple"]:hover {
-    border-color: #667eea;
-    box-shadow: 
-        0 8px 25px rgba(102, 126, 234, 0.3),
-        0 0 20px rgba(102, 126, 234, 0.2);
-}
-
-.link-icon {
-    flex-shrink: 0;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -711,17 +727,6 @@ a.album-card:hover .album-cover::before {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
 
@@ -749,29 +754,6 @@ a.album-card:hover .album-cover::before {
     animation: fadeInUp 2.0s ease-out 1.2s both;
 }
 
-.link-button {
-    animation: slideInLeft 0.6s ease-out both;
-}
-
-.link-button:nth-child(1) { animation-delay: 0.1s; }
-.link-button:nth-child(2) { animation-delay: 0.2s; }
-.link-button:nth-child(3) { animation-delay: 0.3s; }
-.link-button:nth-child(4) { animation-delay: 0.4s; }
-.link-button:nth-child(5) { animation-delay: 0.5s; }
-.link-button:nth-child(6) { animation-delay: 0.6s; }
-.link-button:nth-child(7) { animation-delay: 0.7s; }
-.link-button:nth-child(8) { animation-delay: 0.8s; }
-
-/* Enhanced section headers */
-.section-header {
-    position: relative;
-    background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-
 /* Responsive design */
 @media (max-width: 768px) {
     .quote-container {
@@ -789,6 +771,14 @@ a.album-card:hover .album-cover::before {
     .professional-link {
         padding: 0.75rem 1.25rem;
         font-size: 0.9rem;
+    }
+
+    .project-title {
+        font-size: 0.95rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
     }
     
     
@@ -835,6 +825,17 @@ a.album-card:hover .album-cover::before {
         height: 80px;
         font-size: 2rem;
     }
+
+    .section-header {
+        font-size: 1rem;
+    }
+
+    .header-subtext {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.25rem;
+        font-size: 0.8rem;
+    }
     
     .profile-name {
         font-size: 1.3rem;
@@ -865,6 +866,14 @@ a.album-card:hover .album-cover::before {
         width: 18px;
         height: 18px;
         font-size: 0.9rem;
+    }
+
+    .project-title {
+        font-size: 0.9rem;
+    }
+
+    .project-description {
+        font-size: 0.8rem;
     }
     
     .albums-title {
@@ -926,17 +935,16 @@ a.album-card:hover .album-cover::before {
         font-size: 1.2rem;
     }
 
-    .link-button {
-        padding: 0.875rem 1rem;
-        min-height: 56px;
+    .simple-links-list {
+        padding-left: 1.5rem;
+        gap: 0.875rem;
+    }
+
+    .simple-link {
         font-size: 0.95rem;
-        border-radius: 14px;
     }
-    
-    .link-icon {
-        width: 28px;
-        height: 28px;
-        font-size: 1.1rem;
+
+    .simple-link-description {
+        font-size: 0.85rem;
     }
-    
 }
