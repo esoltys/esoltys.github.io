@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eric Soltys (kootenay_eric)</title>
+    <title>Eric Soltys — Developer & Musician</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -16,38 +16,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="profile-container">
-      <!-- Profile Header -->
-      <div class="profile-header">
-        <div class="avatar">
-          <img
-            src="./images/profile.jpg"
-            alt="Eric Soltys"
-            class="avatar-image"
-          />
+    <main class="container">
+      <!-- Header Grid -->
+      <header class="header-grid">
+        <div class="name-block">
+          <h1 class="name-primary">Eric Soltys</h1>
+          <div class="name-secondary">kootenay_eric</div>
         </div>
-        <h1 class="profile-name">Eric James Soltys</h1>
-        <h2 class="profile-name">kootenay_eric</h2>
-        <p class="profile-description">
-          I'm a Canadian software developer and a hobbyist creating art and music in the BC Kootenays.
-        </p>
-        <p class="profile-location">
-          <i class="ti ti-map-pin"></i> Castlegar, BC, Canada
-        </p>
-      </div>
 
-      <!-- Social Links -->
-      <div class="social-links">
+        <div class="avatar-block">
+          <div class="avatar-container">
+            <img
+              src="./images/profile.jpg"
+              alt="Eric Soltys"
+              class="avatar-image"
+            />
+          </div>
+        </div>
+
+        <div class="bio-block">
+          <p class="bio-text">
+            Canadian software developer and hobbyist creating art and music in the BC Kootenays.
+          </p>
+          <a
+            href="https://www.google.com/maps/place/Castlegar,+BC/@49.3256,-117.6650,13z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="location-tag"
+          >
+            <i class="ti ti-map-pin"></i>
+            <span>Castlegar, BC</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Social Grid -->
+      <section class="social-grid">
         <a
           href="https://instagram.com/kootenay_eric"
           rel="me"
-          class="social-link"
+          class="social-tile social-instagram"
           aria-label="Instagram"
         >
           <i class="ti ti-brand-instagram"></i>
@@ -56,7 +70,7 @@
         <a
           href="https://www.threads.net/@kootenay_eric"
           rel="me"
-          class="social-link"
+          class="social-tile social-threads"
           aria-label="Threads"
         >
           <i class="ti ti-brand-threads"></i>
@@ -64,167 +78,194 @@
         </a>
         <a
           href="https://bsky.app/profile/kootenay-eric.bsky.social"
-          class="social-link"
+          class="social-tile social-bluesky"
           aria-label="Bluesky"
         >
           <i class="ti ti-brand-bluesky"></i>
           <span>Bluesky</span>
         </a>
-      </div>
+      </section>
 
-      <!-- Professional Links Section -->
-      <div class="professional-section">
-        <div class="section-header">Professional <span class="header-subtext">#OpenToWork #RemoteOnly</span></div>
+      <!-- Professional Section -->
+      <section class="professional-section">
+        <div class="section-label">
+          <span class="label-text">&lt;Professional /&gt;</span>
+          <span class="status-badge">#OpenToWork #RemoteOnly</span>
+        </div>
 
-        <div class="professional-links">
+        <div class="professional-grid">
           <a
             href="https://www.linkedin.com/in/ericjamessoltys/"
-            class="professional-link"
+            class="pro-card pro-linkedin"
           >
-            <div class="link-icon"><i class="ti ti-brand-linkedin"></i></div>
+            <i class="ti ti-brand-linkedin"></i>
             <span>LinkedIn</span>
           </a>
 
-          <a href="https://github.com/esoltys" class="professional-link">
-            <div class="link-icon"><i class="ti ti-brand-github"></i></div>
+          <a href="https://github.com/esoltys" class="pro-card pro-github">
+            <i class="ti ti-brand-github"></i>
             <span>GitHub</span>
           </a>
 
-          <a href="https://leetcode.com/u/esoltys/" class="professional-link">
-            <div class="link-icon"><i class="ti ti-code"></i></div>
-            <span>LeetCode • Top 3%</span>
+          <a href="https://leetcode.com/u/esoltys/" class="pro-card pro-leetcode">
+            <i class="ti ti-code"></i>
+            <span>LeetCode <em>Top 3%</em></span>
           </a>
         </div>
-      </div>
+      </section>
 
-      <!-- Blog Section -->
+      <!-- Music Section -->
+      <section class="music-section">
+        <div class="section-label">
+          <span class="label-text">&lt;Albums /&gt;</span>
+        </div>
 
-      <!-- Music Albums Section -->
-      <div class="music-albums">
-        <h2 class="albums-title">Albums</h2>
-
-        <!-- Streaming Links -->
-        <div class="streaming-links">
+        <!-- Streaming platforms -->
+        <div class="streaming-bar">
           <a
             href="https://music.youtube.com/channel/UCmT8GyxF0nCasITpfHcaPmA"
-            class="streaming-link"
+            class="stream-link stream-youtube"
+            aria-label="YouTube Music"
           >
             <i class="ti ti-brand-youtube"></i>
-            <span>YouTube Music</span>
+            <span class="stream-label">YouTube Music</span>
           </a>
           <a
             href="https://open.spotify.com/artist/0j1XlBsuJAWVkLvYdps4lX?si=17amKqiST96BA4Y8VxOMTA"
-            class="streaming-link"
+            class="stream-link stream-spotify"
+            aria-label="Spotify"
           >
             <i class="ti ti-brand-spotify"></i>
-            <span>Spotify</span>
+            <span class="stream-label">Spotify</span>
           </a>
           <a
             href="https://music.apple.com/ca/artist/eric-soltys/1758635096"
-            class="streaming-link"
+            class="stream-link stream-apple"
+            aria-label="Apple Music"
           >
             <i class="ti ti-brand-apple"></i>
-            <span>Apple Music</span>
+            <span class="stream-label">Apple Music</span>
           </a>
-          <a href="https://ericsoltys.bandcamp.com/" class="streaming-link">
+          <a href="https://ericsoltys.bandcamp.com/" class="stream-link stream-bandcamp" aria-label="Bandcamp">
             <i class="ti ti-music"></i>
-            <span>Bandcamp</span>
+            <span class="stream-label">Bandcamp</span>
           </a>
         </div>
 
-        <div class="albums-grid">
+        <!-- Album cards -->
+        <div class="albums-container">
           <a
             href="https://music.youtube.com/playlist?list=OLAK5uy_lYHQY5F4isvQFeEXhv6RboLp0u6teEKYE"
-            class="album-card"
+            class="album-tile"
+            data-year="2025"
           >
-            <div class="album-cover">
+            <div class="album-artwork">
               <img
                 src="./images/basin-cover.png"
                 alt="Basin Album Cover"
                 loading="lazy"
               />
+              <div class="play-overlay">
+                <div class="play-icon"></div>
+              </div>
             </div>
-            <div class="album-info">
-              <h3>Basin</h3>
-              <p>2025</p>
+            <div class="album-meta">
+              <h3 class="album-title">Basin</h3>
+              <span class="album-year">2025</span>
             </div>
           </a>
 
           <a
             href="https://music.youtube.com/playlist?list=OLAK5uy_nFB7et4xfvdOxH_Qpmas2QMuBIc70Z9cI"
-            class="album-card"
+            class="album-tile"
+            data-year="2025"
           >
-            <div class="album-cover">
+            <div class="album-artwork">
               <img
                 src="./images/luminous-cover.png"
                 alt="Luminous Album Cover"
                 loading="lazy"
               />
+              <div class="play-overlay">
+                <div class="play-icon"></div>
+              </div>
             </div>
-            <div class="album-info">
-              <h3>Luminous</h3>
-              <p>2025</p>
+            <div class="album-meta">
+              <h3 class="album-title">Luminous</h3>
+              <span class="album-year">2025</span>
             </div>
           </a>
 
           <a
             href="https://music.youtube.com/playlist?list=OLAK5uy_nR1QY_egTw7dNFVNekdi7oCtO5bTLo7GQ"
-            class="album-card"
+            class="album-tile"
+            data-year="2024"
           >
-            <div class="album-cover">
+            <div class="album-artwork">
               <img src="./images/horizon-cover.png" alt="Horizon Album Cover" loading="lazy" />
+              <div class="play-overlay">
+                <div class="play-icon"></div>
+              </div>
             </div>
-            <div class="album-info">
-              <h3>Horizon</h3>
-              <p>2024</p>
+            <div class="album-meta">
+              <h3 class="album-title">Horizon</h3>
+              <span class="album-year">2024</span>
             </div>
           </a>
 
           <a
             href="https://music.youtube.com/playlist?list=OLAK5uy_kD5_HrmZqmctTvIgt2FyBeBNxCAqyCt9s"
-            class="album-card"
+            class="album-tile"
+            data-year="2024"
           >
-            <div class="album-cover">
+            <div class="album-artwork">
               <img src="./images/contour-cover.png" alt="Contour EP Cover" loading="lazy" />
+              <div class="play-overlay">
+                <div class="play-icon"></div>
+              </div>
             </div>
-            <div class="album-info">
-              <h3>Contour EP</h3>
-              <p>2024</p>
+            <div class="album-meta">
+              <h3 class="album-title">Contour EP</h3>
+              <span class="album-year">2024</span>
             </div>
           </a>
         </div>
-      </div>
+      </section>
 
-      <!-- Review Quote Section -->
-      <div class="quote-section">
-        <div class="quote-container">
-          <p class="quote-text">"Stitched together with a shockingly effective cello sound and no shortage of symphonic swells and dramatic dynamics play, it feels like sitting in lotus on a cliff at the edge of a majestic ravine—epic in scale, but tranquil in its overall vibe."</p>
-          <p class="quote-attribution">—<a href="https://www.grooveartuniverse.com/ericsoltys" class="quote-link">Groove Art Universe</a> on <em>Luminous</em></p>
+      <!-- Featured Quote -->
+      <aside class="quote-block">
+        <div class="quote-mark">"</div>
+        <blockquote class="quote-text">
+          Stitched together with a shockingly effective cello sound and no shortage of symphonic swells and dramatic dynamics play, it feels like sitting in lotus on a cliff at the edge of a majestic ravine—epic in scale, but tranquil in its overall vibe.
+        </blockquote>
+        <cite class="quote-source">
+          <a href="https://www.grooveartuniverse.com/ericsoltys">Groove Art Universe</a> on <em>Luminous</em>
+        </cite>
+      </aside>
+
+      <!-- Other Links -->
+      <section class="other-section">
+        <div class="section-label">
+          <span class="label-text">&lt;Other /&gt;</span>
         </div>
-      </div>
 
-      <!-- Links Section -->
-      <div class="links-container">
-        <!-- Other Section -->
-        <div class="section-header">Other</div>
-
-        <ul class="simple-links-list">
-          <li>
-            <a href="https://esoltys.github.io/contour-2.0/" class="simple-link">Contour - Composition as Code</a>
-            <span class="simple-link-description">A TypeScript-first music composition framework for algorithmic and generative music</span>
-          </li>
-          <li>
-            <a href="https://ericjamessoltys.substack.com/" class="simple-link">Substack blog on #music #history</a>
-          </li>
-          <li>
-            <a href="http://esoltys.redbubble.com" class="simple-link">Redbubble art prints, clothing, and more</a>
-          </li>
-          <li>
-            <a href="https://imgur.com/user/tuxedolucy" class="simple-link">Lucy on Imgur</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+        <nav class="other-links">
+          <a href="https://esoltys.github.io/contour-2.0/" class="other-link">
+            <span class="link-title">Contour - Composition as Code</span>
+            <span class="link-desc">A TypeScript-first music composition framework for algorithmic and generative music</span>
+          </a>
+          <a href="https://ericjamessoltys.substack.com/" class="other-link">
+            <span class="link-title">Substack blog on #music #history</span>
+          </a>
+          <a href="http://esoltys.redbubble.com" class="other-link">
+            <span class="link-title">Redbubble art prints, clothing, and more</span>
+          </a>
+          <a href="https://imgur.com/user/tuxedolucy" class="other-link">
+            <span class="link-title">Lucy on Imgur</span>
+          </a>
+        </nav>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
