@@ -437,6 +437,26 @@ body {
 .stream-apple:hover { color: var(--apple); border-color: var(--apple); }
 .stream-bandcamp:hover { color: var(--accent); border-color: var(--accent); }
 
+.streaming-credit {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.streaming-credit a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: var(--border-width) solid var(--accent);
+  transition: all 0.2s ease;
+}
+
+.streaming-credit a:hover {
+  color: var(--text-primary);
+  border-bottom-color: var(--text-primary);
+}
+
 /* Albums grid with staggered animation */
 .albums-container {
   display: grid;
@@ -574,13 +594,12 @@ body {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 4rem;
   line-height: 1;
-  color: var(--surface);
-  user-select: none;
+  color: var(--accent);
 }
 
 .quote-text {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.125rem;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.875rem;
   font-style: normal;
   line-height: 1.8;
   color: var(--text-primary);
