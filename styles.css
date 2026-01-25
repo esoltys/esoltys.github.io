@@ -503,9 +503,12 @@ body {
 .album-artwork {
   position: relative;
   width: 100%;
+  max-width: 300px;
+  max-height: 300px;
   aspect-ratio: 1;
   overflow: hidden;
   border-top-right-radius: var(--border-radius-md);
+  margin: 0 auto;
 }
 
 .album-artwork img {
