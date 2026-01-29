@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <title>Eric Soltys — Developer & Composer</title>
+    <title>Eric James Soltys — Developer & Composer</title>
     <meta name="description" content="Eric Soltys — Canadian software developer and composer creating ambient electronic music in the BC Kootenays. Check out my music, code projects, and art." />
     <link
       rel="shortcut icon"
@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Serif+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -26,7 +26,7 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Eric Soltys",
+        "name": "Eric James Soltys",
         "url": "https://esoltys.github.io",
         "image": "https://esoltys.github.io/images/2026-01-profile-300px.jpg",
         "jobTitle": "Software Developer",
@@ -43,7 +43,7 @@
           "https://www.threads.net/@kootenay_eric",
           "https://bsky.app/profile/kootenay-eric.bsky.social"
         ],
-        "knowsAbout": ["Software Development", "Web Development", "Music Composition", "Ambient Electronic Music", "Generative Music"],
+        "knowsAbout": ["Software Development", "Web Development", "Music Composition", "Cinematic Electronic Music"],
         "worksFor": {
           "@type": "Organization",
           "name": "Freelance"
@@ -57,7 +57,7 @@
       <!-- Header Grid -->
       <header class="header-grid">
         <div class="name-block">
-          <h1 class="name-primary">Eric Soltys</h1>
+          <h1 class="name-primary">Eric James Soltys</h1>
           <div class="name-secondary">kootenay_eric</div>
         </div>
 
@@ -120,8 +120,9 @@
       <!-- Professional Section -->
       <section class="professional-section">
         <div class="section-label">
-          <span class="label-text">&lt;Professional /&gt;</span>
-          <span class="status-badge">#OpenToWork #RemoteOnly</span>
+          <span class="label-text">Software Developer</span>
+          <span class="status-badge">#OpenToWork</span>
+          <span class="status-badge">#RemoteOnly</span>
         </div>
 
         <div class="professional-grid">
@@ -144,7 +145,7 @@
       <!-- Music Section -->
       <section class="music-section">
         <div class="section-label">
-          <span class="label-text">&lt;Albums /&gt;</span>
+          <span class="label-text">Cinematic Electronic Music</span>
         </div>
 
         <!-- Streaming platforms -->
@@ -177,107 +178,122 @@
             <i class="ti ti-music"></i>
             <span class="stream-label">Bandcamp</span>
           </a>
+          <div class="radio-distributor">
+            Distributed to Canadian radio through <a href="https://earshot-distro.ca/" target="_blank" rel="noopener noreferrer">!earshot</a>
+          </div>
         </div>
 
-        <div class="streaming-credit">
-          Distributed to Canadian radio through <a href="https://earshot-distro.ca/" target="_blank" rel="noopener noreferrer">!earshot</a>
+        <!-- Featured Album -->
+        <div class="featured-album">
+          <div class="featured-album-container">
+            <a
+              href="https://music.youtube.com/playlist?list=OLAK5uy_nFB7et4xfvdOxH_Qpmas2QMuBIc70Z9cI"
+              class="featured-album-artwork-link"
+            >
+              <div class="featured-album-artwork">
+                <img
+                  src="./images/luminous-cover.png"
+                  alt="Luminous Album Cover"
+                  loading="lazy"
+                />
+                <div class="play-overlay">
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+            </a>
+            <div class="featured-album-info">
+              <div class="featured-album-header">
+                <h2 class="featured-album-title">Luminous</h2>
+                <p class="featured-album-year">2025 album</p>
+              </div>
+              <blockquote class="featured-album-quote">
+                Stitched together with a shockingly effective cello sound and no shortage of symphonic swells and dramatic dynamics play, it feels like sitting in lotus on a cliff at the edge of a majestic ravine—epic in scale, but tranquil in its overall vibe.
+              </blockquote>
+              <cite class="featured-album-cite">
+                <a href="https://www.grooveartuniverse.com/ericsoltys">Groove Art Universe</a>
+              </cite>
+            </div>
+          </div>
         </div>
 
-        <!-- Album cards -->
-        <div class="albums-container">
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_lYHQY5F4isvQFeEXhv6RboLp0u6teEKYE"
-            class="album-tile"
-            data-year="2025"
-          >
-            <div class="album-artwork">
-              <img
-                src="./images/basin-cover.png"
-                alt="Basin Album Cover"
-                loading="lazy"
-              />
-              <div class="play-overlay">
-                <div class="play-icon"></div>
+        <!-- Other Albums -->
+        <div class="other-albums">
+          <nav class="other-albums-list">
+            <a
+              href="https://music.youtube.com/playlist?list=OLAK5uy_lYHQY5F4isvQFeEXhv6RboLp0u6teEKYE"
+              class="other-album-item"
+            >
+              <div class="other-album-art">
+                <img
+                  src="./images/basin-cover.png"
+                  alt="Basin Album Cover"
+                  loading="lazy"
+                />
+                <div class="play-overlay">
+                  <div class="play-icon"></div>
+                </div>
               </div>
-            </div>
-            <div class="album-meta">
-              <h3 class="album-title">Basin</h3>
-              <span class="album-year">2025</span>
-            </div>
-          </a>
+              <div class="other-album-meta">
+                <span class="other-album-title">Basin</span>
+                <span class="other-album-year">2025 album</span>
+              </div>
+            </a>
 
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_nFB7et4xfvdOxH_Qpmas2QMuBIc70Z9cI"
-            class="album-tile"
-            data-year="2025"
-          >
-            <div class="album-artwork">
-              <img
-                src="./images/luminous-cover.png"
-                alt="Luminous Album Cover"
-                loading="lazy"
-              />
-              <div class="play-overlay">
-                <div class="play-icon"></div>
+            <a
+              href="https://music.youtube.com/playlist?list=OLAK5uy_nR1QY_egTw7dNFVNekdi7oCtO5bTLo7GQ"
+              class="other-album-item"
+            >
+              <div class="other-album-art">
+                <img src="./images/horizon-cover.png" alt="Horizon Album Cover" loading="lazy" />
+                <div class="play-overlay">
+                  <div class="play-icon"></div>
+                </div>
               </div>
-            </div>
-            <div class="album-meta">
-              <h3 class="album-title">Luminous</h3>
-              <span class="album-year">2025</span>
-            </div>
-          </a>
+              <div class="other-album-meta">
+                <span class="other-album-title">Horizon</span>
+                <span class="other-album-year">2024 album</span>
+              </div>
+            </a>
 
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_nR1QY_egTw7dNFVNekdi7oCtO5bTLo7GQ"
-            class="album-tile"
-            data-year="2024"
-          >
-            <div class="album-artwork">
-              <img src="./images/horizon-cover.png" alt="Horizon Album Cover" loading="lazy" />
-              <div class="play-overlay">
-                <div class="play-icon"></div>
+            <a
+              href="https://music.youtube.com/playlist?list=OLAK5uy_kD5_HrmZqmctTvIgt2FyBeBNxCAqyCt9s"
+              class="other-album-item"
+            >
+              <div class="other-album-art">
+                <img src="./images/contour-cover.png" alt="Contour EP Cover" loading="lazy" />
+                <div class="play-overlay">
+                  <div class="play-icon"></div>
+                </div>
               </div>
-            </div>
-            <div class="album-meta">
-              <h3 class="album-title">Horizon</h3>
-              <span class="album-year">2024</span>
-            </div>
-          </a>
+              <div class="other-album-meta">
+                <span class="other-album-title">Contour</span>
+                <span class="other-album-year">2024 EP</span>
+              </div>
+            </a>
 
-          <a
-            href="https://music.youtube.com/playlist?list=OLAK5uy_kD5_HrmZqmctTvIgt2FyBeBNxCAqyCt9s"
-            class="album-tile"
-            data-year="2024"
-          >
-            <div class="album-artwork">
-              <img src="./images/contour-cover.png" alt="Contour EP Cover" loading="lazy" />
-              <div class="play-overlay">
-                <div class="play-icon"></div>
+            <a
+              href="https://www.youtube.com/watch?v=e15GeXHL4qU"
+              class="other-album-item"
+            >
+              <div class="other-album-art">
+                <img src="./images/night-sky-lullaby-cover.png" alt="Night Sky Lullaby Cover" loading="lazy" />
+                <div class="play-overlay">
+                  <div class="play-icon"></div>
+                </div>
               </div>
-            </div>
-            <div class="album-meta">
-              <h3 class="album-title">Contour EP</h3>
-              <span class="album-year">2024</span>
-            </div>
-          </a>
+              <div class="other-album-meta">
+                <span class="other-album-title">Night Sky Lullaby</span>
+                <span class="other-album-year">2024 single</span>
+              </div>
+            </a>
+          </nav>
         </div>
       </section>
-
-      <!-- Featured Quote -->
-      <aside class="quote-block">
-        <div class="quote-mark">"</div>
-        <blockquote class="quote-text">
-          Stitched together with a shockingly effective cello sound and no shortage of symphonic swells and dramatic dynamics play, it feels like sitting in lotus on a cliff at the edge of a majestic ravine—epic in scale, but tranquil in its overall vibe.
-        </blockquote>
-        <cite class="quote-source">
-          <a href="https://www.grooveartuniverse.com/ericsoltys">Groove Art Universe</a> on <em>Luminous</em>
-        </cite>
-      </aside>
 
       <!-- Other Links -->
       <section class="other-section">
         <div class="section-label">
-          <span class="label-text">&lt;Other /&gt;</span>
+          <span class="label-text">Other</span>
         </div>
 
         <nav class="other-links">

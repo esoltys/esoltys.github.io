@@ -82,5 +82,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  console.log('Eric Soltys — Code Meets Canvas');
+  console.log('Eric Soltys #OpenToWork #RemoteOnly');
 });
