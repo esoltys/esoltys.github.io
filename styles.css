@@ -317,6 +317,12 @@ body {
   animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
 }
 
+.professional-container {
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
 .professional-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
