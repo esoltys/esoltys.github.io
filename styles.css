@@ -70,19 +70,6 @@ body {
   overflow-x: hidden;
 }
 
-/* DM Serif Text Utilities */
-.dm-serif-text-regular {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.dm-serif-text-regular-italic {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -391,7 +378,6 @@ body {
 
 .pro-linkedin:hover { border-color: var(--linkedin); }
 .pro-github:hover { border-color: var(--github); }
-.pro-leetcode:hover { border-color: var(--leetcode); }
 
 /* ===== MUSIC SECTION ===== */
 .music-section {
@@ -466,26 +452,6 @@ body {
 .stream-spotify:hover { color: var(--spotify); border-color: var(--spotify); }
 .stream-apple:hover { color: var(--apple); border-color: var(--apple); }
 .stream-bandcamp:hover { color: var(--accent); border-color: var(--accent); }
-
-.streaming-credit {
-  text-align: center;
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.streaming-credit a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: var(--border-width) solid var(--accent);
-  transition: all 0.2s ease;
-}
-
-.streaming-credit a:hover {
-  color: var(--text-primary);
-  border-bottom-color: var(--text-primary);
-}
 
 /* Albums grid with staggered animation */
 /* ===== ALBUMS SECTION ===== */
@@ -736,62 +702,6 @@ body {
   50% { opacity: 0.6; }
 }
 
-/* ===== QUOTE BLOCK ===== */
-.quote-block {
-  border-left: 3px solid var(--accent);
-  padding: 2rem 2.5rem;
-  background: var(--bg-medium);
-  position: relative;
-  animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;
-  border-top-right-radius: var(--border-radius-md);
-  border-bottom-left-radius: var(--border-radius-md);
-}
-
-.quote-mark {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  font-family: "DM Serif Text", serif;
-  font-size: 4rem;
-  line-height: 1;
-  color: var(--accent);
-}
-
-.quote-text {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
-  font-size: 0.875rem;
-  font-style: normal;
-  line-height: 1.8;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: 1;
-}
-
-.quote-source {
-  display: block;
-  font-size: 0.875rem;
-  text-align: right;
-  color: var(--text-secondary);
-  font-style: normal;
-}
-
-.quote-source a {
-  color: var(--text-primary);
-  text-decoration: none;
-  border-bottom: var(--border-width) solid var(--surface);
-  transition: border-color 0.2s ease;
-}
-
-.quote-source a:hover {
-  border-bottom-color: var(--accent);
-}
-
-.quote-source em {
-  color: var(--text-secondary);
-  font-style: normal;
-}
-
 /* ===== OTHER SECTION ===== */
 .other-section {
   animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.4s both;
@@ -948,14 +858,6 @@ body {
   .label-text {
     flex-basis: 100%;
   }
-
-  .quote-block {
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
-  }
-
-  .quote-text {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -983,9 +885,5 @@ body {
 
   .stream-link i {
     font-size: 1.1rem;
-  }
-
-  .quote-mark {
-    font-size: 3rem;
   }
 }
