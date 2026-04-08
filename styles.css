@@ -22,6 +22,17 @@
   --threads: #000000;
   --bluesky: #1185fe;
 
+  /* Typography Scale (1.25 Major Third) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.25rem;
+  --text-display: clamp(2.5rem, 8vw, 4rem);
+  --text-h2: clamp(1.5rem, 5vw, 2.25rem);
+
   /* Grid & spacing */
   --grid-gap: 1rem;
   --border-width: 1px;
@@ -63,10 +74,12 @@ body {
   background: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.6;
-  font-size: 14px;
+  font-size: var(--text-base);
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -114,15 +127,15 @@ body {
 
 .name-primary {
   font-family: "DM Serif Text", serif;
-  font-size: 3rem;
+  font-size: var(--text-display);
   font-weight: 600;
-  line-height: 1;
+  line-height: 0.9;
   margin-bottom: 0.5rem;
   animation: fadeIn 1s ease-out 0.2s both;
 }
 
 .name-secondary {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--text-secondary);
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -166,10 +179,10 @@ body {
 }
 
 .bio-text {
-  font-size: 0.9rem;
+  font-size: var(--text-base);
   color: var(--text-secondary);
-  margin-bottom: 1rem;
-  max-width: 400px;
+  margin-bottom: 1.5rem;
+  max-width: 45ch;
   line-height: 1.7;
 }
 
@@ -273,10 +286,10 @@ body {
 /* ===== SECTION LABELS ===== */
 .section-label {
   font-family: "DM Serif Text", serif;
-  font-size: 1.75rem;
+  font-size: var(--text-xl);
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -402,10 +415,12 @@ body {
 
 .stream-link {
   display: flex;
+  flex: 1 1 auto; /* Allow items to grow and shrink */
+  min-width: fit-content;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0 1rem;
+  padding: 0 0.75rem; /* Slightly reduced padding */
   height: 44px;
   border: var(--border-width) solid var(--surface);
   background: var(--bg-dark);
@@ -425,7 +440,7 @@ body {
 }
 
 .stream-label {
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   z-index: 1;
@@ -515,9 +530,9 @@ body {
 
 .featured-album-title {
   font-family: "DM Serif Text", serif;
-  font-size: 2rem;
+  font-size: var(--text-h2);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.1;
   margin: 0;
 }
 
