@@ -2,6 +2,24 @@
 // Minimal interactive enhancements
 
 document.addEventListener('DOMContentLoaded', () => {
+  // --- SCROLL REVEAL ANIMATION ---
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        // Once revealed, no need to observe anymore
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15, // Reveal when 15% visible
+    rootMargin: '0px 0px -50px 0px' // Slightly before it hits the bottom
+  });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
   // Add scroll-triggered parallax on album cards
   const albumTiles = document.querySelectorAll('.album-tile');
 
