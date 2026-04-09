@@ -100,5 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  console.log('Eric Soltys #OpenToWork #RemoteOnly');
+  console.log(
+    "%c ERIC JAMES SOLTYS %c Senior Software Developer %c Art + Science ",
+    "background: #4dd4d4; color: #000; font-weight: bold; padding: 4px 8px; border-radius: 4px 0 0 4px;",
+    "background: #eee; color: #000; font-weight: bold; padding: 4px 8px;",
+    "background: #2a2a2a; color: #fff; padding: 4px 8px; border-radius: 0 4px 4px 0;"
+  );
+  console.log("%c Currently #OpenToWork for Remote-Only Senior Roles", "color: #4dd4d4; font-family: monospace; font-weight: bold; font-size: 1.1em;");
 });

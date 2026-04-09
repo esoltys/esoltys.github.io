@@ -191,6 +191,36 @@ body {
   font-weight: 400;
   letter-spacing: 0.05em;
   animation: fadeIn 1s ease-out 0.4s both;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* --- VU METER DELIGHT --- */
+.vu-meter {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 14px;
+  width: 20px;
+  opacity: 0.6;
+}
+
+.vu-bar {
+  width: 3px;
+  background: var(--accent);
+  border-radius: 1px;
+  animation: vu-pulse 1.2s ease-in-out infinite;
+}
+
+.vu-bar:nth-child(1) { height: 40%; animation-delay: 0.1s; }
+.vu-bar:nth-child(2) { height: 80%; animation-delay: 0.3s; }
+.vu-bar:nth-child(3) { height: 60%; animation-delay: 0.2s; }
+.vu-bar:nth-child(4) { height: 90%; animation-delay: 0.4s; }
+
+@keyframes vu-pulse {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.4); }
 }
 
 .avatar-block {
@@ -359,9 +389,13 @@ body {
 }
 
 .professional-container {
+  display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding-bottom: 2rem;
+  max-width: 80ch;
+  font-size: var(--text-base);
+  line-height: 1.7;
 }
 
 .professional-grid {
