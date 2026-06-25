@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- WATER BACKGROUND CANVAS ---
   initWaterBackground();
 
+  // --- TOPO LINES PARALLAX ---
+  initTopoParallax();
+
   // --- SCROLL REVEAL ANIMATION ---
   const revealElements = document.querySelectorAll('.reveal');
 
@@ -131,8 +134,8 @@ function initWaterBackground() {
   }
   function getAccentColor() {
     return window.matchMedia('(prefers-color-scheme: light)').matches
-      ? '#0a9a9a'
-      : '#4dd4d4';
+      ? '#3d7a8a'
+      : '#7eb8c9';
   }
 
   function resize() {
@@ -214,4 +217,37 @@ function hexToRgb(hex) {
     parseInt(h.slice(2, 4), 16),
     parseInt(h.slice(4, 6), 16),
   ];
+}
+
+// =============================================================================
+// TOPO LINES PARALLAX
+// Gently shifts the contour SVG as the header scrolls away, evoking the sense
+// of moving through terrain. Desktop only, respects prefers-reduced-motion.
+// =============================================================================
+
+function initTopoParallax() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.matchMedia('(min-width: 769px)').matches) return;
+
+  const topoLines = document.querySelector('.topo-lines');
+  const header    = document.querySelector('.header-grid');
+  if (!topoLines || !header) return;
+
+  let ticking = false;
+
+  function updateTopoParallax() {
+    const rect     = header.getBoundingClientRect();
+    const scrolled = Math.max(0, -rect.top);
+    const progress = Math.min(1, scrolled / (rect.height || 1));
+    // Shift up 18px as the header exits the viewport
+    topoLines.style.transform = `translateY(${progress * -18}px)`;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateTopoParallax);
+      ticking = true;
+    }
+  }, { passive: true });
 }

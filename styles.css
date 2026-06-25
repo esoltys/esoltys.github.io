@@ -1,16 +1,17 @@
 /* Code Meets Canvas — Eric Soltys */
 
 :root {
-  /* Base palette - monochrome with accent (dark mode default) */
-  --bg-dark: #0a0a0a;
-  --bg-medium: #1a1a1a;
-  --surface: #2a2a2a;
-  --surface-hover: #3a3a3a;
-  --text-primary: #f5f5f5;
-  --text-secondary: #c0c0c0; /* Improved from #a0a0a0 for WCAG AA contrast */
-  --text-dim: #909090; /* Improved from #606060 for WCAG AA contrast */
-  --accent: #4dd4d4; /* Teal/cyan aurora effect */
-  --accent-dim: #3ab5b5;
+  /* Topographic palette — dark mode default */
+  --bg-dark: #151a1f;        /* deep slate */
+  --bg-medium: #1e252c;
+  --surface: #2a333c;
+  --surface-hover: #3a4550;
+  --text-primary: #e8ebe4;   /* mountain fog white */
+  --text-secondary: #a8b5b0;
+  --text-dim: #6a7e78;
+  --accent: #7eb8c9;         /* ridge blue */
+  --accent-dim: #5a9aab;
+  --accent-stone: #c4a882;   /* warm stone — BC river valley */
 
   /* Platform colors */
   --spotify: #1db954;
@@ -38,6 +39,7 @@
   --border-width: 1px;
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
+  --radius-sig: 10px;        /* signature asymmetric corner radius */
 
   /* Animation Easings */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -91,18 +93,19 @@
   box-shadow: 0 5px 15px -5px currentColor;
 }
 
-/* Light mode - auto-switches based on browser preference */
+/* Light mode — mountain fog palette */
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-dark: #f5f5f5;
-    --bg-medium: #e8e8e8;
-    --surface: #d0d0d0;
-    --surface-hover: #c0c0c0;
-    --text-primary: #1a1a1a;
-    --text-secondary: #4a4a4a;
-    --text-dim: #6a6a6a;
-    --accent: #0a9a9a; /* Darker teal for light mode contrast */
-    --accent-dim: #078080;
+    --bg-dark: #eef0eb;        /* fog, warm gray-green */
+    --bg-medium: #e1e5dc;
+    --surface: #cdd3c8;
+    --surface-hover: #bcc3b6;
+    --text-primary: #151a1f;
+    --text-secondary: #3a4a44;
+    --text-dim: #5a6e68;
+    --accent: #3d7a8a;         /* darker ridge blue for light bg contrast */
+    --accent-dim: #2d6070;
+    --accent-stone: #9a7a5a;   /* darker stone for light bg */
 
     /* Platform colors - adjusted for light background contrast */
     --threads: #1a1a1a;
@@ -121,16 +124,28 @@
 }
 
 body {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-family: 'Literata', Georgia, serif;
   background: transparent;
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: var(--text-base);
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mono reserved for metadata, handles, labels, code contexts */
+.name-secondary,
+.location-tag,
+.stream-label,
+.status-badge,
+.other-album-year,
+.featured-album-year,
+.radio-distributor,
+.link-desc {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 /* ===== BACKGROUND CANVAS ===== */
@@ -169,9 +184,34 @@ body {
   padding: 2rem;
   background: var(--bg-dark);
   position: relative;
+  overflow: hidden;
   animation: slideInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   border-top-right-radius: var(--border-radius-md);
   border-bottom-left-radius: var(--border-radius-md);
+}
+
+/* ===== TOPO CONTOUR LINES ===== */
+.topo-lines {
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 80%;
+  height: 150%;
+  opacity: 0.10;
+  pointer-events: none;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+.topo-lines path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+
+@media (prefers-color-scheme: light) {
+  .topo-lines { opacity: 0.18; }
 }
 
 .header-grid::before {
@@ -561,6 +601,7 @@ body {
   height: 300px;
   overflow: hidden;
   border-top-right-radius: var(--border-radius-md);
+  border-bottom-left-radius: var(--border-radius-md);
 }
 
 .featured-album-artwork img {
@@ -627,7 +668,7 @@ body {
 }
 
 .featured-album-cite a {
-  color: var(--accent);
+  color: var(--accent-stone);
   text-decoration: none;
   transition: color 0.3s ease;
 }
