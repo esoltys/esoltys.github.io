@@ -139,6 +139,7 @@ body {
 /* Mono reserved for metadata, handles, labels, code contexts */
 .name-secondary,
 .location-tag,
+.location-context,
 .stream-label,
 .status-badge,
 .other-album-year,
@@ -199,8 +200,6 @@ body {
   height: 150%;
   opacity: 0.10;
   pointer-events: none;
-  will-change: transform;
-  transition: transform 0.1s linear;
 }
 
 .topo-lines path {
@@ -301,13 +300,19 @@ body {
   line-height: 1.7;
 }
 
+.location-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .location-tag {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   font-size: 0.75rem;
   color: var(--text-dim);
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0.3rem 0.7rem;
   border: var(--border-width) solid var(--surface);
@@ -317,6 +322,13 @@ body {
   cursor: pointer;
   border-top-right-radius: var(--border-radius-sm);
   border-bottom-left-radius: var(--border-radius-sm);
+}
+
+.location-context {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  line-height: 1.4;
 }
 
 .location-tag:hover {
@@ -597,8 +609,8 @@ body {
 
 .featured-album-artwork {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-top-right-radius: var(--border-radius-md);
   border-bottom-left-radius: var(--border-radius-md);
@@ -964,16 +976,7 @@ body {
     gap: 1.5rem;
   }
 
-  .featured-album-artwork-link {
-    display: block;
-    width: 100%;
-  }
 
-  .featured-album-artwork {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
 
   .featured-album-title {
     font-size: 1.5rem;
