@@ -69,8 +69,8 @@
 .professional-grid.reveal.active .pro-card:nth-child(3) { transition-delay: 0.3s; }
 
 /* Refined Hover States */
-.social-tile, .pro-card, .stream-link, .other-album-item, .other-link {
-  transition: all 0.4s var(--ease-out-expo);
+.social-tile, .pro-card, .stream-link, .location-tag, .other-album-item {
+  transition: all 0.2s var(--ease-out-expo);
 }
 
 .social-tile:hover, .pro-card:hover {
@@ -128,7 +128,7 @@
 
 body {
   font-family: 'Literata', Georgia, serif;
-  background: transparent;
+  background: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.7;
   font-size: var(--text-base);
@@ -142,7 +142,6 @@ body {
 /* Mono reserved for metadata, handles, labels, code contexts */
 .name-secondary,
 .location-tag,
-.location-context,
 .stream-label,
 .status-badge,
 .other-album-year,
@@ -321,18 +320,11 @@ body {
   border: var(--border-width) solid var(--surface);
   background: var(--bg-medium);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
   border-top-right-radius: var(--border-radius-sm);
   border-bottom-left-radius: var(--border-radius-sm);
 }
 
-.location-context {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  letter-spacing: 0.05em;
-  line-height: 1.4;
-}
 
 .location-tag:hover {
   background: var(--surface);
@@ -365,7 +357,6 @@ body {
   color: var(--text-primary);
   font-size: 0.8rem;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
   border-top-right-radius: var(--border-radius-sm);
@@ -374,7 +365,7 @@ body {
 
 .social-tile i {
   font-size: 2rem;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s var(--ease-out-expo);
 }
 
 .social-tile::before {
@@ -466,7 +457,6 @@ body {
   color: var(--text-primary);
   font-size: 0.8rem;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
   border-top-right-radius: var(--border-radius-sm);
@@ -475,7 +465,7 @@ body {
 
 .pro-card i {
   font-size: 2rem;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s var(--ease-out-expo);
 }
 
 .pro-card em {
@@ -548,7 +538,6 @@ body {
   background: var(--bg-dark);
   color: var(--text-primary);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   white-space: nowrap;
   border-top-right-radius: var(--border-radius-sm);
@@ -738,29 +727,10 @@ body {
   text-decoration: none;
   color: var(--text-primary);
   font-size: 0.875rem;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border-left: 2px solid transparent;
-  position: relative;
-}
-
-.other-album-item::before {
-  content: '→';
-  position: absolute;
-  left: 0.75rem;
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .other-album-item:hover {
   background: var(--surface);
-  border-left-color: var(--accent);
-  padding-left: 2.5rem;
-}
-
-.other-album-item:hover::before {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .other-album-art {
@@ -769,6 +739,7 @@ body {
   overflow: hidden;
   border-radius: var(--border-radius-sm);
   flex-shrink: 0;
+  position: relative;
 }
 
 .other-album-art img {
@@ -776,11 +747,13 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+  filter: grayscale(30%);
 }
 
 .other-album-item:hover .other-album-art img {
   transform: scale(1.05);
+  filter: grayscale(0%);
 }
 
 .other-album-meta {
@@ -839,64 +812,7 @@ body {
   50% { opacity: 0.6; }
 }
 
-/* ===== OTHER SECTION ===== */
-.other-section {
-  animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.4s both;
-}
 
-.other-links {
-  display: grid;
-  gap: var(--border-width);
-  border: var(--border-width) solid var(--surface);
-  border-top-right-radius: var(--border-radius-md);
-  border-bottom-left-radius: var(--border-radius-md);
-  overflow: hidden;
-}
-
-.other-link {
-  display: block;
-  padding: 1.25rem 1.5rem;
-  background: var(--bg-medium);
-  text-decoration: none;
-  color: var(--text-primary);
-  font-size: 0.875rem;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  border-left: 2px solid transparent;
-  position: relative;
-}
-
-.other-link::before {
-  content: '→';
-  position: absolute;
-  left: 0.75rem;
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.other-link:hover {
-  background: var(--surface);
-  border-left-color: var(--accent);
-  padding-left: 2.5rem;
-}
-
-.other-link:hover::before {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.link-title {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-
-.link-desc {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
@@ -979,7 +895,9 @@ body {
     gap: 1.5rem;
   }
 
-
+  .featured-album-artwork-link {
+    align-self: center;
+  }
 
   .featured-album-title {
     font-size: 1.5rem;

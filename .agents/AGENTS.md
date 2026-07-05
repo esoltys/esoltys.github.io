@@ -26,8 +26,9 @@ Useful local commands:
   - `git status --short`
 - Find project references quickly:
   - `rg "search text" index.html styles.css script.js`
-- Optional ad-hoc HTML validation if Node/npm is available:
-  - `npx --yes html-validate index.html`
+- HTML validation:
+  - `bunx html-validate index.html` (preferred)
+  - `npx --yes html-validate index.html` (fallback if bun is not available)
 - Optional link/accessibility/browser checks should be run manually in a browser because this is a static page with external services and CDN assets.
 
 ## Deployment
@@ -71,9 +72,8 @@ The page is a personal landing page with these main areas:
 
 1. Header/profile and location
 2. Social links: Instagram, Threads, Bluesky
-3. Professional section: senior developer positioning, LinkedIn, GitHub
+3. Professional section: senior developer positioning, LinkedIn, GitHub, LeetCode
 4. Music section: streaming links, featured album, album list, radio distribution note
-5. Other links: Contour, Substack, Redbubble, Imgur
 
 When updating music releases, update all relevant places together:
 
@@ -88,7 +88,7 @@ When updating music releases, update all relevant places together:
 - Tabler Icons webfont via jsDelivr CDN.
 - Google Fonts for typography.
 - GoatCounter analytics: `https://esoltys.goatcounter.com/count` loaded from `//gc.zgo.at/count.js`.
-- External profile/music links to LinkedIn, GitHub, Instagram, Threads, Bluesky, YouTube Music, Spotify, Apple Music, Bandcamp, !earshot, Substack, Redbubble, and Imgur.
+- External profile/music links to LinkedIn, GitHub, LeetCode, Instagram, Threads, Bluesky, YouTube Music, Spotify, Apple Music, Bandcamp, and !earshot.
 
 Be careful when editing external URLs: preserve exact playlist/profile IDs and use HTTPS where available.
 

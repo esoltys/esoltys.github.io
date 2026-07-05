@@ -26,46 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  // Add scroll-triggered parallax on album cards
-  const albumTiles = document.querySelectorAll('.album-tile');
 
-  if (albumTiles.length > 0 && window.matchMedia('(min-width: 769px)').matches) {
-    let ticking = false;
-
-    function updateParallax() {
-      const scrolled = window.pageYOffset;
-
-      albumTiles.forEach((tile, index) => {
-        const rect = tile.getBoundingClientRect();
-        const elementCenter = rect.top + rect.height / 2;
-        const viewportCenter = window.innerHeight / 2;
-        const distance = (elementCenter - viewportCenter) / viewportCenter;
-
-        // Subtle rotation and translation based on scroll position
-        const rotation = distance * 1.5;
-        const translateY = distance * -5;
-
-        // Only apply when element is in viewport
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          tile.style.transform = `translateY(${translateY}px) rotate(${rotation}deg)`;
-        }
-      });
-
-      ticking = false;
-    }
-
-    function requestParallax() {
-      if (!ticking) {
-        window.requestAnimationFrame(updateParallax);
-        ticking = true;
-      }
-    }
-
-    window.addEventListener('scroll', requestParallax);
-  }
 
   // Cursor trail effect on album artwork (desktop only)
-  const artworks = document.querySelectorAll('.album-artwork');
+  const artworks = document.querySelectorAll('.featured-album-artwork');
 
   if (artworks.length > 0 && window.matchMedia('(min-width: 769px)').matches) {
     artworks.forEach(artwork => {
@@ -106,13 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  console.log(
-    "%c ERIC JAMES SOLTYS %c Senior Software Developer %c Art + Science ",
-    "background: #4dd4d4; color: #000; font-weight: bold; padding: 4px 8px; border-radius: 4px 0 0 4px;",
-    "background: #eee; color: #000; font-weight: bold; padding: 4px 8px;",
-    "background: #2a2a2a; color: #fff; padding: 4px 8px; border-radius: 0 4px 4px 0;"
-  );
-  console.log("%c Currently #OpenToWork for Remote-Only Senior Roles", "color: #4dd4d4; font-family: monospace; font-weight: bold; font-size: 1.1em;");
 });
 
 // =============================================================================
