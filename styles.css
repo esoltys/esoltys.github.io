@@ -19,6 +19,7 @@
   --apple: #fc3c44;
   --linkedin: #0077b5;
   --github: #6e5494;
+  --leetcode: #ffa116;
   --instagram: #e4405f;
   --threads: #000000;
   --bluesky: #1185fe;
@@ -65,6 +66,7 @@
 
 .professional-grid.reveal.active .pro-card:nth-child(1) { transition-delay: 0.1s; }
 .professional-grid.reveal.active .pro-card:nth-child(2) { transition-delay: 0.2s; }
+.professional-grid.reveal.active .pro-card:nth-child(3) { transition-delay: 0.3s; }
 
 /* Refined Hover States */
 .social-tile, .pro-card, .stream-link, .other-album-item, .other-link {
@@ -87,6 +89,7 @@
 
 .pro-linkedin:hover { border-color: var(--linkedin); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), 0 0 20px -5px var(--linkedin); }
 .pro-github:hover { border-color: var(--github); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), 0 0 20px -5px var(--github); }
+.pro-leetcode:hover { border-color: var(--leetcode); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), 0 0 20px -5px var(--leetcode); }
 
 .stream-link:hover {
   transform: scale(1.03);
