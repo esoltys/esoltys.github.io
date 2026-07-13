@@ -26,33 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-
-
-  // Cursor trail effect on album artwork (desktop only)
-  const artworks = document.querySelectorAll('.featured-album-artwork');
-
-  if (artworks.length > 0 && window.matchMedia('(min-width: 769px)').matches) {
-    artworks.forEach(artwork => {
-      artwork.addEventListener('mousemove', (e) => {
-        const rect = artwork.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width - 0.5) * 10;
-        const y = ((e.clientY - rect.top) / rect.height - 0.5) * 10;
-
-        const img = artwork.querySelector('img');
-        if (img) {
-          img.style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
-        }
-      });
-
-      artwork.addEventListener('mouseleave', () => {
-        const img = artwork.querySelector('img');
-        if (img) {
-          img.style.transform = '';
-        }
-      });
-    });
-  }
-
   // Smooth scroll for any future anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
