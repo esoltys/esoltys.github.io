@@ -19,7 +19,7 @@
   --apple: #fc3c44;
   --linkedin: #0077b5;
   --github: #6e5494;
-  --leetcode: #ffa116;
+  --substack: #50394d;
   --instagram: #e4405f;
   --threads: #000000;
   --bluesky: #1185fe;
@@ -91,7 +91,7 @@
 
 .pro-linkedin:hover { color: var(--linkedin); border-color: var(--linkedin); }
 .pro-github:hover { color: var(--github); border-color: var(--github); }
-.pro-leetcode:hover { color: var(--leetcode); border-color: var(--leetcode); }
+.pro-substack:hover { color: var(--substack); border-color: var(--substack); }
 
 .stream-link:hover {
   transform: scale(1.03);

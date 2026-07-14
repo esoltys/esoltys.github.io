@@ -72,7 +72,7 @@ The page is a personal landing page with these main areas:
 
 1. Header/profile and location
 2. Social links: Instagram, Threads, Bluesky
-3. Professional section: senior developer positioning, LinkedIn, GitHub, LeetCode
+3. Professional section: senior developer positioning, LinkedIn, GitHub, Substack
 4. Music section: streaming links, featured album, album list, radio distribution note
 
 When updating music releases, update all relevant places together:
@@ -88,7 +88,7 @@ When updating music releases, update all relevant places together:
 - Tabler Icons webfont via jsDelivr CDN.
 - Google Fonts for typography.
 - GoatCounter analytics: `https://esoltys.goatcounter.com/count` loaded from `//gc.zgo.at/count.js`.
-- External profile/music links to LinkedIn, GitHub, LeetCode, Instagram, Threads, Bluesky, YouTube Music, Spotify, Apple Music, Bandcamp, and !earshot.
+- External profile/music links to LinkedIn, GitHub, Substack, Instagram, Threads, Bluesky, YouTube Music, Spotify, Apple Music, Bandcamp, and !earshot.
 
 Be careful when editing external URLs: preserve exact playlist/profile IDs and use HTTPS where available.
 
