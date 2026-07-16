@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
     <title>Eric James Soltys — kootenay_eric</title>
-    <meta name="description" content="Eric Soltys — Senior software developer and hobbyist composer in the BC Kootenays." />
+    <meta name="description" content="Eric Soltys — Canadian software developer and hobbyist creating art and music in the BC Kootenays." />
+    <meta name="theme-color" content="#151a1f" />
     <meta property="og:title" content="Eric James Soltys — kootenay_eric" />
-    <meta property="og:description" content="Senior software developer and hobbyist composer in the BC Kootenays." />
+    <meta property="og:description" content="Canadian software developer and hobbyist creating art and music in the BC Kootenays." />
     <meta property="og:image" content="https://esoltys.github.io/images/20260429-180px.jpg" />
+    <meta property="og:image:width" content="180" />
+    <meta property="og:image:height" content="180" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:url" content="https://esoltys.github.io" />
     <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="Eric James Soltys" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Eric James Soltys — kootenay_eric" />
+    <meta name="twitter:description" content="Canadian software developer and hobbyist creating art and music in the BC Kootenays." />
+    <meta name="twitter:image" content="https://esoltys.github.io/images/20260429-180px.jpg" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="/favicon.ico?v=20250810"
     />
+    <link rel="apple-touch-icon" href="./images/20260429-180px.jpg" />
+    <link rel="manifest" href="./manifest.json" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
@@ -36,7 +46,7 @@
         "url": "https://esoltys.github.io",
         "image": "https://esoltys.github.io/images/20260429-180px.jpg",
         "jobTitle": "Software Developer",
-        "description": "Senior software developer and hobbyist composer in the BC Kootenays",
+        "description": "Canadian software developer and hobbyist creating art and music in the BC Kootenays",
 
         "location": {
           "@type": "Place",
@@ -141,7 +151,7 @@
 
         <div class="bio-block">
           <p class="bio-text">
-            Senior software developer and hobbyist composer
+            Canadian software developer and hobbyist creating art and music in the BC Kootenays
           </p>
           <div class="location-container">
             <a
@@ -150,40 +160,41 @@
               rel="noopener noreferrer"
               class="location-tag"
             >
-              <i class="ti ti-map-pin"></i>
+              <i class="ti ti-map-pin" aria-hidden="true"></i>
               <span>Castlegar, BC, Canada</span>
+              <span class="sr-only"> (opens in new tab)</span>
             </a>
           </div>
         </div>
       </header>
 
-      <!-- Social Grid -->
-      <section class="social-grid reveal">
+      <!-- Social Bar -->
+      <section class="social-bar reveal">
         <a
           href="https://www.threads.net/@kootenay_eric"
           rel="me"
-          class="social-tile social-threads"
+          class="social-link social-threads"
           aria-label="Threads"
         >
-          <i class="ti ti-brand-threads"></i>
-          <span>Threads</span>
+          <i class="ti ti-brand-threads" aria-hidden="true"></i>
+          <span class="social-label">Threads</span>
         </a>
         <a
           href="https://bsky.app/profile/kootenay-eric.bsky.social"
-          class="social-tile social-bluesky"
+          class="social-link social-bluesky"
           aria-label="Bluesky"
         >
-          <i class="ti ti-brand-bluesky"></i>
-          <span>Bluesky</span>
+          <i class="ti ti-brand-bluesky" aria-hidden="true"></i>
+          <span class="social-label">Bluesky</span>
         </a>
         <a
           href="https://instagram.com/kootenay_eric"
           rel="me"
-          class="social-tile social-instagram"
+          class="social-link social-instagram"
           aria-label="Instagram"
         >
-          <i class="ti ti-brand-instagram"></i>
-          <span>Instagram</span>
+          <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+          <span class="social-label">Instagram</span>
         </a>
       </section>
 
@@ -204,7 +215,7 @@
             class="pro-link pro-linkedin"
             aria-label="LinkedIn"
           >
-            <i class="ti ti-brand-linkedin"></i>
+            <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
             <span class="pro-label">LinkedIn</span>
           </a>
           <a
@@ -212,7 +223,7 @@
             class="pro-link pro-github"
             aria-label="GitHub"
           >
-            <i class="ti ti-brand-github"></i>
+            <i class="ti ti-brand-github" aria-hidden="true"></i>
             <span class="pro-label">GitHub</span>
           </a>
           <a
@@ -220,7 +231,7 @@
             class="pro-link pro-substack"
             aria-label="Substack"
           >
-            <i class="ti ti-stack-2"></i>
+            <i class="ti ti-stack-2" aria-hidden="true"></i>
             <span class="pro-label">Substack</span>
           </a>
         </div>
@@ -231,6 +242,7 @@
             <a
               href="https://github.com/esoltys/luminous"
               class="featured-project-artwork-link"
+              data-lang="Rust"
             >
               <div class="featured-project-artwork">
                 <img
@@ -238,6 +250,9 @@
                   alt="Luminous App Icon"
                   loading="lazy"
                 >
+                <div class="featured-project-lang-badge">
+                  <i class="ti ti-brand-rust project-lang-icon" aria-hidden="true"></i>
+                </div>
               </div>
             </a>
             <div class="featured-project-info">
@@ -246,7 +261,7 @@
                 <p class="featured-project-year">featured project</p>
               </div>
               <p>
-                Luminous is a high-performance desktop music player designed for modern local audio listening. Built with Rust, Tauri v2, TypeScript, and Svelte 5 (Runes), it offers a lightweight, premium desktop experience with a beautiful dynamic user interface.
+                Luminous is a high-performance desktop music player designed for modern local audio listening. Built with <strong>Rust</strong>, <strong>Tauri v2</strong>, <strong>TypeScript</strong>, and <strong>Svelte 5 (Runes)</strong>, it offers a lightweight, premium desktop experience with a beautiful dynamic user interface. Made in Canada 🍁 and available in both English and French.
               </p>
             </div>
           </div>
@@ -261,14 +276,11 @@
               data-lang="Python"
             >
               <div class="other-project-header">
-                <i class="ti ti-brand-python project-lang-icon"></i>
-                <div class="project-overlay">
-                  <i class="ti ti-brand-github"></i>
-                </div>
+                <i class="ti ti-brand-python project-lang-icon" aria-hidden="true"></i>
               </div>
               <div class="other-project-meta">
                 <span class="other-project-title">cadence-music-assistant</span>
-                <span class="other-project-language">Python</span>
+                <span class="other-project-language">Python, Agent Development Kit</span>
                 <p class="other-project-desc">Conversational AI agent that keeps musicians and students in their creative flow. Ask theory questions, build scores, and hear results.</p>
               </div>
             </a>
@@ -279,10 +291,7 @@
               data-lang="TypeScript"
             >
               <div class="other-project-header">
-                <i class="ti ti-brand-typescript project-lang-icon"></i>
-                <div class="project-overlay">
-                  <i class="ti ti-brand-github"></i>
-                </div>
+                <i class="ti ti-brand-typescript project-lang-icon" aria-hidden="true"></i>
               </div>
               <div class="other-project-meta">
                 <span class="other-project-title">contour-2.0</span>
@@ -297,10 +306,7 @@
               data-lang="JavaScript"
             >
               <div class="other-project-header">
-                <i class="ti ti-brand-javascript project-lang-icon"></i>
-                <div class="project-overlay">
-                  <i class="ti ti-brand-github"></i>
-                </div>
+                <i class="ti ti-brand-javascript project-lang-icon" aria-hidden="true"></i>
               </div>
               <div class="other-project-meta">
                 <span class="other-project-title">music-color-wheel</span>
@@ -315,10 +321,7 @@
               data-lang="Python"
             >
               <div class="other-project-header">
-                <i class="ti ti-brand-python project-lang-icon"></i>
-                <div class="project-overlay">
-                  <i class="ti ti-brand-github"></i>
-                </div>
+                <i class="ti ti-brand-python project-lang-icon" aria-hidden="true"></i>
               </div>
               <div class="other-project-meta">
                 <span class="other-project-title">o1lama</span>
@@ -333,10 +336,7 @@
               data-lang="PowerShell"
             >
               <div class="other-project-header">
-                <i class="ti ti-terminal-2 project-lang-icon"></i>
-                <div class="project-overlay">
-                  <i class="ti ti-brand-github"></i>
-                </div>
+                <i class="ti ti-terminal-2 project-lang-icon" aria-hidden="true"></i>
               </div>
               <div class="other-project-meta">
                 <span class="other-project-title">Repo-Documenter</span>
@@ -361,7 +361,7 @@
             class="stream-link stream-youtube"
             aria-label="YouTube Music"
           >
-            <i class="ti ti-brand-youtube"></i>
+            <i class="ti ti-brand-youtube" aria-hidden="true"></i>
             <span class="stream-label">YouTube Music</span>
           </a>
           <a
@@ -369,7 +369,7 @@
             class="stream-link stream-spotify"
             aria-label="Spotify"
           >
-            <i class="ti ti-brand-spotify"></i>
+            <i class="ti ti-brand-spotify" aria-hidden="true"></i>
             <span class="stream-label">Spotify</span>
           </a>
           <a
@@ -377,15 +377,15 @@
             class="stream-link stream-apple"
             aria-label="Apple Music"
           >
-            <i class="ti ti-brand-apple"></i>
+            <i class="ti ti-brand-apple" aria-hidden="true"></i>
             <span class="stream-label">Apple Music</span>
           </a>
           <a href="https://ericsoltys.bandcamp.com/" class="stream-link stream-bandcamp" aria-label="Bandcamp">
-            <i class="ti ti-music"></i>
+            <i class="ti ti-music" aria-hidden="true"></i>
             <span class="stream-label">Bandcamp</span>
           </a>
           <div class="radio-distributor">
-            Distributed to Canadian radio through <a href="https://earshot-distro.ca/" target="_blank" rel="noopener noreferrer">!earshot</a>
+            Distributed to Canadian radio through <a href="https://earshot-distro.ca/" target="_blank" rel="noopener noreferrer">!earshot<span class="sr-only"> (opens in new tab)</span></a>
           </div>
         </div>
 
@@ -402,9 +402,6 @@
                   alt="Luminous Album Cover"
                   loading="lazy"
                 />
-                <div class="play-overlay">
-                  <div class="play-icon"></div>
-                </div>
               </div>
             </a>
             <div class="featured-album-info">
@@ -438,9 +435,6 @@
                   alt="Basin EP Cover"
                   loading="lazy"
                 />
-                <div class="play-overlay">
-                  <div class="play-icon"></div>
-                </div>
               </div>
               <div class="other-album-meta">
                 <span class="other-album-title">Basin</span>
@@ -454,9 +448,6 @@
             >
               <div class="other-album-art">
                 <img src="./images/horizon-cover.png" alt="Horizon Album Cover" loading="lazy" />
-                <div class="play-overlay">
-                  <div class="play-icon"></div>
-                </div>
               </div>
               <div class="other-album-meta">
                 <span class="other-album-title">Horizon</span>
@@ -470,9 +461,6 @@
             >
               <div class="other-album-art">
                 <img src="./images/contour-cover.png" alt="Contour EP Cover" loading="lazy" />
-                <div class="play-overlay">
-                  <div class="play-icon"></div>
-                </div>
               </div>
               <div class="other-album-meta">
                 <span class="other-album-title">Contour</span>
@@ -486,9 +474,6 @@
             >
               <div class="other-album-art">
                 <img src="./images/night-sky-lullaby-cover.png" alt="Night Sky Lullaby Cover" loading="lazy" />
-                <div class="play-overlay">
-                  <div class="play-icon"></div>
-                </div>
               </div>
               <div class="other-album-meta">
                 <span class="other-album-title">Night Sky Lullaby</span>
