@@ -1,0 +1,15 @@
+{
+  "name": "Eric James Soltys",
+  "short_name": "kootenay_eric",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#151a1f",
+  "theme_color": "#151a1f",
+  "icons": [
+    {
+      "src": "/images/20260429-180px.jpg",
+      "sizes": "180x180",
+      "type": "image/jpeg"
+    }
+  ]
+}

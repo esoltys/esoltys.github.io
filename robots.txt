@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://esoltys.github.io/sitemap.xml
