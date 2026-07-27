@@ -62,13 +62,8 @@
   <div id="features" style="max-width:1160px; margin:0 auto; padding:120px 32px 40px; display:flex; flex-direction:column; gap:120px;">
     <sc-for list="{{ features }}" as="row" hint-placeholder-count="7">
       <div style="display:flex; align-items:center; gap:56px; flex-wrap:wrap;">
-        <div style="flex:1 1 380px; display:flex; flex-direction:column; gap:14px; order:{{ row.textOrder }};">
-          <div style="font-family:'Inter',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:{{ row.overlineColor }};">{{ row.overline }}</div>
-          <div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:30px; letter-spacing:-0.01em;">{{ row.title }}</div>
-          <div style="font-size:15px; line-height:1.7; color:#9aa0b4; max-width:440px;">{{ row.body }}</div>
-        </div>
-        <sc-if value="{{ row.dual }}" hint-placeholder-val="{{ false }}">
-          <div style="flex:1 1 420px; display:flex; gap:16px; order:{{ row.imgOrder }};">
+        <sc-if value="{{ row.dualBefore }}" hint-placeholder-val="{{ false }}">
+          <div style="flex:1 1 420px; display:flex; gap:16px;">
             <sc-for list="{{ row.imgs }}" as="im" hint-placeholder-count="2">
               <div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);">
                 <img src="{{ im.src }}" alt="{{ im.alt }}" style="width:100%; display:block;" />
@@ -76,8 +71,27 @@
             </sc-for>
           </div>
         </sc-if>
-        <sc-if value="{{ row.single }}" hint-placeholder-val="{{ true }}">
-          <div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6); order:{{ row.imgOrder }};">
+        <sc-if value="{{ row.singleBefore }}" hint-placeholder-val="{{ false }}">
+          <div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);">
+            <img src="{{ row.img }}" alt="{{ row.alt }}" style="width:100%; display:block;" />
+          </div>
+        </sc-if>
+        <div style="flex:1 1 380px; display:flex; flex-direction:column; gap:14px;">
+          <div style="font-family:'Inter',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:{{ row.overlineColor }};">{{ row.overline }}</div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:30px; letter-spacing:-0.01em;">{{ row.title }}</div>
+          <div style="font-size:15px; line-height:1.7; color:#9aa0b4; max-width:440px;">{{ row.body }}</div>
+        </div>
+        <sc-if value="{{ row.dualAfter }}" hint-placeholder-val="{{ true }}">
+          <div style="flex:1 1 420px; display:flex; gap:16px;">
+            <sc-for list="{{ row.imgs }}" as="im" hint-placeholder-count="2">
+              <div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);">
+                <img src="{{ im.src }}" alt="{{ im.alt }}" style="width:100%; display:block;" />
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ row.singleAfter }}" hint-placeholder-val="{{ true }}">
+          <div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);">
             <img src="{{ row.img }}" alt="{{ row.alt }}" style="width:100%; display:block;" />
           </div>
         </sc-if>
@@ -161,15 +175,16 @@ class Component extends DCLogic {
     const suffix = lang === "fr" ? "FR" : "EN";
     const d = DICT[lang];
     const features = d.features.map(f => {
+      const isDual = !!f.dual;
       const base = {
         overlineColor: f.overlineColor,
         overline: f.overline,
         title: f.title,
         body: f.body,
-        textOrder: f.reverse ? 2 : 1,
-        imgOrder: f.reverse ? 1 : 2,
-        dual: !!f.dual,
-        single: !f.dual
+        dualBefore: isDual && f.reverse,
+        singleBefore: !isDual && f.reverse,
+        dualAfter: isDual && !f.reverse,
+        singleAfter: !isDual && !f.reverse
       };
       if (f.dual) {
         base.imgs = [
