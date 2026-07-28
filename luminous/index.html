@@ -164,7 +164,7 @@ function render(lang) {
   document.getElementById('hero-caption').innerHTML = escapeHtml(d.hero.captionLine1) + '<br />' + escapeHtml(d.hero.captionLine2);
   document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png';
   document.getElementById('hero-img').alt = d.hero.heroImgAlt;
-  document.getElementById('footer-copyright').textContent = d.footer.copyright;
+  document.getElementById('footer-copyright').innerHTML = escapeHtml(d.footer.copyright).replace('Eric James Soltys', '<a href="https://esoltys.dev" style="color:#6d7286; text-decoration:underline;">Eric James Soltys</a>');
   document.getElementById('footer-github').textContent = d.footer.github;
   document.getElementById('footer-releases').textContent = d.footer.releases;
   document.getElementById('footer-license').textContent = d.footer.license;
