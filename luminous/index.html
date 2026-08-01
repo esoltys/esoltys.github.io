@@ -20,6 +20,7 @@
   ::selection { background: #4F5BD5; color: #fff; }
   a { color: #9BA4FF; text-decoration: none; }
   a:hover { color: #c3c9ff; }
+  .nav-link:hover { color: #f1f3f8 !important; }
   img { max-width: 100%; display: block; }
 </style>
 </head>
@@ -31,10 +32,21 @@
       <div style="display:flex; align-items:center; gap:10px;">
         <img src="./landing-assets/luminous-mark.svg" alt="Luminous" style="width:30px; height:30px;" />
         <span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; letter-spacing:-0.01em;">Luminous</span>
+        <span style="font-family:'Inter',sans-serif; font-weight:500; font-size:13px; color:#5d6175;">0.96</span>
       </div>
-      <div style="display:flex; align-items:center; border:1px solid #2c2f3a; border-radius:9999px; padding:3px; gap:2px;">
-        <button id="btn-en" onclick="setLang('en')" style="font-family:'Inter',sans-serif; font-size:12.5px; font-weight:700; border:none; cursor:pointer; padding:6px 12px; border-radius:9999px;">EN</button>
-        <button id="btn-fr" onclick="setLang('fr')" style="font-family:'Inter',sans-serif; font-size:12.5px; font-weight:700; border:none; cursor:pointer; padding:6px 12px; border-radius:9999px;">FR</button>
+      <div style="display:flex; align-items:center; gap:24px;">
+        <div style="display:flex; align-items:center; gap:18px;">
+          <a href="https://github.com/esoltys/luminous" class="nav-link" style="display:flex; align-items:center; gap:7px; font-size:13.5px; font-weight:500; color:#c7cadb;">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://github.com/esoltys/luminous/issues" class="nav-link" style="font-size:13.5px; font-weight:500; color:#c7cadb;">Issues</a>
+          <a href="https://github.com/esoltys/luminous/discussions" class="nav-link" style="font-size:13.5px; font-weight:500; color:#c7cadb;">Discussions</a>
+        </div>
+        <div style="display:flex; align-items:center; border:1px solid #2c2f3a; border-radius:9999px; padding:3px; gap:2px;">
+          <button id="btn-en" onclick="setLang('en')" style="font-family:'Inter',sans-serif; font-size:12.5px; font-weight:700; border:none; cursor:pointer; padding:6px 12px; border-radius:9999px;">EN</button>
+          <button id="btn-fr" onclick="setLang('fr')" style="font-family:'Inter',sans-serif; font-size:12.5px; font-weight:700; border:none; cursor:pointer; padding:6px 12px; border-radius:9999px;">FR</button>
+        </div>
       </div>
     </div>
   </div>
@@ -46,7 +58,12 @@
       <div id="hero-title" style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(34px,5.6vw,62px); line-height:1.06; letter-spacing:-0.02em; max-width:820px;"></div>
       <div id="hero-sub" style="font-size:17px; line-height:1.6; color:#9aa0b4; max-width:600px;"></div>
       <div style="display:flex; gap:14px; row-gap:14px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
-        <a href="https://github.com/esoltys/luminous/releases/latest" id="hero-btn-download" style="font-size:15px; font-weight:600; color:#08090c; background:#f1f3f8; padding:14px 26px; border-radius:12px;"></a>
+        <a href="https://github.com/esoltys/luminous/releases/latest" style="display:flex; align-items:center; gap:10px; font-size:15px; font-weight:600; color:#08090c; background:#f1f3f8; padding:14px 26px; border-radius:12px;">
+          <span id="hero-btn-download"></span>
+          <span style="display:flex; align-items:center; gap:6px; font-size:12.5px; font-weight:600; color:#5d6175; letter-spacing:0.02em;">
+            <span>Windows</span><span>&middot;</span><span>Linux</span>
+          </span>
+        </a>
         <a href="https://github.com/esoltys/luminous" id="hero-btn-github" style="font-size:15px; font-weight:600; color:#f1f3f8; background:transparent; border:1px solid #2c2f3a; padding:14px 26px; border-radius:12px;"></a>
       </div>
       <div id="hero-caption" style="font-size:12.5px; color:#5d6175; margin-top:2px;"></div>
@@ -55,7 +72,7 @@
     <div style="position:relative; margin-top:56px;">
       <div style="position:absolute; inset:-40px; background:radial-gradient(ellipse at center, rgba(98,111,232,0.22), transparent 70%); filter:blur(6px); pointer-events:none;"></div>
       <div style="position:relative; border-radius:16px; overflow:hidden; border:1px solid #23262f; box-shadow:0 40px 90px -30px rgba(0,0,0,0.7);">
-        <img id="hero-img" src="./landing-assets/home-EN.png" alt="Luminous home screen" style="width:100%; display:block;" />
+        <img id="hero-img" src="./landing-assets/home-EN.png?v=1785342382942" alt="Luminous home screen" style="width:100%; display:block;" />
       </div>
     </div>
   </div>
@@ -100,7 +117,8 @@ const DICT = {
       { overlineColor: "#8b93d5", overline: "Clean metadata", title: "Tag editing that stays out of your way.", body: "Fix a title, artist, or album straight from the track — no external tools needed. Edit tags one song at a time or in bulk, and keep your library consistent.", img: "song-tag-editor", alt: "Song tag editor", reverse: true },
       { overlineColor: "#FFB648", overline: "Make it yours", title: "A player that matches your music, not the other way around.", body: "Choose from four crafted themes, or turn on the dynamic theme and watch the whole interface repaint itself around every album's cover art — no two sessions look the same.", img: "themes", alt: "Theme picker", reverse: false },
       { overlineColor: "#8b93d5", overline: "Tidy by default", title: "Organize your files, automatically.", body: "Point Luminous at a messy folder and it sorts files into a clean artist/album structure on disk, renaming as it goes — your library stays organized without you touching a thing.", img: "settings-organize", alt: "Library organization settings", reverse: true },
-      { overlineColor: "#FFB648", overline: "Lyrics, synced", title: "Follow along, line by line.", body: "Time-synced lyrics track the song in real time, with inline editing when the timing needs a touch-up. No lyrics found? Add and sync your own.", img: "lyrics", alt: "Synced lyrics view", reverse: false }
+      { overlineColor: "#FFB648", overline: "Lyrics, synced", title: "Follow along, line by line.", body: "Time-synced lyrics track the song in real time, with inline editing when the timing needs a touch-up. No lyrics found? Add and sync your own.", img: "lyrics", alt: "Synced lyrics view", reverse: false },
+      { overlineColor: "#8b93d5", overline: "Shape your sound", title: "A graphic equalizer, tuned your way.", body: "Dial in a 10-band graphic EQ with genre presets to start from, then save your own. Fine-tune the low end or tame harsh highs — the changes apply instantly as you play.", img: "equalizer", alt: "Graphic equalizer", reverse: true }
     ]
   },
   fr: {
@@ -123,7 +141,8 @@ const DICT = {
       { overlineColor: "#8b93d5", overline: "Métadonnées propres", title: "Une édition des balises qui reste discrète.", body: "Corrigez un titre, un artiste ou un album directement depuis la chanson — aucun outil externe requis. Modifiez les balises une chanson à la fois ou en lot, et gardez votre bibliothèque cohérente.", img: "song-tag-editor", alt: "Éditeur de balises de chanson", reverse: true },
       { overlineColor: "#FFB648", overline: "Faites-le vôtre", title: "Un lecteur qui s'accorde à votre musique.", body: "Choisissez parmi quatre thèmes soignés, ou activez le thème dynamique et regardez toute l'interface se repeindre selon la pochette de chaque album — jamais deux séances pareilles.", img: "themes", alt: "Sélecteur de thèmes", reverse: false },
       { overlineColor: "#8b93d5", overline: "Ordre par défaut", title: "Organisez vos fichiers, automatiquement.", body: "Pointez Luminous vers un dossier en désordre et il trie les fichiers en une structure claire artiste/album sur le disque, en les renommant au passage — votre bibliothèque reste organisée sans que vous n'ayez à y toucher.", img: "settings-organize", alt: "Paramètres d'organisation de la bibliothèque", reverse: true },
-      { overlineColor: "#FFB648", overline: "Paroles synchronisées", title: "Suivez, ligne par ligne.", body: "Les paroles synchronisées suivent la chanson en temps réel, avec une édition intégrée quand le minutage a besoin d'un ajustement. Paroles introuvables? Ajoutez et synchronisez les vôtres.", img: "lyrics", alt: "Écran de paroles synchronisées", reverse: false }
+      { overlineColor: "#FFB648", overline: "Paroles synchronisées", title: "Suivez, ligne par ligne.", body: "Les paroles synchronisées suivent la chanson en temps réel, avec une édition intégrée quand le minutage a besoin d'un ajustement. Paroles introuvables? Ajoutez et synchronisez les vôtres.", img: "lyrics", alt: "Écran de paroles synchronisées", reverse: false },
+      { overlineColor: "#8b93d5", overline: "Façonnez votre son", title: "Un égaliseur graphique, ajusté à votre goût.", body: "Réglez un égaliseur graphique à 10 bandes à partir de préréglages par genre, puis enregistrez les vôtres. Affinez les basses ou adoucissez les aigus — les changements s'appliquent instantanément.", img: "equalizer", alt: "Égaliseur graphique", reverse: true }
     ]
   }
 };
@@ -137,11 +156,11 @@ function featureRowHtml(f, suffix) {
   let media;
   if (isDual) {
     media = '<div style="flex:1 1 420px; display:flex; gap:16px;">'
-      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-' + suffix + '.png" alt="' + escapeHtml(f.alt) + '" /></div>'
-      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-hover-' + suffix + '.png" alt="' + escapeHtml(f.alt) + ' hover" /></div>'
+      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-' + suffix + '.png?v=1785342382942" alt="' + escapeHtml(f.alt) + '" /></div>'
+      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-hover-' + suffix + '.png?v=1785342382942" alt="' + escapeHtml(f.alt) + ' hover" /></div>'
       + '</div>';
   } else {
-    media = '<div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.img + '-' + suffix + '.png" alt="' + escapeHtml(f.alt) + '" /></div>';
+    media = '<div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.img + '-' + suffix + '.png?v=1785342382942" alt="' + escapeHtml(f.alt) + '" /></div>';
   }
   const text = '<div style="flex:1 1 380px; display:flex; flex-direction:column; gap:14px;">'
     + '<div style="font-family:\'Inter\',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:' + f.overlineColor + ';">' + escapeHtml(f.overline) + '</div>'
