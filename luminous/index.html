@@ -33,7 +33,7 @@
       <div style="display:flex; align-items:center; gap:10px;">
         <img src="./landing-assets/luminous-mark.svg" alt="Luminous" style="width:30px; height:30px;" />
         <span style="font-family:'Expose',sans-serif; font-weight:700; font-size:19px; letter-spacing:-0.01em;">Luminous</span>
-        <span style="font-family:'Inter',sans-serif; font-weight:500; font-size:13px; color:#5d6175;">0.97</span>
+        <span style="font-family:'Inter',sans-serif; font-weight:500; font-size:13px; color:#5d6175;">0.98.1</span>
       </div>
       <div style="display:flex; align-items:center; gap:24px;">
         <div style="display:flex; align-items:center; gap:18px;">
@@ -115,11 +115,12 @@ const DICT = {
       { overlineColor: "#8b93d5", overline: "Local & instant", title: "Your library, indexed and instant.", body: "Every track stays on your disk — Luminous just makes it fast to find. Search across artists, albums, songs, and lyrics as you type, with a now-playing bar that's always one click away.", img: "albums", alt: "Albums view", reverse: false },
       { overlineColor: "#FFB648", overline: "Smarter playlists", title: "Playlists that build themselves.", body: "Create smart playlists from your own rules, or drop into auto playlists already built around decades and genres — always up to date as your library grows.", img: "playlist-auto", alt: "Auto and smart playlists", reverse: true },
       { overlineColor: "#8b93d5", overline: "Stay in the flow", title: "A miniplayer for quick skips, without the whole window.", body: "Shrink Luminous to a compact, always-on-top miniplayer for quick skips while you work — full playback controls, a fraction of the footprint.", dual: "miniplayer", alt: "Miniplayer", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Clean metadata", title: "Tag editing that stays out of your way.", body: "Fix a title, artist, or album straight from the track — no external tools needed. Edit tags one song at a time or in bulk, and keep your library consistent.", img: "song-tag-editor", alt: "Song tag editor", reverse: true },
       { overlineColor: "#FFB648", overline: "Make it yours", title: "A player that matches your music, not the other way around.", body: "Choose from four crafted themes, or turn on the dynamic theme and watch the whole interface repaint itself around every album's cover art — no two sessions look the same.", img: "themes", alt: "Theme picker", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Tidy by default", title: "Organize your files, automatically.", body: "Point Luminous at a messy folder and it sorts files into a clean artist/album structure on disk, renaming as it goes — your library stays organized without you touching a thing.", img: "settings-organize", alt: "Library organization settings", reverse: true },
-      { overlineColor: "#FFB648", overline: "Lyrics, synced", title: "Follow along, line by line.", body: "Time-synced lyrics track the song in real time, with inline editing when the timing needs a touch-up. No lyrics found? Add and sync your own.", img: "lyrics", alt: "Synced lyrics view", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Shape your sound", title: "A graphic equalizer, tuned your way.", body: "Dial in a 10-band graphic EQ with genre presets to start from, then save your own. Fine-tune the low end or tame harsh highs — the changes apply instantly as you play.", img: "equalizer", alt: "Graphic equalizer", reverse: true }
+      { overlineColor: "#FFB648", overline: "Lyrics, synced", title: "Follow along, line by line.", body: "Time-synced lyrics track the song in real time, with inline editing when the timing needs a touch-up. No lyrics found? Add and sync your own.", img: "lyrics", alt: "Synced lyrics view", reverse: true },
+      { overlineColor: "#FFB648", overline: "For power users", title: "Search like you mean it.", body: "Type field:value terms — genre:rock rating:>=4 year:<2000 — to filter your whole library in one line, right down to advanced tags like Initial Key and BPM, then turn any search into a smart playlist with one click.", img: "advanced-search", alt: "Advanced search", reverse: false },
+      { overlineColor: "#8b93d5", overline: "Clean metadata", title: "Tag editing that stays out of your way.", body: "Fix a title, artist, or album straight from the track — no external tools needed. Edit tags one song at a time or in bulk, and keep your library consistent." },
+      { overlineColor: "#8b93d5", overline: "Shape your sound", title: "A graphic equalizer, tuned your way.", body: "Dial in a 10-band graphic EQ with genre presets to start from, then save your own, or switch to the 20-band parametric EQ for surgical control over frequency and Q. Fine-tune the low end or tame harsh highs — the changes apply instantly as you play." },
+      { overlineColor: "#8b93d5", overline: "Tidy by default", title: "Organize your files, automatically.", body: "Point Luminous at a messy folder and it sorts files into a clean artist/album structure on disk, renaming as it goes — your library stays organized without you touching a thing." }
     ]
   },
   fr: {
@@ -139,17 +140,26 @@ const DICT = {
       { overlineColor: "#8b93d5", overline: "Local et instantané", title: "Votre bibliothèque, indexée et instantanée.", body: "Chaque piste reste sur votre disque — Luminous la retrouve simplement plus vite. Cherchez parmi les artistes, albums, chansons et paroles en tapant, avec une barre de lecture toujours à portée de clic.", img: "albums", alt: "Vue des albums", reverse: false },
       { overlineColor: "#FFB648", overline: "Listes plus intelligentes", title: "Des listes de lecture qui se construisent seules.", body: "Créez des listes de lecture intelligentes selon vos propres règles, ou plongez dans des listes automatiques déjà bâties par décennie et par genre — toujours à jour à mesure que votre bibliothèque grandit.", img: "playlist-auto", alt: "Listes de lecture automatiques et intelligentes", reverse: true },
       { overlineColor: "#8b93d5", overline: "Restez dans le rythme", title: "Un mini-lecteur pour passer d'une chanson à l'autre, sans la fenêtre complète.", body: "Réduisez Luminous en un mini-lecteur compact, toujours au premier plan, pour passer rapidement d'une chanson à l'autre pendant que vous travaillez — tous les contrôles de lecture, une fraction de l'espace.", dual: "miniplayer", alt: "Mini-lecteur", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Métadonnées propres", title: "Une édition des balises qui reste discrète.", body: "Corrigez un titre, un artiste ou un album directement depuis la chanson — aucun outil externe requis. Modifiez les balises une chanson à la fois ou en lot, et gardez votre bibliothèque cohérente.", img: "song-tag-editor", alt: "Éditeur de balises de chanson", reverse: true },
       { overlineColor: "#FFB648", overline: "Faites-le vôtre", title: "Un lecteur qui s'accorde à votre musique.", body: "Choisissez parmi quatre thèmes soignés, ou activez le thème dynamique et regardez toute l'interface se repeindre selon la pochette de chaque album — jamais deux séances pareilles.", img: "themes", alt: "Sélecteur de thèmes", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Ordre par défaut", title: "Organisez vos fichiers, automatiquement.", body: "Pointez Luminous vers un dossier en désordre et il trie les fichiers en une structure claire artiste/album sur le disque, en les renommant au passage — votre bibliothèque reste organisée sans que vous n'ayez à y toucher.", img: "settings-organize", alt: "Paramètres d'organisation de la bibliothèque", reverse: true },
-      { overlineColor: "#FFB648", overline: "Paroles synchronisées", title: "Suivez, ligne par ligne.", body: "Les paroles synchronisées suivent la chanson en temps réel, avec une édition intégrée quand le minutage a besoin d'un ajustement. Paroles introuvables? Ajoutez et synchronisez les vôtres.", img: "lyrics", alt: "Écran de paroles synchronisées", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Façonnez votre son", title: "Un égaliseur graphique, ajusté à votre goût.", body: "Réglez un égaliseur graphique à 10 bandes à partir de préréglages par genre, puis enregistrez les vôtres. Affinez les basses ou adoucissez les aigus — les changements s'appliquent instantanément.", img: "equalizer", alt: "Égaliseur graphique", reverse: true }
+      { overlineColor: "#FFB648", overline: "Paroles synchronisées", title: "Suivez, ligne par ligne.", body: "Les paroles synchronisées suivent la chanson en temps réel, avec une édition intégrée quand le minutage a besoin d'un ajustement. Paroles introuvables? Ajoutez et synchronisez les vôtres.", img: "lyrics", alt: "Écran de paroles synchronisées", reverse: true },
+      { overlineColor: "#FFB648", overline: "Pour les utilisateurs avancés", title: "Cherchez comme un pro.", body: "Tapez des termes champ:valeur — genre:rock rating:>=4 year:<2000 — pour filtrer toute votre bibliothèque en une ligne, jusqu'aux balises avancées comme la tonalité (Initial Key) et le BPM, puis transformez n'importe quelle recherche en liste intelligente en un clic.", img: "advanced-search", alt: "Recherche avancée", reverse: false },
+      { overlineColor: "#8b93d5", overline: "Métadonnées propres", title: "Une édition des balises qui reste discrète.", body: "Corrigez un titre, un artiste ou un album directement depuis la chanson — aucun outil externe requis. Modifiez les balises une chanson à la fois ou en lot, et gardez votre bibliothèque cohérente." },
+      { overlineColor: "#8b93d5", overline: "Façonnez votre son", title: "Un égaliseur graphique, ajusté à votre goût.", body: "Réglez un égaliseur graphique à 10 bandes à partir de préréglages par genre, puis enregistrez les vôtres, ou passez à l'égaliseur paramétrique à 20 bandes pour un contrôle chirurgical de la fréquence et du Q. Affinez les basses ou adoucissez les aigus — les changements s'appliquent instantanément." },
+      { overlineColor: "#8b93d5", overline: "Ordre par défaut", title: "Organisez vos fichiers, automatiquement.", body: "Pointez Luminous vers un dossier en désordre et il trie les fichiers en une structure claire artiste/album sur le disque, en les renommant au passage — votre bibliothèque reste organisée sans que vous n'ayez à y toucher." }
     ]
   }
 };
 
 function escapeHtml(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function textOnlyHtml(f) {
+  return '<div style="display:flex; flex-direction:column; gap:14px;">'
+    + '<div style="font-family:\'Inter\',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:' + f.overlineColor + ';">' + escapeHtml(f.overline) + '</div>'
+    + '<div style="font-family:\'Expose\',sans-serif; font-weight:600; font-size:26px; letter-spacing:-0.01em;">' + escapeHtml(f.title) + '</div>'
+    + '<div style="font-size:15px; line-height:1.7; color:#9aa0b4;">' + escapeHtml(f.body) + '</div>'
+    + '</div>';
 }
 
 function featureRowHtml(f, suffix) {
@@ -188,7 +198,26 @@ function render(lang) {
   document.getElementById('footer-github').textContent = d.footer.github;
   document.getElementById('footer-releases').textContent = d.footer.releases;
   document.getElementById('footer-license').textContent = d.footer.license;
-  document.getElementById('features').innerHTML = d.features.map(f => featureRowHtml(f, suffix)).join('');
+  const rows = [];
+  let i = 0;
+  while (i < d.features.length) {
+    const f = d.features[i];
+    if (!f.img && !f.dual) {
+      const group = [];
+      let j = i;
+      while (j < d.features.length && !d.features[j].img && !d.features[j].dual) {
+        group.push(d.features[j]);
+        j++;
+      }
+      const cols = Math.min(group.length, 3);
+      rows.push('<div style="display:grid; grid-template-columns:repeat(' + cols + ', 1fr); gap:56px;">' + group.map(textOnlyHtml).join('') + '</div>');
+      i = j;
+      continue;
+    }
+    rows.push(featureRowHtml(f, suffix));
+    i += 1;
+  }
+  document.getElementById('features').innerHTML = rows.join('');
   document.getElementById('btn-en').style.background = lang === 'en' ? '#f1f3f8' : 'transparent';
   document.getElementById('btn-en').style.color = lang === 'en' ? '#08090c' : '#9aa0b4';
   document.getElementById('btn-fr').style.background = lang === 'fr' ? '#f1f3f8' : 'transparent';
