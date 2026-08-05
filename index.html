@@ -38,81 +38,118 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="alternate" type="text/markdown" href="/luminous/index.md" title="Luminous Landing Page (Markdown)">
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Eric James Soltys",
-        "url": "https://esoltys.github.io",
-        "image": "https://esoltys.github.io/images/20260429-180px.jpg",
-        "jobTitle": "Software Developer",
-        "description": "Canadian software developer and hobbyist creating art and music in the BC Kootenays",
-
-        "location": {
-          "@type": "Place",
-          "name": "Castlegar, BC, Canada"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://esoltys.dev/#person",
+          "name": "Eric James Soltys",
+          "url": "https://esoltys.dev",
+          "image": "https://esoltys.dev/images/20260429-180px.jpg",
+          "jobTitle": "Software Developer",
+          "description": "Canadian software developer and hobbyist creating art and music in the BC Kootenays",
+          "homeLocation": {
+            "@type": "Place",
+            "name": "Castlegar, BC, Canada"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/ericjamessoltys/",
+            "https://github.com/esoltys",
+            "https://esoltys.substack.com/",
+            "https://instagram.com/kootenay_eric",
+            "https://www.threads.net/@kootenay_eric",
+            "https://bsky.app/profile/kootenay-eric.bsky.social"
+          ],
+          "knowsAbout": [
+            "Software Development",
+            "Web Development",
+            "Music Composition",
+            "Cinematic Electronic Music",
+            "Tauri",
+            "React",
+            "TypeScript",
+            "Rust"
+          ]
         },
-        "sameAs": [
-          "https://www.linkedin.com/in/ericjamessoltys/",
-          "https://github.com/esoltys",
-          "https://esoltys.substack.com/",
-          "https://instagram.com/kootenay_eric",
-          "https://www.threads.net/@kootenay_eric",
-          "https://bsky.app/profile/kootenay-eric.bsky.social"
-        ],
-        "knowsAbout": ["Software Development", "Web Development", "Music Composition", "Cinematic Electronic Music"],
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Freelance"
-        }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "MusicAlbum",
-            "name": "Luminous",
-            "byArtist": { "@type": "Person", "name": "Eric James Soltys" },
-            "datePublished": "2025",
-            "image": "https://esoltys.github.io/images/luminous-cover.png",
-            "url": "https://music.youtube.com/playlist?list=OLAK5uy_nFB7et4xfvdOxH_Qpmas2QMuBIc70Z9cI"
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://esoltys.dev/luminous/#app",
+          "name": "Luminous",
+          "url": "https://esoltys.dev/luminous",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "Windows, Linux",
+          "description": "An open-source desktop music player built with Tauri, Rust, and React for high-performance audio playback and local library management.",
+          "license": "https://opensource.org/licenses/MIT",
+          "codeRepository": "https://github.com/esoltys/luminous",
+          "author": {
+            "@id": "https://esoltys.dev/#person"
           },
-          {
-            "@type": "MusicAlbum",
-            "name": "Basin",
-            "byArtist": { "@type": "Person", "name": "Eric James Soltys" },
-            "datePublished": "2025",
-            "image": "https://esoltys.github.io/images/basin-cover.png",
-            "url": "https://music.youtube.com/playlist?list=OLAK5uy_lYHQY5F4isvQFeEXhv6RboLp0u6teEKYE"
-          },
-          {
-            "@type": "MusicAlbum",
-            "name": "Horizon",
-            "byArtist": { "@type": "Person", "name": "Eric James Soltys" },
-            "datePublished": "2024",
-            "image": "https://esoltys.github.io/images/horizon-cover.png",
-            "url": "https://music.youtube.com/playlist?list=OLAK5uy_nR1QY_egTw7dNFVNekdi7oCtO5bTLo7GQ"
-          },
-          {
-            "@type": "MusicAlbum",
-            "name": "Contour EP",
-            "byArtist": { "@type": "Person", "name": "Eric James Soltys" },
-            "datePublished": "2024",
-            "image": "https://esoltys.github.io/images/contour-cover.png",
-            "url": "https://music.youtube.com/playlist?list=OLAK5uy_kD5_HrmZqmctTvIgt2FyBeBNxCAqyCt9s"
-          },
-          {
-            "@type": "MusicAlbum",
-            "name": "Night Sky Lullaby",
-            "byArtist": { "@type": "Person", "name": "Eric James Soltys" },
-            "datePublished": "2024",
-            "image": "https://esoltys.github.io/images/night-sky-lullaby-cover.png",
-            "url": "https://www.youtube.com/watch?v=e15GeXHL4qU"
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
           }
-        ]
-      }
+        },
+        {
+          "@type": "MusicAlbum",
+          "@id": "https://esoltys.dev/#album-luminous",
+          "name": "Luminous",
+          "byArtist": {
+            "@id": "https://esoltys.dev/#person"
+          },
+          "datePublished": "2025",
+          "image": "https://esoltys.dev/images/luminous-cover.png",
+          "url": "https://music.youtube.com/playlist?list=OLAK5uy_nFB7et4xfvdOxH_Qpmas2QMuBIc70Z9cI"
+        },
+        {
+          "@type": "MusicAlbum",
+          "@id": "https://esoltys.dev/#album-basin",
+          "name": "Basin",
+          "byArtist": {
+            "@id": "https://esoltys.dev/#person"
+          },
+          "datePublished": "2025",
+          "image": "https://esoltys.dev/images/basin-cover.png",
+          "url": "https://music.youtube.com/playlist?list=OLAK5uy_lYHQY5F4isvQFeEXhv6RboLp0u6teEKYE"
+        },
+        {
+          "@type": "MusicAlbum",
+          "@id": "https://esoltys.dev/#album-horizon",
+          "name": "Horizon",
+          "byArtist": {
+            "@id": "https://esoltys.dev/#person"
+          },
+          "datePublished": "2024",
+          "image": "https://esoltys.dev/images/horizon-cover.png",
+          "url": "https://music.youtube.com/playlist?list=OLAK5uy_nR1QY_egTw7dNFVNekdi7oCtO5bTLo7GQ"
+        },
+        {
+          "@type": "MusicAlbum",
+          "@id": "https://esoltys.dev/#album-contour",
+          "name": "Contour EP",
+          "byArtist": {
+            "@id": "https://esoltys.dev/#person"
+          },
+          "datePublished": "2024",
+          "image": "https://esoltys.dev/images/contour-cover.png",
+          "url": "https://music.youtube.com/playlist?list=OLAK5uy_kD5_HrmZqmctTvIgt2FyBeBNxCAqyCt9s"
+        },
+        {
+          "@type": "MusicAlbum",
+          "@id": "https://esoltys.dev/#album-night-sky-lullaby",
+          "name": "Night Sky Lullaby",
+          "byArtist": {
+            "@id": "https://esoltys.dev/#person"
+          },
+          "datePublished": "2024",
+          "image": "https://esoltys.dev/images/night-sky-lullaby-cover.png",
+          "url": "https://www.youtube.com/watch?v=e15GeXHL4qU"
+        }
+      ]
+    }
     </script>
     <script data-goatcounter="https://esoltys.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>

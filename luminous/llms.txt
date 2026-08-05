@@ -1,0 +1,17 @@
+# Luminous
+
+> Luminous is an open-source, lightweight desktop music player built for local audio library management and high-fidelity playback.
+
+## Core Features
+- Local audio library indexing & playback
+- Support for lossless audio formats (FLAC, WAV, ALAC)
+- Custom UI themes & customizable layouts
+- Fast, low-resource performance
+
+## Tech Stack & Architecture
+- Framework: Tauri v2
+- Frontend: React / TypeScript / Tailwind CSS
+- Core Backend: Rust
+
+## Key Links
+- GitHub Repository: https://github.com/esoltys/luminous
