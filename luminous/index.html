@@ -72,7 +72,7 @@
     <div style="position:relative; margin-top:56px;">
       <div style="position:absolute; inset:-40px; background:radial-gradient(ellipse at center, rgba(98,111,232,0.22), transparent 70%); filter:blur(6px); pointer-events:none;"></div>
       <div style="position:relative; border-radius:16px; overflow:hidden; border:1px solid #23262f; box-shadow:0 40px 90px -30px rgba(0,0,0,0.7);">
-        <img id="hero-img" src="./landing-assets/home-EN.png?v=1785342382942" alt="Luminous home screen" style="width:100%; display:block;" />
+        <img id="hero-img" src="./landing-assets/home-EN.png?v=1786170282023" alt="Luminous home screen" style="width:100%; display:block;" />
       </div>
     </div>
   </div>
@@ -174,11 +174,11 @@ function featureRowHtml(f, suffix) {
   let media;
   if (isDual) {
     media = '<div style="flex:1 1 420px; display:flex; gap:16px;">'
-      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-' + suffix + '.png?v=1785342382942" alt="' + escapeHtml(f.alt) + '" /></div>'
-      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-hover-' + suffix + '.png?v=1785342382942" alt="' + escapeHtml(f.alt) + ' hover" /></div>'
+      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-' + suffix + '.png?v=1786170282023" alt="' + escapeHtml(f.alt) + '" /></div>'
+      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-hover-' + suffix + '.png?v=1786170282023" alt="' + escapeHtml(f.alt) + ' hover" /></div>'
       + '</div>';
   } else {
-    media = '<div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.img + '-' + suffix + '.png?v=1785342382942" alt="' + escapeHtml(f.alt) + '" /></div>';
+    media = '<div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.img + '-' + suffix + '.png?v=1786170282023" alt="' + escapeHtml(f.alt) + '" /></div>';
   }
   const text = '<div style="flex:1 1 380px; display:flex; flex-direction:column; gap:14px;">'
     + '<div style="font-family:\'Inter\',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:' + f.overlineColor + ';">' + escapeHtml(f.overline) + '</div>'
@@ -201,7 +201,7 @@ function render(lang) {
   document.getElementById('qi-intro').innerHTML = d.hero.qiIntro;
   document.getElementById('qi-windows').innerHTML = d.hero.qiWindows;
   document.getElementById('qi-linux').innerHTML = d.hero.qiLinux;
-  document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png';
+  document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png?v=1786170282023';
   document.getElementById('hero-img').alt = d.hero.heroImgAlt;
   document.getElementById('footer-copyright').innerHTML = escapeHtml(d.footer.copyright).replace('Eric James Soltys', '<a href="https://esoltys.dev" style="color:#6d7286; text-decoration:underline;">Eric James Soltys</a>');
   document.getElementById('footer-github').textContent = d.footer.github;
