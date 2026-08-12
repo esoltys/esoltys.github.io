@@ -60,7 +60,7 @@
 }
 
 /* Refined Hover States */
-.social-link, .pro-link, .stream-link, .location-tag, .other-album-item, .other-project-item {
+.social-link, .pro-link, .stream-link, .location-tag, .other-project-item {
   transition: all 0.2s var(--ease-out-expo);
 }
 
@@ -149,7 +149,6 @@ a:focus-visible {
 .stream-label,
 .pro-label,
 .status-badge,
-.other-album-year,
 .featured-album-year,
 .other-project-language,
 .featured-project-year,
@@ -590,45 +589,40 @@ a:focus-visible {
   margin-bottom: 2rem;
 }
 
-.featured-album-container,
-.featured-project-container {
+.featured-album-container {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
 
-.featured-album-artwork-link,
-.featured-project-artwork-link {
+.featured-project-container {
+  display: flex;
+}
+
+.featured-project-link {
+  display: block;
+  color: inherit;
   text-decoration: none;
-  flex-shrink: 0;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.featured-album-artwork,
 .featured-project-artwork {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100%;
   overflow: hidden;
-  border-top-right-radius: var(--border-radius-md);
-  border-bottom-left-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-md);
   border: var(--border-width) solid var(--surface);
+  background: var(--bg-dark);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.featured-album-artwork img,
 .featured-project-artwork img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
+  object-fit: contain;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
   filter: grayscale(30%);
-}
-
-.featured-project-artwork img {
-  padding: 12%;
-  background: var(--bg-dark);
 }
 
 .featured-project-lang-badge {
@@ -646,16 +640,19 @@ a:focus-visible {
   font-size: 1.25rem;
 }
 
-.featured-album-artwork-link:hover .featured-album-artwork img,
-.featured-project-artwork-link:hover .featured-project-artwork img {
+.featured-project-link:hover .featured-project-artwork img {
   transform: scale(1.05);
   filter: grayscale(0%);
 }
 
-.featured-album-artwork-link:hover .featured-album-artwork,
-.featured-project-artwork-link:hover .featured-project-artwork {
+.featured-project-link:hover .featured-project-artwork {
   border-color: var(--accent);
   box-shadow: 0 15px 35px -15px rgba(0,0,0,0.6), 0 0 20px -5px var(--accent);
+}
+
+.featured-project-link:hover .featured-project-title {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .featured-album-info,
@@ -688,18 +685,19 @@ a:focus-visible {
 }
 
 .featured-album-title a,
-.featured-project-title a,
-.featured-album-title a:visited,
-.featured-project-title a:visited {
+.featured-album-title a:visited {
   color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.featured-album-title a:hover,
-.featured-project-title a:hover {
+.featured-album-title a:hover {
   color: var(--accent);
   text-decoration: underline;
+}
+
+.featured-project-title {
+  transition: color 0.3s ease;
 }
 
 .featured-album-year,
@@ -741,6 +739,20 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.featured-album-player {
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: var(--border-width) solid var(--surface);
+}
+
+.featured-album-player iframe {
+  display: block;
+  width: 100%;
+  height: 460px;
+  border: 0;
+}
+
 .radio-distributor {
   flex-basis: 100%;
   font-size: 0.75rem;
@@ -759,85 +771,6 @@ a:focus-visible {
 .radio-distributor a:hover {
   color: var(--accent-dim);
   text-decoration: underline;
-}
-
-/* Other Albums */
-.other-albums {
-  animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s both;
-}
-
-.other-albums-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--border-width);
-  border: var(--border-width) solid var(--surface);
-  border-top-right-radius: var(--border-radius-md);
-  border-bottom-left-radius: var(--border-radius-md);
-  overflow: hidden;
-}
-
-.other-album-item {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 1.25rem 1.5rem;
-  background: var(--bg-medium);
-  text-decoration: none;
-  color: var(--text-primary);
-  font-size: 0.875rem;
-}
-
-.other-album-item:hover {
-  background: var(--surface);
-}
-
-.other-album-art {
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  border-radius: var(--border-radius-sm);
-  flex-shrink: 0;
-  position: relative;
-}
-
-.other-album-art img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
-  filter: grayscale(30%);
-}
-
-.other-album-item:hover .other-album-art img {
-  transform: scale(1.05);
-  filter: grayscale(0%);
-}
-
-.other-album-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.other-album-title {
-  display: block;
-  font-weight: 700;
-  margin: 0;
-  transition: color 0.3s ease;
-}
-
-.other-album-item:hover .other-album-title {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-.other-album-year {
-  display: block;
-  color: var(--text-secondary);
-  font-size: 0.75rem;
-  margin: 0;
 }
 
 /* Other Projects */
@@ -936,7 +869,7 @@ a:focus-visible {
 .other-project-item[data-lang="TypeScript"] .project-lang-icon { color: #3178C6; }
 .other-project-item[data-lang="JavaScript"] .project-lang-icon { color: #F7DF1E; }
 .other-project-item[data-lang="PowerShell"] .project-lang-icon { color: #5391FE; }
-.featured-project-artwork-link[data-lang="Rust"] .project-lang-icon { color: #CE422B; }
+.featured-project-link[data-lang="Rust"] .project-lang-icon { color: #CE422B; }
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
@@ -1009,15 +942,9 @@ a:focus-visible {
     grid-row: 3;
   }
 
-  .featured-album-container,
-  .featured-project-container {
+  .featured-album-container {
     flex-direction: column;
     gap: 1.5rem;
-  }
-
-  .featured-album-artwork-link,
-  .featured-project-artwork-link {
-    align-self: center;
   }
 
   .featured-album-title,
@@ -1059,7 +986,6 @@ a:focus-visible {
     font-size: 1.1rem;
   }
 
-  .other-albums-list,
   .other-projects-list {
     grid-template-columns: 1fr;
   }
