@@ -59,17 +59,12 @@
       <div id="hero-sub" style="font-size:17px; line-height:1.6; color:#9aa0b4; max-width:600px;"></div>
       <div style="margin-top:28px; max-width:560px; width:100%; text-align:left; background:#101218; border:1px solid #23262f; border-radius:14px; padding:24px 28px;">
         <div id="qi-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:16px; margin-bottom:10px;"></div>
-        <div id="qi-intro" style="font-size:13.5px; color:#9aa0b4; line-height:1.6; margin-bottom:12px;"></div>
-        <ul style="margin:0; padding-left:18px; display:flex; flex-direction:column; gap:8px;">
-          <li id="qi-windows" style="font-size:13.5px; color:#c7cadb; line-height:1.6;">
-            <span id="qi-windows-main"></span>
-            <ul style="margin:6px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:6px;">
-              <li id="qi-winget" style="font-size:13.5px; color:#c7cadb; line-height:1.6;"></li>
-              <li id="qi-store" style="font-size:13.5px; color:#c7cadb; line-height:1.6;"></li>
-            </ul>
-          </li>
-          <li id="qi-linux" style="font-size:13.5px; color:#c7cadb; line-height:1.6;"></li>
-        </ul>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://apps.microsoft.com/detail/9PNQ2NFSQ7XW?launch=true&mode=full" target="_blank" style="display:inline-flex;">
+            <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" style="height:44px; width:161px; display:block;" />
+          </a>
+          <a id="qi-linux" href="https://github.com/esoltys/luminous/releases" target="_blank" style="display:inline-flex; align-items:center; height:44px; padding:0 20px; border-radius:4px; background:#202020; border:1px solid rgba(255,255,255,0.1); color:#f1f3f8; font-size:14px; font-weight:600; text-decoration:none;"></a>
+        </div>
         <div id="hero-caption" style="font-size:13.5px; color:#9aa0b4; line-height:1.6; margin-top:14px;"></div>
       </div>
     </div>
@@ -115,10 +110,7 @@ const DICT = {
       heroImgAlt: "Luminous home screen",
       qiTitle: "Quick Install",
       qiIntro: "Grab the latest build from the <a href='https://github.com/esoltys/luminous/releases/latest' style='color:#c7cadb; text-decoration:underline;'>Releases</a> page.",
-      qiWindows: "<strong>Windows:</strong> download the <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>.msix</code> or <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>-setup.exe</code> installer.",
-      qiLinux: "<strong>Linux:</strong> download the <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>.deb</code> or <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>.rpm</code> for your distro from the same release and install/run it as usual.",
-      qiWinget: "<strong>winget:</strong> <span style='color:#9aa0b4;'>coming soon</span>",
-      qiStore: "<strong>Microsoft Store:</strong> <span style='color:#9aa0b4;'>coming soon</span>"
+      qiLinux: "Linux (.deb / .rpm)"
     },
     footer: { copyright: "\u00A9 2026 Eric James Soltys. Licensed under the MIT License.", github: "GitHub", releases: "Releases", license: "License" },
     features: [
@@ -146,10 +138,7 @@ const DICT = {
       heroImgAlt: "Écran d'accueil de Luminous",
       qiTitle: "Installation rapide",
       qiIntro: "Obtenez la dernière version depuis la page <a href='https://github.com/esoltys/luminous/releases/latest' style='color:#c7cadb; text-decoration:underline;'>Releases</a>.",
-      qiWindows: "<strong>Windows :</strong> téléchargez l'installateur <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>.msix</code> ou <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>-setup.exe</code>.",
-      qiLinux: "<strong>Linux :</strong> téléchargez le <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>.deb</code> ou le <code style='background:rgba(255,255,255,0.08); padding:2px 6px; border-radius:4px; font-family:monospace;'>.rpm</code> pour votre distribution depuis la même version et installez/exécutez-le comme d'habitude.",
-      qiWinget: "<strong>winget :</strong> <span style='color:#9aa0b4;'>bientôt disponible</span>",
-      qiStore: "<strong>Microsoft Store :</strong> <span style='color:#9aa0b4;'>bientôt disponible</span>"
+      qiLinux: "Linux (.deb / .rpm)"
     },
     footer: { copyright: "\u00A9 2026 Eric James Soltys. Sous licence MIT.", github: "GitHub", releases: "Versions", license: "Licence" },
     features: [
@@ -207,11 +196,7 @@ function render(lang) {
   document.getElementById('hero-sub').textContent = d.hero.sub;
   document.getElementById('hero-caption').textContent = d.hero.captionLine1;
   document.getElementById('qi-title').textContent = d.hero.qiTitle;
-  document.getElementById('qi-intro').innerHTML = d.hero.qiIntro;
-  document.getElementById('qi-windows-main').innerHTML = d.hero.qiWindows;
-  document.getElementById('qi-linux').innerHTML = d.hero.qiLinux;
-  document.getElementById('qi-winget').innerHTML = d.hero.qiWinget;
-  document.getElementById('qi-store').innerHTML = d.hero.qiStore;
+  document.getElementById('qi-linux').textContent = d.hero.qiLinux;
   document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png?v=1786170282023';
   document.getElementById('hero-img').alt = d.hero.heroImgAlt;
   document.getElementById('footer-copyright').innerHTML = escapeHtml(d.footer.copyright).replace('Eric James Soltys', '<a href="https://esoltys.dev" style="color:#6d7286; text-decoration:underline;">Eric James Soltys</a>');
