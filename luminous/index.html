@@ -86,14 +86,14 @@
         <span id="footer-copyright" style="font-size:13px; color:#6d7286;"></span>
       </div>
       <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center;">
-        <a href="https://github.com/esoltys/luminous" id="footer-github" style="font-size:13px; color:#6d7286;"></a>
-        <a href="https://github.com/esoltys/luminous/releases" id="footer-releases" style="font-size:13px; color:#6d7286;"></a>
-        <a href="https://github.com/esoltys/luminous/blob/main/LICENSE" id="footer-license" style="font-size:13px; color:#6d7286;"></a>
         <a href="https://instagram.com/luminousmusicapp" aria-label="Instagram" style="display:flex;">
           <img src="https://cdn.simpleicons.org/instagram/6d7286" width="16" height="16" alt="Instagram" />
         </a>
         <a href="https://threads.net/@luminousmusicapp" aria-label="Threads" style="display:flex;">
           <img src="https://cdn.simpleicons.org/threads/6d7286" width="16" height="16" alt="Threads" />
+        </a>
+        <a href="https://bsky.app/profile/luminousmusicapp.bsky.social" aria-label="Bluesky" style="display:flex;">
+          <img src="https://cdn.simpleicons.org/bluesky/6d7286" width="16" height="16" alt="Bluesky" />
         </a>
       </div>
     </div>
@@ -206,9 +206,6 @@ function render(lang) {
   document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png?v=1786170282023';
   document.getElementById('hero-img').alt = d.hero.heroImgAlt;
   document.getElementById('footer-copyright').innerHTML = escapeHtml(d.footer.copyright).replace('Eric James Soltys', '<a href="https://esoltys.dev" style="color:#6d7286; text-decoration:underline;">Eric James Soltys</a>');
-  document.getElementById('footer-github').textContent = d.footer.github;
-  document.getElementById('footer-releases').textContent = d.footer.releases;
-  document.getElementById('footer-license').textContent = d.footer.license;
   const rows = [];
   let i = 0;
   while (i < d.features.length) {
