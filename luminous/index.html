@@ -23,6 +23,9 @@
   a:hover { color: #c3c9ff; }
   .nav-link:hover { color: #f1f3f8 !important; }
   img { max-width: 100%; display: block; }
+  @media (max-width: 720px) {
+    .info-grid { grid-template-columns: 1fr !important; }
+  }
 </style>
 </head>
 <body>
@@ -60,13 +63,14 @@
       <div style="margin-top:28px; max-width:560px; width:100%; text-align:left; background:#101218; border:1px solid #23262f; border-radius:14px; padding:24px 28px;">
         <div id="qi-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:16px; margin-bottom:10px;"></div>
         <div style="display:flex; gap:12px; flex-wrap:wrap;">
-          <a href="https://apps.microsoft.com/detail/9PNQ2NFSQ7XW?launch=true&mode=full" target="_blank" style="display:inline-flex;">
+          <a href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi" target="_blank" style="display:inline-flex;">
             <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" style="height:44px; width:161px; display:block;" />
           </a>
           <a id="qi-linux" href="https://github.com/esoltys/luminous/releases" target="_blank" style="display:inline-flex; align-items:center; height:44px; padding:0 20px; border-radius:4px; background:#202020; border:1px solid rgba(255,255,255,0.1); color:#f1f3f8; font-size:14px; font-weight:600; text-decoration:none;"></a>
         </div>
         <div id="hero-caption" style="font-size:13.5px; color:#9aa0b4; line-height:1.6; margin-top:14px;"></div>
       </div>
+      <div id="hero-stats" style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:8px;"></div>
     </div>
 
     <div style="position:relative; margin-top:56px;">
@@ -116,7 +120,8 @@ const DICT = {
       heroImgAlt: "Luminous home screen",
       qiTitle: "Quick Install",
       qiIntro: "Grab the latest build from the <a href='https://github.com/esoltys/luminous/releases/latest' style='color:#c7cadb; text-decoration:underline;'>Releases</a> page.",
-      qiLinux: "Linux (.deb / .rpm)"
+      qiLinux: "Linux (.deb / .rpm)",
+      stats: ["Native — Rust and Tauri. No Electron.", "Lightweight — 33.4 MB", "No Subscription", "No Data Collection"]
     },
     footer: { copyright: "\u00A9 2026 Eric James Soltys. Licensed under the MIT License.", github: "GitHub", releases: "Releases", license: "License" },
     features: [
@@ -144,7 +149,8 @@ const DICT = {
       heroImgAlt: "Écran d'accueil de Luminous",
       qiTitle: "Installation rapide",
       qiIntro: "Obtenez la dernière version depuis la page <a href='https://github.com/esoltys/luminous/releases/latest' style='color:#c7cadb; text-decoration:underline;'>Releases</a>.",
-      qiLinux: "Linux (.deb / .rpm)"
+      qiLinux: "Linux (.deb / .rpm)",
+      stats: ["Natif — Rust et Tauri. Pas d'Electron.", "Léger — 33,4 Mo", "Sans abonnement", "Aucune collecte de données"]
     },
     footer: { copyright: "\u00A9 2026 Eric James Soltys. Sous licence MIT.", github: "GitHub", releases: "Versions", license: "Licence" },
     features: [
@@ -203,6 +209,9 @@ function render(lang) {
   document.getElementById('hero-caption').textContent = d.hero.captionLine1;
   document.getElementById('qi-title').textContent = d.hero.qiTitle;
   document.getElementById('qi-linux').textContent = d.hero.qiLinux;
+  document.getElementById('hero-stats').innerHTML = d.hero.stats.map(function(s) {
+    return '<span style="background:rgba(255,255,255,0.05); border:1px solid #23262f; border-radius:9999px; padding:6px 14px; font-size:13px; color:#9aa0b4;">' + escapeHtml(s) + '</span>';
+  }).join('');
   document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png?v=1786170282023';
   document.getElementById('hero-img').alt = d.hero.heroImgAlt;
   document.getElementById('footer-copyright').innerHTML = escapeHtml(d.footer.copyright).replace('Eric James Soltys', '<a href="https://esoltys.dev" style="color:#6d7286; text-decoration:underline;">Eric James Soltys</a>');
@@ -218,7 +227,7 @@ function render(lang) {
         j++;
       }
       const cols = Math.min(group.length, 3);
-      rows.push('<div style="display:grid; grid-template-columns:repeat(' + cols + ', 1fr); gap:56px;">' + group.map(textOnlyHtml).join('') + '</div>');
+      rows.push('<div class="info-grid" style="display:grid; grid-template-columns:repeat(' + cols + ', 1fr); gap:56px;">' + group.map(textOnlyHtml).join('') + '</div>');
       i = j;
       continue;
     }
