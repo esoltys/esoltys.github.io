@@ -903,6 +903,8 @@ a:focus-visible {
 .other-project-item[data-lang="TypeScript"] .project-lang-icon { color: #3178C6; }
 .other-project-item[data-lang="JavaScript"] .project-lang-icon { color: #F7DF1E; }
 .other-project-item[data-lang="PowerShell"] .project-lang-icon { color: #5391FE; }
+.other-project-item[data-lang="CSharp"] .project-lang-icon,
+.other-project-item[data-lang="C#"] .project-lang-icon { color: #239120; }
 .featured-project[data-lang="Rust"] .project-lang-icon,
 .featured-project-link[data-lang="Rust"] .project-lang-icon { color: #CE422B; }
 
