@@ -835,10 +835,6 @@ a:focus-visible {
   background: var(--surface);
 }
 
-.other-project-item:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
-}
-
 .other-project-header {
   width: 80px;
   height: 80px;
