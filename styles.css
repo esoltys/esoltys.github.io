@@ -17,6 +17,7 @@
   --spotify: #1db954;
   --youtube: #ff0000;
   --apple: #fc3c44;
+  --soundcloud: #ff5500;
   --linkedin: #0077b5;
   --github: #6e5494;
   --substack: #ff6719;
@@ -578,6 +579,7 @@ a:focus-visible {
 .stream-spotify:hover { color: var(--spotify); border-color: var(--spotify); }
 .stream-apple:hover { color: var(--apple); border-color: var(--apple); }
 .stream-bandcamp:hover { color: var(--accent); border-color: var(--accent); }
+.stream-soundcloud:hover { color: var(--soundcloud); border-color: var(--soundcloud); }
 
 /* Albums grid with staggered animation */
 /* ===== ALBUMS SECTION ===== */
