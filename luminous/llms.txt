@@ -1,17 +1,40 @@
 # Luminous
 
-> Luminous is an open-source, lightweight desktop music player built for local audio library management and high-fidelity playback.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 2.0.
+
+## What's New in 2.0
+- Listening Stats: streaks, top artists and albums, and time-of-day listening patterns
+- Redesigned Organize Files: clearer preview and destination flow when renaming and sorting your library
+- Pin to Home: pin favorite artists, albums, and playlists to the Home screen
+- Moment Mix: an auto-generated playlist that shifts with the time of day
+- MusicBrainz Picard integration: hand off tag lookups to Picard from the tag editor
+- WebDAV support: connect a WebDAV server and add its music into your library
+- Artist & Album Artwork: local-artwork scanner finds artist portraits, band logos, and fanart on disk
+- Social Share Cards: share what you're listening to with generated social images
+- Bios & Links: add markdown bios and links to artists and albums
 
 ## Core Features
-- Local audio library indexing & playback
-- Support for lossless audio formats (FLAC, WAV, ALAC)
-- Custom UI themes & customizable layouts
-- Fast, low-resource performance
+- Local audio library indexing with instant search across artists, albums, and songs
+- Smart and auto playlists (built around decades, genres, and BPM)
+- Custom genre hierarchies via drag-and-drop sub-genre organization
+- Compact, always-on-top miniplayer
+- Predefined and dynamic (cover-art-driven) themes
+- Time-synced lyrics with inline editing
+- Advanced `field:value` search syntax (e.g. `genre:rock`), savable as smart playlists
+- Built-in tag editor for single or bulk metadata edits, with MusicBrainz Picard handoff
+- 10-band graphic EQ with genre presets, plus a 20-band parametric EQ
+- Automatic file organization into a clean artist/album folder structure
+- Available in English and French
 
 ## Tech Stack & Architecture
-- Framework: Tauri v2
+- Framework: Tauri v2 (native — no Electron)
 - Frontend: React / TypeScript / Tailwind CSS
 - Core Backend: Rust
+- Lightweight, no subscriptions, no data collection
 
 ## Key Links
+- Microsoft Store: https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi
 - GitHub Repository: https://github.com/esoltys/luminous
+- Releases (Linux .deb / .rpm and more): https://github.com/esoltys/luminous/releases/latest
+- Issues: https://github.com/esoltys/luminous/issues
+- Discussions: https://github.com/esoltys/luminous/discussions
