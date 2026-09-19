@@ -58,17 +58,17 @@
     <div style="position:absolute; top:-120px; left:50%; transform:translateX(-50%); width:640px; height:640px; background:radial-gradient(circle, rgba(79,91,213,0.28), transparent 68%); filter:blur(10px); pointer-events:none;"></div>
     <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px;">
       <div id="hero-badge" style="font-family:'Inter',sans-serif; font-weight:600; font-size:12.5px; letter-spacing:0.22em; text-transform:uppercase; color:#FFB648; border:1px solid rgba(255,182,72,0.35); background:rgba(255,182,72,0.08); padding:7px 16px; border-radius:9999px;"></div>
-      <div id="hero-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:clamp(34px,5.6vw,62px); line-height:1.06; letter-spacing:-0.02em; max-width:820px;"></div>
-      <div id="hero-sub" style="font-size:17px; line-height:1.6; color:#9aa0b4; max-width:600px;"></div>
-      <div style="margin-top:28px; max-width:560px; width:100%; text-align:left; background:#101218; border:1px solid #23262f; border-radius:14px; padding:24px 28px;">
-        <div id="qi-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:16px; margin-bottom:10px;"></div>
-        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <div id="hero-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:clamp(34px,5.6vw,62px); line-height:1.06; letter-spacing:-0.02em; max-width:820px; text-wrap:pretty;"></div>
+      <div id="hero-sub" style="font-size:17px; line-height:1.6; color:#9aa0b4; max-width:600px; text-wrap:pretty;"></div>
+      <div style="margin-top:28px; max-width:560px; width:100%; text-align:center; display:flex; flex-direction:column; align-items:center; gap:14px;">
+        <div id="qi-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:16px;"></div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
           <a href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi" target="_blank" style="display:inline-flex;">
             <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" style="height:44px; width:161px; display:block;" />
           </a>
           <a id="qi-linux" href="https://github.com/esoltys/luminous/releases" target="_blank" style="display:inline-flex; align-items:center; height:44px; padding:0 20px; border-radius:4px; background:#202020; border:1px solid rgba(255,255,255,0.1); color:#f1f3f8; font-size:14px; font-weight:600; text-decoration:none;"></a>
         </div>
-        <div id="hero-caption" style="font-size:13.5px; color:#9aa0b4; line-height:1.6; margin-top:14px;"></div>
+        <div id="hero-caption" style="font-size:13.5px; color:#9aa0b4; line-height:1.6; text-wrap:pretty;"></div>
       </div>
       <div id="hero-stats" style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:8px;"></div>
     </div>
@@ -76,12 +76,30 @@
     <div style="position:relative; margin-top:56px;">
       <div style="position:absolute; inset:-40px; background:radial-gradient(ellipse at center, rgba(98,111,232,0.22), transparent 70%); filter:blur(6px); pointer-events:none;"></div>
       <div style="position:relative; border-radius:16px; overflow:hidden; border:1px solid #23262f; box-shadow:0 40px 90px -30px rgba(0,0,0,0.7);">
-        <img id="hero-img" src="./landing-assets/home-EN.png?v=1786170282023" alt="Luminous home screen" style="width:100%; display:block;" />
+        <img id="hero-img" src="./landing-assets/home-EN.png?v=1789507200000" alt="Luminous home screen" style="width:100%; display:block;" />
       </div>
     </div>
   </div>
 
+  <div style="max-width:1160px; margin:0 auto; padding:64px 32px 0;">
+    <div id="whatsnew-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:22px; text-align:center; margin-bottom:32px;"></div>
+    <div id="whatsnew-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;"></div>
+  </div>
+
   <div id="features" style="max-width:1160px; margin:0 auto; padding:120px 32px 40px; display:flex; flex-direction:column; gap:120px;"></div>
+
+  <div style="border-top:1px solid #1a1c24;">
+    <div style="max-width:1160px; margin:0 auto; padding:96px 32px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:20px;">
+      <div id="cta-title" style="font-family:'Expose',sans-serif; font-weight:700; font-size:clamp(26px,3.4vw,36px); letter-spacing:-0.01em; text-wrap:pretty;"></div>
+      <div id="cta-sub" style="font-size:15.5px; color:#9aa0b4; max-width:480px; line-height:1.6; text-wrap:pretty;"></div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
+        <a href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi" target="_blank" style="display:inline-flex;">
+          <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" style="height:44px; width:161px; display:block;" />
+        </a>
+        <a id="cta-linux" href="https://github.com/esoltys/luminous/releases" target="_blank" style="display:inline-flex; align-items:center; height:44px; padding:0 20px; border-radius:4px; background:#202020; border:1px solid rgba(255,255,255,0.1); color:#f1f3f8; font-size:14px; font-weight:600; text-decoration:none;"></a>
+      </div>
+    </div>
+  </div>
 
   <div style="border-top:1px solid #1a1c24;">
     <div style="max-width:1160px; margin:0 auto; padding:36px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
@@ -110,7 +128,7 @@ const DICT = {
   en: {
     nav: { features: "Features", download: "Download" },
     hero: {
-      badge: "Desktop Music Player",
+      badge: "Version 2.0",
       title: "A high-performance home for the music you already own.",
       sub: "Luminous is a fast, local-first player for your own audio library — no streaming, no subscriptions, no cloud. Just your files, indexed, searchable, and beautifully played.",
       btnDownload: "Download latest release",
@@ -118,29 +136,44 @@ const DICT = {
       captionLine1: "Free and open source. Made in Canada \uD83C\uDF41 Available in English and French.",
       captionLine2: "",
       heroImgAlt: "Luminous home screen",
-      qiTitle: "Quick Install",
+      qiTitle: "Get Started",
       qiIntro: "Grab the latest build from the <a href='https://github.com/esoltys/luminous/releases/latest' style='color:#c7cadb; text-decoration:underline;'>Releases</a> page.",
       qiLinux: "Linux (.deb / .rpm)",
-      stats: ["Native — Rust and Tauri. No Electron.", "Lightweight — 33.4 MB", "No Subscription", "No Data Collection"]
+      ctaTitle: "Ready when you are.",
+      ctaSub: "Download Luminous and turn your folder of files into a real music library.",
+      whatsNewTitle: "What's New in 2.0",
+      whatsNew: [
+        { title: "Listening Stats", body: "See your streaks, top artists and albums, and when in the day you listen most." },
+        { title: "Redesigned Organize Files", body: "A clearer preview and destination flow when renaming and sorting your library." },
+        { title: "Pin to Home", body: "Pin your favorite artists, albums, and playlists right to the Home screen." },
+        { title: "Moment Mix", body: "An auto-generated playlist that shifts with the time of day." },
+        { title: "MusicBrainz Picard", body: "Hand off tag lookups to Picard straight from the tag editor." },
+        { title: "WebDAV Support", body: "Connect a WebDAV server and add its music straight into your library." },
+        { title: "Artist & Album Artwork", body: "A local-artwork scanner finds artist portraits, band logos, and fanart on disk." },
+        { title: "Social Share Cards", body: "Share what you're listening to with beautiful social images." },
+        { title: "Bios & Links", body: "Add markdown bios and links to your artists and albums." }
+      ],
+      stats: ["Native — Rust and Tauri. No Electron.", "Lightweight", "No Subscription", "No Data Collection"]
     },
     footer: { copyright: "\u00A9 2026 Eric James Soltys. Licensed under the MIT License.", github: "GitHub", releases: "Releases", license: "License" },
     features: [
       { overlineColor: "#8b93d5", overline: "Local & instant", title: "Your library, indexed and instant.", body: "Every track stays on your disk — Luminous just makes it fast to find. Search across artists, albums, and songs as you type, with a now-playing bar that's always one click away.", img: "albums", alt: "Albums view", reverse: false },
       { overlineColor: "#FFB648", overline: "Smarter playlists", title: "Playlists that build themselves.", body: "Create smart playlists from your own rules, or drop into auto playlists already built around decades, genres, and BPM — always up to date as your library grows.", img: "playlist-auto", alt: "Auto and smart playlists", reverse: true },
       { overlineColor: "#8b93d5", overline: "Genres, organized", title: "Genres, curated your way.", body: "Drag tags between genre cards to build your own sub-genre hierarchy, right down to Shoegaze under Alternative or Synthwave under Electronic.", img: "genres", alt: "Genre browser", reverse: false },
+      { overlineColor: "#FFB648", overline: "Know your habits", title: "See how you actually listen.", body: "Track your listening streak, see when in the day you tune in most, and browse your top artists and albums over the past week, month, or year.", img: "stats", alt: "Listening stats", reverse: true },
       { overlineColor: "#8b93d5", overline: "Stay in the flow", title: "A miniplayer for quick skips, without the whole window.", body: "Shrink Luminous to a compact, always-on-top miniplayer for quick skips while you work — full playback controls, a fraction of the footprint.", dual: "miniplayer", alt: "Miniplayer", reverse: false },
-      { overlineColor: "#FFB648", overline: "Make it yours", title: "A player that matches your music, not the other way around.", body: "Choose from predefined themes, or turn on the dynamic theme and watch the whole interface repaint itself around every album's cover art — the look always matches the music.", img: "themes", alt: "Theme picker", reverse: false },
-      { overlineColor: "#FFB648", overline: "Lyrics, synced", title: "Follow along, line by line.", body: "Time-synced lyrics track the song in real time, with inline editing when the timing needs a touch-up. No lyrics found? Add and sync your own.", img: "lyrics", alt: "Synced lyrics view", reverse: true },
-      { overlineColor: "#FFB648", overline: "For power users", title: "Find any track by the rules you set.", bodyHtml: "Type <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>field:value</code> terms — <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>genre:rock</code> — to filter your whole library in one line, right down to advanced tags like Initial Key and BPM, then turn any search into a smart playlist with one click.", img: "advanced-search", alt: "Advanced search", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Clean metadata", title: "Tag editing that stays out of your way.", body: "Fix a title, artist, or album straight from the track — no external tools needed. Edit tags one song at a time or in bulk, and keep your library consistent." },
-      { overlineColor: "#8b93d5", overline: "Shape your sound", title: "A graphic equalizer, tuned your way.", body: "Dial in a 10-band graphic EQ with genre presets to start from, then save your own, or switch to the 20-band parametric EQ for surgical control over frequency and Q. Fine-tune the low end or tame harsh highs — the changes apply instantly as you play." },
+      { overlineColor: "#FFB648", overline: "Make it yours", title: "A player that matches your music, not the other way around.", body: "Choose from predefined themes, or turn on the dynamic theme and watch the whole interface repaint itself around every album's cover art — the look always matches the music.", img: "themes", alt: "Theme picker", reverse: true, cycle: true },
+      { overlineColor: "#8b93d5", overline: "Lyrics, synced", title: "Follow along, line by line.", body: "Time-synced lyrics track the song in real time, with inline editing when the timing needs a touch-up. No lyrics found? Add and sync your own.", img: "lyrics", alt: "Synced lyrics view", reverse: false },
+      { overlineColor: "#FFB648", overline: "For power users", title: "Find any track by the rules you set.", bodyHtml: "Type <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>field:value</code> terms — <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>genre:rock</code> — to filter your whole library in one line, right down to advanced tags like Initial Key and BPM, then turn any search into a smart playlist with one click.", img: "advanced-search", alt: "Advanced search", reverse: true },
+      { overlineColor: "#8b93d5", overline: "Clean metadata", title: "Tag editing that stays out of your way.", body: "Fix a title, artist, or album straight from the track — no external tools needed. Edit tags one song at a time or in bulk, or hand it off to MusicBrainz Picard for automatic lookups, and keep your library consistent." },
+      { overlineColor: "#FFB648", overline: "Shape your sound", title: "A graphic equalizer, tuned your way.", body: "Dial in a 10-band graphic EQ with genre presets to start from, then save your own, or switch to the 20-band parametric EQ for surgical control over frequency and Q. Fine-tune the low end or tame harsh highs — the changes apply instantly as you play." },
       { overlineColor: "#8b93d5", overline: "Tidy by default", title: "Organize your files, automatically.", body: "Point Luminous at a messy folder and it sorts files into a clean artist/album structure on disk, renaming as it goes — your library stays organized without you touching a thing." }
     ]
   },
   fr: {
     nav: { features: "Fonctionnalités", download: "Télécharger" },
     hero: {
-      badge: "Lecteur de musique de bureau",
+      badge: "Version 2.0",
       title: "Un lecteur performant pour la musique que vous possédez déjà.",
       sub: "Luminous est un lecteur rapide et local pour votre bibliothèque audio — sans diffusion, sans abonnement, sans infonuagique. Vos fichiers, indexés, cherchables et magnifiquement joués.",
       btnDownload: "Télécharger la dernière version",
@@ -148,22 +181,37 @@ const DICT = {
       captionLine1: "Gratuit et à code source ouvert. Fait au Canada \uD83C\uDF41 Offert en anglais et en français.",
       captionLine2: "",
       heroImgAlt: "Écran d'accueil de Luminous",
-      qiTitle: "Installation rapide",
+      qiTitle: "Pour commencer",
       qiIntro: "Obtenez la dernière version depuis la page <a href='https://github.com/esoltys/luminous/releases/latest' style='color:#c7cadb; text-decoration:underline;'>Releases</a>.",
       qiLinux: "Linux (.deb / .rpm)",
-      stats: ["Natif — Rust et Tauri. Pas d'Electron.", "Léger — 33,4 Mo", "Sans abonnement", "Aucune collecte de données"]
+      ctaTitle: "Prêt quand vous l'êtes.",
+      ctaSub: "Téléchargez Luminous et transformez votre dossier de fichiers en une vraie bibliothèque musicale.",
+      whatsNewTitle: "Quoi de neuf dans la 2.0",
+      whatsNew: [
+        { title: "Statistiques d'écoute", body: "Vos séries, vos meilleurs artistes et albums, et les moments où vous écoutez le plus." },
+        { title: "Organisation des fichiers repensée", body: "Un aperçu et un flux de destination plus clairs pour renommer et trier votre bibliothèque." },
+        { title: "Épingler à l'accueil", body: "Épinglez vos artistes, albums et listes de lecture préférés directement sur l'écran d'accueil." },
+        { title: "Moment Mix", body: "Une liste de lecture générée automatiquement qui s'adapte au moment de la journée." },
+        { title: "MusicBrainz Picard", body: "Confiez la recherche de balises à Picard directement depuis l'éditeur." },
+        { title: "Prise en charge de WebDAV", body: "Connectez un serveur WebDAV et ajoutez sa musique directement à votre bibliothèque." },
+        { title: "Illustrations d'artistes et d'albums", body: "Un scanner local trouve les portraits d'artistes, logos de groupes et fanarts sur disque." },
+        { title: "Cartes de partage", body: "Partagez ce que vous écoutez avec une carte d'album générée automatiquement." },
+        { title: "Biographies et liens", body: "Ajoutez des biographies en markdown et des liens à vos artistes et albums." }
+      ],
+      stats: ["Natif — Rust et Tauri. Pas d'Electron.", "Léger", "Sans abonnement", "Aucune collecte de données"]
     },
     footer: { copyright: "\u00A9 2026 Eric James Soltys. Sous licence MIT.", github: "GitHub", releases: "Versions", license: "Licence" },
     features: [
       { overlineColor: "#8b93d5", overline: "Local et instantané", title: "Votre bibliothèque, indexée et instantanée.", body: "Chaque piste reste sur votre disque — Luminous la retrouve simplement plus vite. Cherchez parmi les artistes, albums et chansons en tapant, avec une barre de lecture toujours à portée de clic.", img: "albums", alt: "Vue des albums", reverse: false },
       { overlineColor: "#FFB648", overline: "Listes plus intelligentes", title: "Des listes de lecture qui se construisent seules.", body: "Créez des listes de lecture intelligentes selon vos règles, ou plongez dans des listes automatiques bâties par décennie, genre et BPM — toujours à jour selon votre bibliothèque.", img: "playlist-auto", alt: "Listes de lecture automatiques et intelligentes", reverse: true },
       { overlineColor: "#8b93d5", overline: "Genres organisés", title: "Des genres, à votre façon.", body: "Glissez des balises entre les cartes de genre pour créer votre propre hiérarchie de sous-genres, jusqu'à Shoegaze sous Alternative ou Synthwave sous Electronic.", img: "genres", alt: "Navigateur de genres", reverse: false },
+      { overlineColor: "#FFB648", overline: "Connaissez vos habitudes", title: "Voyez comment vous écoutez vraiment.", body: "Suivez votre série d'écoute, découvrez les moments de la journée où vous écoutez le plus, et parcourez vos meilleurs artistes et albums sur la semaine, le mois ou l'année.", img: "stats", alt: "Statistiques d'écoute", reverse: true },
       { overlineColor: "#8b93d5", overline: "Restez dans le rythme", title: "Un mini-lecteur pour passer d'une chanson à l'autre, sans la fenêtre complète.", body: "Réduisez Luminous en un mini-lecteur compact et toujours au premier plan pour changer de chanson en travaillant — tous les contrôles, une fraction de l'espace.", dual: "miniplayer", alt: "Mini-lecteur", reverse: false },
-      { overlineColor: "#FFB648", overline: "Faites-le vôtre", title: "Un lecteur qui s'accorde à votre musique.", body: "Choisissez parmi les thèmes prédéfinis, ou activez le thème dynamique et regardez toute l'interface se repeindre selon la pochette de chaque album — le style s'accorde toujours à la musique.", img: "themes", alt: "Sélecteur de thèmes", reverse: false },
-      { overlineColor: "#FFB648", overline: "Paroles synchronisées", title: "Suivez, ligne par ligne.", body: "Les paroles synchronisées suivent la chanson en temps réel, avec une édition intégrée quand le minutage a besoin d'un ajustement. Paroles introuvables? Ajoutez et synchronisez les vôtres.", img: "lyrics", alt: "Écran de paroles synchronisées", reverse: true },
-      { overlineColor: "#FFB648", overline: "Pour les utilisateurs avancés", title: "Trouvez n'importe quel morceau selon vos critères.", bodyHtml: "Tapez des termes <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>field:value</code> — <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>genre:rock</code> — pour filtrer votre bibliothèque en une ligne, jusqu'aux balises comme la tonalité et le BPM, puis transformez la recherche en liste intelligente.", img: "advanced-search", alt: "Recherche avancée", reverse: false },
-      { overlineColor: "#8b93d5", overline: "Métadonnées propres", title: "Une édition des balises qui reste discrète.", body: "Corrigez un titre, un artiste ou un album directement depuis la chanson — aucun outil externe requis. Modifiez les balises une chanson à la fois ou en lot, et gardez votre bibliothèque cohérente." },
-      { overlineColor: "#8b93d5", overline: "Façonnez votre son", title: "Un égaliseur graphique, ajusté à votre goût.", body: "Réglez un égaliseur graphique à 10 bandes à partir de préréglages par genre, puis enregistrez les vôtres, ou passez à l'égaliseur paramétrique à 20 bandes pour un contrôle chirurgical de la fréquence et du Q. Affinez les basses ou adoucissez les aigus — les changements s'appliquent instantanément." },
+      { overlineColor: "#FFB648", overline: "Faites-le vôtre", title: "Un lecteur qui s'accorde à votre musique.", body: "Choisissez parmi les thèmes prédéfinis, ou activez le thème dynamique et regardez toute l'interface se repeindre selon la pochette de chaque album — le style s'accorde toujours à la musique.", img: "themes", alt: "Sélecteur de thèmes", reverse: true, cycle: true },
+      { overlineColor: "#8b93d5", overline: "Paroles synchronisées", title: "Suivez, ligne par ligne.", body: "Les paroles synchronisées suivent la chanson en temps réel, avec une édition intégrée quand le minutage a besoin d'un ajustement. Paroles introuvables? Ajoutez et synchronisez les vôtres.", img: "lyrics", alt: "Écran de paroles synchronisées", reverse: false },
+      { overlineColor: "#FFB648", overline: "Pour les utilisateurs avancés", title: "Trouvez n'importe quel morceau selon vos critères.", bodyHtml: "Tapez des termes <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>field:value</code> — <code style='background:#1a1c24; padding:2px 6px; border-radius:4px; font-family:monospace; font-size:0.92em;'>genre:rock</code> — pour filtrer votre bibliothèque en une ligne, jusqu'aux balises comme la tonalité et le BPM, puis transformez la recherche en liste intelligente.", img: "advanced-search", alt: "Recherche avancée", reverse: true },
+      { overlineColor: "#8b93d5", overline: "Métadonnées propres", title: "Une édition des balises qui reste discrète.", body: "Corrigez un titre, un artiste ou un album directement depuis la chanson — aucun outil externe requis. Modifiez les balises une chanson à la fois ou en lot, ou confiez la recherche automatique à MusicBrainz Picard, et gardez votre bibliothèque cohérente." },
+      { overlineColor: "#FFB648", overline: "Façonnez votre son", title: "Un égaliseur graphique, ajusté à votre goût.", body: "Réglez un égaliseur graphique à 10 bandes à partir de préréglages par genre, puis enregistrez les vôtres, ou passez à l'égaliseur paramétrique à 20 bandes pour un contrôle chirurgical de la fréquence et du Q. Affinez les basses ou adoucissez les aigus — les changements s'appliquent instantanément." },
       { overlineColor: "#8b93d5", overline: "Ordre par défaut", title: "Organisez vos fichiers, automatiquement.", body: "Pointez Luminous vers un dossier en désordre et il trie les fichiers en une structure claire artiste/album sur le disque, en les renommant au passage — votre bibliothèque reste organisée sans que vous n'ayez à y toucher." }
     ]
   }
@@ -176,31 +224,49 @@ function escapeHtml(s) {
 function textOnlyHtml(f) {
   return '<div style="display:flex; flex-direction:column; gap:14px;">'
     + '<div style="font-family:\'Inter\',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:' + f.overlineColor + ';">' + escapeHtml(f.overline) + '</div>'
-    + '<div style="font-family:\'Expose\',sans-serif; font-weight:600; font-size:26px; letter-spacing:-0.01em;">' + escapeHtml(f.title) + '</div>'
-    + '<div style="font-size:15px; line-height:1.7; color:#9aa0b4;">' + (f.bodyHtml || escapeHtml(f.body)) + '</div>'
+    + '<div style="font-family:\'Expose\',sans-serif; font-weight:600; font-size:26px; letter-spacing:-0.01em; text-wrap:pretty;">' + escapeHtml(f.title) + '</div>'
+    + '<div style="font-size:15px; line-height:1.7; color:#9aa0b4; text-wrap:pretty;">' + (f.bodyHtml || escapeHtml(f.body)) + '</div>'
     + '</div>';
 }
 
 function featureRowHtml(f, suffix) {
   const isDual = !!f.dual;
   let media;
-  if (isDual) {
+  if (f.cycle) {
+    const n = 7;
+    media = '<div style="flex:1 1 420px; position:relative; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6); aspect-ratio:646/480;">'
+      + Array.from({ length: n }, function(_, i) {
+        return '<img class="theme-cycle-img" src="./landing-assets/theme-dynamic-0' + (i + 1) + '.png" alt="' + escapeHtml(f.alt) + '" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:' + (i === 0 ? 1 : 0) + '; transition:opacity 1.2s ease;" />';
+      }).join('')
+      + '</div>';
+  } else if (isDual) {
     media = '<div style="flex:1 1 420px; display:flex; gap:16px;">'
-      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-' + suffix + '.png?v=1786170282023" alt="' + escapeHtml(f.alt) + '" /></div>'
-      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-hover-' + suffix + '.png?v=1786170282023" alt="' + escapeHtml(f.alt) + ' hover" /></div>'
+      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-' + suffix + '.png?v=1790200000000" alt="' + escapeHtml(f.alt) + '" /></div>'
+      + '<div style="flex:1; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.dual + '-hover-' + suffix + '.png?v=1790200000000" alt="' + escapeHtml(f.alt) + ' hover" /></div>'
       + '</div>';
   } else {
-    media = '<div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.img + '-' + suffix + '.png?v=1786170282023" alt="' + escapeHtml(f.alt) + '" /></div>';
+    media = '<div style="flex:1 1 420px; border-radius:14px; overflow:hidden; border:1px solid #23262f; box-shadow:0 24px 60px -24px rgba(0,0,0,0.6);"><img src="./landing-assets/' + f.img + '-' + suffix + '.png?v=1790200000000" alt="' + escapeHtml(f.alt) + '" /></div>';
   }
   const text = '<div style="flex:1 1 380px; display:flex; flex-direction:column; gap:14px;">'
     + '<div style="font-family:\'Inter\',sans-serif; font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:' + f.overlineColor + ';">' + escapeHtml(f.overline) + '</div>'
-    + '<div style="font-family:\'Expose\',sans-serif; font-weight:600; font-size:30px; letter-spacing:-0.01em;">' + escapeHtml(f.title) + '</div>'
-    + '<div style="font-size:15px; line-height:1.7; color:#9aa0b4; max-width:440px;">' + (f.bodyHtml || escapeHtml(f.body)) + '</div>'
+    + '<div style="font-family:\'Expose\',sans-serif; font-weight:600; font-size:30px; letter-spacing:-0.01em; text-wrap:pretty;">' + escapeHtml(f.title) + '</div>'
+    + '<div style="font-size:15px; line-height:1.7; color:#9aa0b4; max-width:440px; text-wrap:pretty;">' + (f.bodyHtml || escapeHtml(f.body)) + '</div>'
     + '</div>';
   return '<div style="display:flex; align-items:center; gap:56px; flex-wrap:wrap;">'
     + (f.reverse ? media + text : text + media)
     + '</div>';
 }
+
+function startThemeCycle() {
+  let idx = 0;
+  setInterval(function() {
+    const imgs = document.querySelectorAll('.theme-cycle-img');
+    if (!imgs.length) return;
+    idx = (idx + 1) % imgs.length;
+    imgs.forEach(function(img, i) { img.style.opacity = i === idx ? 1 : 0; });
+  }, 2600);
+}
+startThemeCycle();
 
 function render(lang) {
   const suffix = lang === "fr" ? "FR" : "EN";
@@ -211,10 +277,21 @@ function render(lang) {
   document.getElementById('hero-caption').textContent = d.hero.captionLine1;
   document.getElementById('qi-title').textContent = d.hero.qiTitle;
   document.getElementById('qi-linux').textContent = d.hero.qiLinux;
+  document.getElementById('cta-title').textContent = d.hero.ctaTitle;
+  document.getElementById('cta-sub').textContent = d.hero.ctaSub;
+  document.getElementById('cta-linux').textContent = d.hero.qiLinux;
+  document.getElementById('whatsnew-title').textContent = d.hero.whatsNewTitle;
+  document.getElementById('whatsnew-grid').innerHTML = d.hero.whatsNew.map(function(item) {
+    return '<div style="background:#101218; border:1px solid #23262f; border-radius:12px; padding:20px;">'
+      + '<div style="display:inline-block; font-family:\'Inter\',sans-serif; font-weight:700; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#08090c; background:#FFB648; border-radius:9999px; padding:3px 10px; margin-bottom:12px;">New</div>'
+      + '<div style="font-family:\'Expose\',sans-serif; font-weight:600; font-size:16px; margin-bottom:8px; text-wrap:pretty;">' + escapeHtml(item.title) + '</div>'
+      + '<div style="font-size:13.5px; line-height:1.6; color:#9aa0b4; text-wrap:pretty;">' + escapeHtml(item.body) + '</div>'
+      + '</div>';
+  }).join('');
   document.getElementById('hero-stats').innerHTML = d.hero.stats.map(function(s) {
     return '<span style="background:rgba(255,255,255,0.05); border:1px solid #23262f; border-radius:9999px; padding:6px 14px; font-size:13px; color:#9aa0b4;">' + escapeHtml(s) + '</span>';
   }).join('');
-  document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png?v=1786170282023';
+  document.getElementById('hero-img').src = './landing-assets/home-' + suffix + '.png?v=1789507200000';
   document.getElementById('hero-img').alt = d.hero.heroImgAlt;
   document.getElementById('footer-copyright').innerHTML = escapeHtml(d.footer.copyright).replace('Eric James Soltys', '<a href="https://esoltys.dev" style="color:#6d7286; text-decoration:underline;">Eric James Soltys</a>');
   const rows = [];
