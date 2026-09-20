@@ -123,6 +123,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Modern Typographic Line-Wrapping */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p, li, blockquote {
+  text-wrap: pretty;
+}
+
 /* Visually hidden but announced by screen readers */
 .sr-only {
   position: absolute;
@@ -611,6 +620,7 @@ a:focus-visible {
 .featured-project-artwork {
   position: relative;
   width: 100%;
+  aspect-ratio: 646 / 480;
   overflow: hidden;
   border-radius: var(--border-radius-md);
   border: var(--border-width) solid var(--surface);
@@ -625,6 +635,20 @@ a:focus-visible {
   object-fit: contain;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
   filter: grayscale(30%);
+}
+
+.featured-project-artwork .theme-cycle-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.featured-project-artwork .theme-cycle-img:first-child {
+  opacity: 1;
 }
 
 .featured-project-lang-badge {
