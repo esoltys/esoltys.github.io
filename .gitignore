@@ -1,2 +1,5 @@
 CLAUDE.md.impeccable.md
 .github/copilot-instructions.md
+
+# Local editor/agent tooling (e.g. preview-server launch config)
+.claude/

@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: Google-Extended
 Allow: /
+
+Sitemap: https://esoltys.dev/sitemap.xml
