@@ -12,6 +12,7 @@
 - Artist & Album Artwork: local-artwork scanner finds artist portraits, band logos, and fanart on disk
 - Social Share Cards: share what you're listening to with generated social images
 - Bios & Links: add markdown bios and links to artists and albums
+- Discord & ListenBrainz: share live listening as a Discord presence and scrobble to ListenBrainz
 
 ## Core Features
 - Local audio library indexing with instant search across artists, albums, and songs
@@ -35,6 +36,7 @@
 ## Key Links
 - Microsoft Store: https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi
 - GitHub Repository: https://github.com/esoltys/luminous
+- Flatpak repo (Linux, auto-updating): https://esoltys.dev/flatpak/esoltys.flatpakrepo
 - Releases (Linux .deb / .rpm and more): https://github.com/esoltys/luminous/releases/latest
 - Issues: https://github.com/esoltys/luminous/issues
 - Discussions: https://github.com/esoltys/luminous/discussions
