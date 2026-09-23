@@ -83,6 +83,24 @@ When updating music releases, update all relevant places together:
 - Open Graph image if the featured/social image changes
 - Any CSS only if layout assumptions change
 
+## Luminous landing page (`luminous/`)
+
+`https://esoltys.dev/luminous/` is a separate page for the Luminous Music Player with its own assets; it does not share `styles.css` or `script.js` with the home page.
+
+- `luminous/index.html` — complete English content as static semantic markup (the page must work with JavaScript disabled), plus its own metadata and `SoftwareApplication` JSON-LD.
+- `luminous/styles.css` — tokens in `:root`; dark only. Media feature rows alternate sides via `.feature-list .feature:nth-child(even)`, so add or reorder features without per-item flags.
+- `luminous/main.js` — ES module: EN/FR language switch and the dynamic-theme slideshow. Because it is a module, preview over HTTP (`python3 -m http.server 8000` → `http://localhost:8000/luminous/`); opening the file directly won't run it.
+- `luminous/i18n/fr.js` — French strings keyed by the markup's `data-i18n` / `data-i18n-html` attributes. English is read from the DOM, so there is no English dictionary.
+- `luminous/landing-assets/` — screenshots (`<name>-EN.png` / `<name>-FR.png` pairs), brand SVGs, and self-hosted Simple Icons in `icons/` (colour baked into each file).
+- `luminous/llms.txt` — Markdown summary of the page, linked as `rel="alternate"` from both pages.
+
+When changing Luminous copy:
+
+- Every translatable element needs a key: `data-i18n="key"` (text), plus `data-i18n-attr="alt"` to target an attribute, or `data-i18n-html="key"` for trusted markup such as `<code>`. Add the French string under the same key in `i18n/fr.js`; a missing key falls back to English and logs a console warning.
+- Localized screenshots take `data-localized-src`; the script swaps `-EN.` for `-FR.` in `src`, so both files must exist with matching names.
+- Keep `luminous/llms.txt` and the `SoftwareApplication` JSON-LD (in both `luminous/index.html` and the home page, which share `@id` `https://esoltys.dev/luminous/#app`) in step with release notes.
+- Run `bunx html-validate luminous/index.html`.
+
 ## External dependencies and services
 
 - Tabler Icons webfont via jsDelivr CDN.
