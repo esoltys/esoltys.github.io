@@ -24,6 +24,7 @@
   --instagram: #e4405f;
   --threads: #000000;
   --bluesky: #1185fe;
+  --mastodon: #6364ff;
 
   /* Typography Scale (1.25 Major Third) */
   --text-xs: 0.75rem;
@@ -74,6 +75,7 @@
 
 .social-threads:hover { color: var(--text-primary); border-color: var(--text-primary); }
 .social-bluesky:hover { color: var(--bluesky); border-color: var(--bluesky); }
+.social-mastodon:hover { color: var(--mastodon); border-color: var(--mastodon); }
 .social-instagram:hover { color: var(--instagram); border-color: var(--instagram); }
 
 .pro-linkedin:hover { color: var(--linkedin); border-color: var(--linkedin); }

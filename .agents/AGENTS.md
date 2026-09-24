@@ -71,7 +71,7 @@ This is the `esoltys.github.io` repository on the `main` branch. GitHub Pages se
 The page is a personal landing page with these main areas:
 
 1. Header/profile and location
-2. Social links: Instagram, Threads, Bluesky
+2. Social links: Instagram, Threads, Bluesky, Mastodon
 3. Professional section: senior developer positioning, LinkedIn, GitHub, Substack
 4. Music section: streaming links, featured album, album list, radio distribution note
 
@@ -106,7 +106,7 @@ When changing Luminous copy:
 - Tabler Icons webfont via jsDelivr CDN.
 - Google Fonts for typography.
 - GoatCounter analytics: `https://esoltys.goatcounter.com/count` loaded from `//gc.zgo.at/count.js`.
-- External profile/music links to LinkedIn, GitHub, Substack, Instagram, Threads, Bluesky, YouTube Music, Spotify, Apple Music, Bandcamp, and !earshot.
+- External profile/music links to LinkedIn, GitHub, Substack, Instagram, Threads, Bluesky, Mastodon, YouTube Music, Spotify, Apple Music, Bandcamp, and !earshot.
 
 Be careful when editing external URLs: preserve exact playlist/profile IDs and use HTTPS where available.
 
