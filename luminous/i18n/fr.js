@@ -7,13 +7,14 @@ export default {
   "langSwitch.label": "Langue",
 
   "hero.title": "Un lecteur performant pour la musique que vous possédez déjà.",
-  "hero.sub": "Luminous est un lecteur rapide et local pour votre bibliothèque audio. Vos fichiers, indexés, cherchables et magnifiquement joués.",
+  "hero.sub": "Luminous est un lecteur rapide et local pour votre propre musique — sur votre disque, un partage réseau ou votre propre serveur.",
   "hero.getStarted": "Pour commencer",
   "hero.moreOptions": "Plus d'options de téléchargement",
   "hero.caption": "Gratuit et à code source ouvert. Fait au Canada 🍁 Offert en anglais et en français.",
   "hero.imgAlt": "Écran d'accueil de Luminous",
 
   "stats.native": "Natif — Rust et Tauri. Pas d'Electron.",
+  "stats.remoteLibraries": "Compatible WebDAV et OpenSubsonic",
   "stats.lightweight": "Léger",
   "stats.noSubscription": "Sans abonnement",
   "stats.noDataCollection": "Aucune collecte de données",
