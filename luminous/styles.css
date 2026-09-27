@@ -476,6 +476,48 @@ a:hover {
   text-transform: uppercase;
 }
 
+.card-grid--wide {
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+}
+
+/* Point-form release notes: heading row first, then the list. */
+.card > .card__heading {
+  margin-bottom: 14px;
+}
+
+.card__heading .card__title,
+.card__heading .card__badge {
+  margin-bottom: 0;
+}
+
+.release-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.release-list li {
+  position: relative;
+  padding-left: 16px;
+  text-wrap: pretty;
+}
+
+.release-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  left: 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+
 /* Features */
 .features {
   display: flex;

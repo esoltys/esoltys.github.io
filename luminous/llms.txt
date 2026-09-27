@@ -1,6 +1,18 @@
 # Luminous
 
-> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 2.0.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 2.5.
+
+## What's New in 2.5
+- OpenSubsonic streaming: connect Navidrome, Nextcloud Music, Gonic, LMS, or any Subsonic-compatible server and sync its library into Luminous
+- Two-way server sync: plays, favourites, and ratings sync back to the server
+- Artist enrichment: MusicBrainz artist details, with portraits from fanart.tv and Wikidata
+- Album links to Discogs, AllMusic, Wikidata, and lyrics providers
+- Audio Pipeline inspector: decode format, sample rate, bit depth, gain, and output device, plus a playbar quality badge
+- Opus playback
+- Repeat Album mode
+- Smart playlists from folders
+- Share cards for playlists, artists, and personal stats
+- Official Flatpak from a self-hosted, auto-updating repo
 
 ## What's New in 2.0
 - Listening Stats: streaks, top artists and albums, and time-of-day listening patterns
@@ -16,6 +28,7 @@
 
 ## Core Features
 - Local audio library indexing with instant search across artists, albums, and songs
+- Remote sources: OpenSubsonic servers and WebDAV
 - Smart and auto playlists (built around decades, genres, and BPM)
 - Custom genre hierarchies via drag-and-drop sub-genre organization
 - Compact, always-on-top miniplayer
@@ -29,7 +42,7 @@
 
 ## Tech Stack & Architecture
 - Framework: Tauri v2 (native — no Electron)
-- Frontend: React / TypeScript / Tailwind CSS
+- Frontend: SvelteKit (Svelte 5) / TypeScript / Tailwind CSS
 - Core Backend: Rust
 - Lightweight, no subscriptions, no data collection
 

@@ -45,7 +45,7 @@
       "image": "https://esoltys.dev/luminous/luminous-social.png",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Windows, Linux",
-      "softwareVersion": "2.0",
+      "softwareVersion": "2.5",
       "inLanguage": ["en", "fr"],
       "sameAs": "https://github.com/esoltys/luminous",
       "downloadUrl": "https://github.com/esoltys/luminous/releases/latest",
@@ -91,7 +91,7 @@
       <!-- Hero -->
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero__intro">
-          <p class="hero__badge">Version 2.0</p>
+          <p class="hero__badge">Version 2.5</p>
           <h1 id="hero-title" class="hero__title" data-i18n="hero.title">A high-performance home for the music you already own.</h1>
           <p class="hero__sub" data-i18n="hero.sub">Luminous is a fast, local-first player for your own audio library. Your files, indexed, searchable, and beautifully played.</p>
 
@@ -169,57 +169,42 @@
 
       <!-- What's new -->
       <section class="section container" aria-labelledby="whats-new-title">
-        <h2 id="whats-new-title" class="section__title" data-i18n="whatsNew.title">What's New in 2.0</h2>
-        <ul class="card-grid">
+        <h2 id="whats-new-title" class="section__title" data-i18n="whatsNew.title">What's New</h2>
+        <ul class="card-grid card-grid--wide">
           <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.stats.title">Listening Stats</h3>
-            <p class="card__body" data-i18n="whatsNew.stats.body">See your streaks, top artists and albums, and when in the day you listen most.</p>
+            <div class="card__heading">
+              <h3 class="card__title" data-i18n="whatsNew.v25.title">Version 2.5</h3>
+              <span class="card__badge" data-i18n="whatsNew.badge">New</span>
+            </div>
+            <ul class="release-list">
+              <li data-i18n="whatsNew.v25.openSubsonic">OpenSubsonic streaming from Navidrome, Nextcloud Music, Gonic, and more</li>
+              <li data-i18n="whatsNew.v25.serverSync">Two-way server sync for plays, favourites, and ratings</li>
+              <li data-i18n="whatsNew.v25.artists">Artist profiles and portraits from MusicBrainz, fanart.tv, and Wikidata</li>
+              <li data-i18n="whatsNew.v25.albumLinks">Album links to Discogs, AllMusic, and Wikidata</li>
+              <li data-i18n="whatsNew.v25.pipeline">Audio Pipeline inspector and playbar quality badge</li>
+              <li data-i18n="whatsNew.v25.opus">Opus playback</li>
+              <li data-i18n="whatsNew.v25.repeatAlbum">Repeat Album mode</li>
+              <li data-i18n="whatsNew.v25.folderPlaylists">Smart playlists from folders</li>
+              <li data-i18n="whatsNew.v25.shareCards">Share cards for playlists, artists, and stats</li>
+              <li data-i18n="whatsNew.v25.flatpak">Official Flatpak</li>
+            </ul>
           </li>
           <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.organize.title">Redesigned Organize Files</h3>
-            <p class="card__body" data-i18n="whatsNew.organize.body">A clearer preview and destination flow when renaming and sorting your library.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.pin.title">Pin to Home</h3>
-            <p class="card__body" data-i18n="whatsNew.pin.body">Pin your favorite artists, albums, and playlists right to the Home screen.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title">Moment Mix</h3>
-            <p class="card__body" data-i18n="whatsNew.momentMix.body">An auto-generated playlist that shifts with the time of day.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title">MusicBrainz Picard</h3>
-            <p class="card__body" data-i18n="whatsNew.picard.body">Hand off tag lookups to Picard straight from the tag editor.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.webdav.title">WebDAV Support</h3>
-            <p class="card__body" data-i18n="whatsNew.webdav.body">Connect a WebDAV server and add its music straight into your library.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.artwork.title">Artist &amp; Album Artwork</h3>
-            <p class="card__body" data-i18n="whatsNew.artwork.body">A local-artwork scanner finds artist portraits, band logos, and fanart on disk.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.shareCards.title">Social Share Cards</h3>
-            <p class="card__body" data-i18n="whatsNew.shareCards.body">Share what you're listening to with beautiful social images.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.bios.title">Bios &amp; Links</h3>
-            <p class="card__body" data-i18n="whatsNew.bios.body">Add markdown bios and links to your artists and albums.</p>
-          </li>
-          <li class="card">
-            <span class="card__badge" data-i18n="whatsNew.badge">New</span>
-            <h3 class="card__title" data-i18n="whatsNew.discord.title">Discord &amp; ListenBrainz</h3>
-            <p class="card__body" data-i18n="whatsNew.discord.body">Share your live listening as a Discord presence and scrobble to ListenBrainz.</p>
+            <div class="card__heading">
+              <h3 class="card__title" data-i18n="whatsNew.v20.title">Version 2.0</h3>
+            </div>
+            <ul class="release-list">
+              <li data-i18n="whatsNew.v20.stats">Listening stats</li>
+              <li data-i18n="whatsNew.v20.organize">Redesigned Organize Files</li>
+              <li data-i18n="whatsNew.v20.pin">Pin to Home</li>
+              <li data-i18n="whatsNew.v20.momentMix">Moment Mix</li>
+              <li data-i18n="whatsNew.v20.picard">MusicBrainz Picard handoff</li>
+              <li data-i18n="whatsNew.v20.webdav">WebDAV libraries</li>
+              <li data-i18n="whatsNew.v20.artwork">Local artist and album artwork</li>
+              <li data-i18n="whatsNew.v20.shareCards">Social share cards</li>
+              <li data-i18n="whatsNew.v20.bios">Artist and album bios and links</li>
+              <li data-i18n="whatsNew.v20.discord">Discord presence and ListenBrainz scrobbling</li>
+            </ul>
           </li>
         </ul>
       </section>
