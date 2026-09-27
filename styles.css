@@ -49,18 +49,6 @@
   --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-/* Scroll Reveal Base */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Refined Hover States */
 .social-link, .pro-link, .stream-link, .location-tag, .other-project-item {
   transition: all 0.2s var(--ease-out-expo);
@@ -154,36 +142,20 @@ a:focus-visible {
   border-radius: var(--radius-sig);
 }
 
-/* Mono reserved for metadata, handles, labels, code contexts */
-.name-secondary,
+/* Metadata labels: tracked caps in the body serif, like place names on a topo map */
 .location-tag,
 .social-label,
 .stream-label,
 .pro-label,
-.status-badge,
 .featured-album-year,
-.other-project-language,
 .featured-project-year,
-.radio-distributor,
-.link-desc {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
-}
-
-/* ===== BACKGROUND CANVAS ===== */
-#bg-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
+.other-project-language {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #bg-canvas { display: none; }
-  body { background: var(--bg-dark); }
-
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -240,22 +212,6 @@ a:focus-visible {
   .topo-lines { opacity: 0.18; }
 }
 
-.header-grid::before {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: 20%;
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  animation: scanline 3s ease-in-out infinite;
-}
-
-@keyframes scanline {
-  0%, 100% { opacity: 0; transform: scaleX(0.5); }
-  50% { opacity: 1; transform: scaleX(1); }
-}
-
 .name-block {
   grid-column: 1;
   grid-row: 1;
@@ -274,7 +230,7 @@ a:focus-visible {
   font-size: var(--text-sm);
   color: var(--text-secondary);
   font-weight: 400;
-  letter-spacing: 0.05em;
+  font-style: italic;
   animation: fadeIn 1s ease-out 0.4s both;
   display: flex;
   align-items: center;
@@ -340,7 +296,6 @@ a:focus-visible {
   gap: 0.4rem;
   font-size: 0.75rem;
   color: var(--text-dim);
-  letter-spacing: 0.1em;
   padding: 0.3rem 0.7rem;
   border: var(--border-width) solid var(--surface);
   background: var(--bg-medium);
@@ -393,8 +348,6 @@ a:focus-visible {
 
 .social-label {
   font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   z-index: 1;
 }
 
@@ -433,11 +386,11 @@ a:focus-visible {
 
 .status-badge {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--accent);
   padding: 0.2rem 0.6rem;
   border: var(--border-width) solid var(--accent);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
   border-top-right-radius: var(--border-radius-sm);
   border-bottom-left-radius: var(--border-radius-sm);
 }
@@ -489,8 +442,6 @@ a:focus-visible {
 
 .pro-label {
   font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   z-index: 1;
 }
 
@@ -565,8 +516,6 @@ a:focus-visible {
 
 .stream-label {
   font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   z-index: 1;
 }
 
@@ -761,7 +710,7 @@ a:focus-visible {
 .featured-album-year,
 .featured-project-year {
   color: var(--text-secondary);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   margin: 0;
   white-space: nowrap;
 }

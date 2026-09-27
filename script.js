@@ -24,43 +24,10 @@
     }, 2600);
   }
 
-  // Reveal Animations on Scroll
-  function initRevealObserver() {
-    var reveals = document.querySelectorAll('.reveal');
-    if (!reveals || !reveals.length) return;
-
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
-
-      reveals.forEach(function (el) {
-        observer.observe(el);
-      });
-    } else {
-      // Fallback for older browsers
-      reveals.forEach(function (el) {
-        el.classList.add('visible');
-      });
-    }
-  }
-
   // Initialize on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      initThemeCycle();
-      initRevealObserver();
-    });
+    document.addEventListener('DOMContentLoaded', initThemeCycle);
   } else {
     initThemeCycle();
-    initRevealObserver();
   }
 })();
