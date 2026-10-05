@@ -52,4 +52,4 @@
 - Flatpak repo (Linux, auto-updating): https://esoltys.dev/flatpak/esoltys.flatpakrepo
 - Releases (Linux .deb / .rpm and more): https://github.com/esoltys/luminous/releases/latest
 - Issues: https://github.com/esoltys/luminous/issues
-- Discussions: https://github.com/esoltys/luminous/discussions
+- Discussions: https://www.reddit.com/r/LuminousMusicPlayer/
