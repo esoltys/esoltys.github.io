@@ -1,32 +1,33 @@
 /* Luminous landing page */
 
 :root {
-  /* Palette: muted warm charcoal (dark default), warm paper in light */
+  /* Palette: muted warm charcoal / warm paper. Follows the system unless
+     [data-theme] is set (see the header toggle in main.js). */
   color-scheme: dark light;
-  --bg: #191918;
-  --bg-header: rgb(25 25 24 / 0.82);
-  --surface: #222220;
-  --surface-code: #2c2c29;
-  --surface-button: #2a2a27;
-  --surface-tint: rgb(245 241 233 / 0.05);
-  --border-subtle: #2c2c29;
-  --border: #38382f;
-  --border-strong: #4a4a43;
-  --text: #f5f1e9;
-  --text-nav: #d2cec4;
-  --text-muted: #b7b4ab;
-  --text-dim: #928f86;       /* passes WCAG AA on --bg at small sizes */
-  --link: #9ba4ff;
-  --link-hover: #c3c9ff;
+  --bg: light-dark(#eee9df, #191918);
+  --bg-header: light-dark(rgb(238 233 223 / 0.85), rgb(25 25 24 / 0.82));
+  --surface: light-dark(#e5e0d4, #222220);
+  --surface-code: light-dark(#dbd5c7, #2c2c29);
+  --surface-button: light-dark(#e5e0d4, #2a2a27);
+  --surface-tint: light-dark(rgb(25 25 24 / 0.05), rgb(245 241 233 / 0.05));
+  --border-subtle: light-dark(#dcd6c8, #2c2c29);
+  --border: light-dark(#cdc7b8, #38382f);
+  --border-strong: light-dark(#b5af9f, #4a4a43);
+  --text: light-dark(#191918, #f5f1e9);
+  --text-nav: light-dark(#3a3934, #d2cec4);
+  --text-muted: light-dark(#55534c, #b7b4ab);
+  --text-dim: light-dark(#6b685f, #928f86);
+  --link: light-dark(#3a45b0, #9ba4ff);
+  --link-hover: light-dark(#232c85, #c3c9ff);
   --brand: #4f5bd5;
-  --indigo: #8b93d5;
-  --amber: #ffb648;
-  --on-amber: #191918;
-  --button-edge: rgb(245 241 233 / 0.12);
-  --button-edge-hover: rgb(245 241 233 / 0.28);
-  --glow-strong: rgb(79 91 213 / 0.14);
-  --glow-soft: rgb(98 111 232 / 0.10);
-  --shadow-color: rgb(0 0 0 / 0.6);
+  --indigo: light-dark(#4f58a8, #8b93d5);
+  --amber: light-dark(#8f5508, #ffb648);
+  --on-amber: light-dark(#fff, #191918);
+  --button-edge: light-dark(rgb(25 25 24 / 0.16), rgb(245 241 233 / 0.12));
+  --button-edge-hover: light-dark(rgb(25 25 24 / 0.4), rgb(245 241 233 / 0.28));
+  --glow-strong: light-dark(rgb(79 91 213 / 0.10), rgb(79 91 213 / 0.14));
+  --glow-soft: light-dark(rgb(79 91 213 / 0.06), rgb(98 111 232 / 0.10));
+  --shadow-color: light-dark(rgb(60 50 30 / 0.25), rgb(0 0 0 / 0.6));
 
   /* Typography */
   --font-body: "Inter", system-ui, sans-serif;
@@ -42,41 +43,29 @@
   --shadow-frame: 0 24px 60px -24px var(--shadow-color);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #eee9df;
-    --bg-header: rgb(238 233 223 / 0.85);
-    --surface: #e5e0d4;
-    --surface-code: #dbd5c7;
-    --surface-button: #e5e0d4;
-    --surface-tint: rgb(25 25 24 / 0.05);
-    --border-subtle: #dcd6c8;
-    --border: #cdc7b8;
-    --border-strong: #b5af9f;
-    --text: #191918;
-    --text-nav: #3a3934;
-    --text-muted: #55534c;
-    --text-dim: #6b685f;
-    --link: #3a45b0;
-    --link-hover: #232c85;
-    --indigo: #4f58a8;
-    --amber: #8f5508;
-    --on-amber: #fff;
-    --button-edge: rgb(25 25 24 / 0.16);
-    --button-edge-hover: rgb(25 25 24 / 0.4);
-    --glow-strong: rgb(79 91 213 / 0.10);
-    --glow-soft: rgb(79 91 213 / 0.06);
-    --shadow-color: rgb(60 50 30 / 0.25);
-  }
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 /* The icon SVGs are fixed light grey; darken them on the light palette. */
+.platform img.icon,
+.alt-downloads img,
+.social-links img {
+  filter: var(--icon-filter, none);
+}
+
 @media (prefers-color-scheme: light) {
-  .platform img.icon,
-  .alt-downloads img,
-  .social-links img {
-    filter: brightness(0.22);
+  :root:not([data-theme="dark"]) {
+    --icon-filter: brightness(0.22);
   }
+}
+
+[data-theme="light"] {
+  --icon-filter: brightness(0.22);
 }
 
 /* Base */
@@ -275,6 +264,41 @@ a:hover {
 .lang-switch__button[aria-pressed="true"] {
   background: var(--text);
   color: var(--bg);
+}
+
+/* Theme toggle: main.js sets data-theme-applied to the theme in effect and the
+   button shows the icon of the theme a click switches to. */
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+.theme-toggle[hidden] {
+  display: none;
+}
+
+.theme-toggle__sun {
+  display: none;
+}
+
+[data-theme-applied="dark"] .theme-toggle__sun {
+  display: block;
+}
+
+[data-theme-applied="dark"] .theme-toggle__moon {
+  display: none;
 }
 
 /* Shared controls */

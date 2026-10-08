@@ -137,5 +137,36 @@ function initThemeCycle(container) {
   document.addEventListener("visibilitychange", update);
 }
 
+// Without a saved choice the page follows the system theme; the toggle then
+// pins the opposite one. Needs JavaScript, so the button starts hidden.
+function initThemeToggle() {
+  const THEME_KEY = "luminous-theme";
+  const root = document.documentElement;
+  const button = document.querySelector(".theme-toggle");
+  const systemLight = matchMedia("(prefers-color-scheme: light)");
+
+  const applied = () => root.dataset.theme ?? (systemLight.matches ? "light" : "dark");
+  const sync = () => {
+    root.dataset.themeApplied = applied();
+    button.setAttribute("aria-pressed", String(applied() === "light"));
+  };
+
+  button.addEventListener("click", () => {
+    const next = applied() === "light" ? "dark" : "light";
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch {
+      // Not persisting is harmless.
+    }
+    sync();
+  });
+  systemLight.addEventListener("change", sync);
+
+  button.hidden = false;
+  sync();
+}
+
 initLanguageSwitch();
+initThemeToggle();
 document.querySelectorAll("[data-theme-cycle]").forEach(initThemeCycle);
