@@ -167,6 +167,11 @@ function initThemeToggle() {
   sync();
 }
 
+// A missing light screenshot just falls back to its dark twin.
+document.querySelectorAll(".shot-light").forEach((img) => {
+  img.addEventListener("error", () => img.remove());
+});
+
 initLanguageSwitch();
 initThemeToggle();
 document.querySelectorAll("[data-theme-cycle]").forEach(initThemeCycle);

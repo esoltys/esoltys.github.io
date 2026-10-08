@@ -177,6 +177,31 @@ a:hover {
   box-shadow: var(--shadow-frame);
 }
 
+/* Light-theme screenshots (<name>-light-EN.png) sit right after their dark
+   twin. They stay hidden until the light theme is in effect; if the file is
+   missing, main.js removes the element and the dark shot keeps showing. */
+.shot-light {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .shot-light {
+    display: block;
+  }
+
+  :root:not([data-theme="dark"]) .shot-dark:has(+ .shot-light) {
+    display: none;
+  }
+}
+
+[data-theme="light"] .shot-light {
+  display: block;
+}
+
+[data-theme="light"] .shot-dark:has(+ .shot-light) {
+  display: none;
+}
+
 /* Header */
 .site-header {
   position: sticky;
