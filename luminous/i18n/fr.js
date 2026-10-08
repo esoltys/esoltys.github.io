@@ -97,7 +97,7 @@ export default {
   "features.organize.title": "Organisez vos fichiers, automatiquement.",
   "features.organize.body": "Pointez Luminous vers un dossier en désordre et il trie les fichiers en une structure claire artiste/album sur le disque, en les renommant au passage — votre bibliothèque reste organisée sans que vous n'ayez à y toucher.",
 
-  "cta.title": "Prêt quand vous l'êtes.",
+  "cta.title": "Obtenir Luminous",
   "cta.sub": "Téléchargez Luminous et transformez votre dossier de fichiers en une vraie bibliothèque musicale.",
 
   "footer.license": "Sous licence MIT.",
