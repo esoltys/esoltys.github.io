@@ -1,24 +1,33 @@
 /* Luminous landing page */
 
 :root {
-  /* Palette */
-  --bg: #08090c;
-  --bg-header: rgb(8 9 12 / 0.78);
-  --surface: #101218;
-  --surface-code: #1a1c24;
-  --surface-button: #202020;
-  --border-subtle: #1a1c24;
-  --border: #23262f;
-  --border-strong: #2c2f3a;
-  --text: #f1f3f8;
-  --text-nav: #c7cadb;
-  --text-muted: #9aa0b4;
-  --text-dim: #7a7f94;       /* lightest shade that still passes WCAG AA on --bg at small sizes */
-  --link: #9ba4ff;
-  --link-hover: #c3c9ff;
+  /* Palette: muted warm charcoal / warm paper. Follows the system unless
+     [data-theme] is set (see the header toggle in main.js). */
+  color-scheme: dark light;
+  --bg: light-dark(#eee9df, #191918);
+  --bg-header: light-dark(rgb(238 233 223 / 0.85), rgb(25 25 24 / 0.82));
+  --surface: light-dark(#e5e0d4, #222220);
+  --surface-code: light-dark(#dbd5c7, #2c2c29);
+  --surface-button: light-dark(#e5e0d4, #2a2a27);
+  --surface-tint: light-dark(rgb(25 25 24 / 0.05), rgb(245 241 233 / 0.05));
+  --border-subtle: light-dark(#dcd6c8, #2c2c29);
+  --border: light-dark(#cdc7b8, #38382f);
+  --border-strong: light-dark(#b5af9f, #4a4a43);
+  --text: light-dark(#191918, #f5f1e9);
+  --text-nav: light-dark(#3a3934, #d2cec4);
+  --text-muted: light-dark(#55534c, #b7b4ab);
+  --text-dim: light-dark(#6b685f, #928f86);
+  --link: light-dark(#3a45b0, #9ba4ff);
+  --link-hover: light-dark(#232c85, #c3c9ff);
   --brand: #4f5bd5;
-  --indigo: #8b93d5;
-  --amber: #ffb648;
+  --indigo: light-dark(#4f58a8, #8b93d5);
+  --amber: light-dark(#8f5508, #ffb648);
+  --on-amber: light-dark(#fff, #191918);
+  --button-edge: light-dark(rgb(25 25 24 / 0.16), rgb(245 241 233 / 0.12));
+  --button-edge-hover: light-dark(rgb(25 25 24 / 0.4), rgb(245 241 233 / 0.28));
+  --glow-strong: light-dark(rgb(79 91 213 / 0.10), rgb(79 91 213 / 0.14));
+  --glow-soft: light-dark(rgb(79 91 213 / 0.06), rgb(98 111 232 / 0.10));
+  --shadow-color: light-dark(rgb(60 50 30 / 0.25), rgb(0 0 0 / 0.6));
 
   /* Typography */
   --font-body: "Inter", system-ui, sans-serif;
@@ -31,7 +40,32 @@
   --radius-pill: 9999px;
   --radius-card: 12px;
   --radius-frame: 14px;
-  --shadow-frame: 0 24px 60px -24px rgb(0 0 0 / 0.6);
+  --shadow-frame: 0 24px 60px -24px var(--shadow-color);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* The icon SVGs are fixed light grey; darken them on the light palette. */
+.platform img.icon,
+.alt-downloads img,
+.social-links img {
+  filter: var(--icon-filter, none);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --icon-filter: brightness(0.22);
+  }
+}
+
+[data-theme="light"] {
+  --icon-filter: brightness(0.22);
 }
 
 /* Base */
@@ -143,6 +177,31 @@ a:hover {
   box-shadow: var(--shadow-frame);
 }
 
+/* Light-theme screenshots (<name>-light-EN.png) sit right after their dark
+   twin. They stay hidden until the light theme is in effect; if the file is
+   missing, main.js removes the element and the dark shot keeps showing. */
+.shot-light {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .shot-light {
+    display: block;
+  }
+
+  :root:not([data-theme="dark"]) .shot-dark:has(+ .shot-light) {
+    display: none;
+  }
+}
+
+[data-theme="light"] .shot-light {
+  display: block;
+}
+
+[data-theme="light"] .shot-dark:has(+ .shot-light) {
+  display: none;
+}
+
 /* Header */
 .site-header {
   position: sticky;
@@ -232,6 +291,41 @@ a:hover {
   color: var(--bg);
 }
 
+/* Theme toggle: main.js sets data-theme-applied to the theme in effect and the
+   button shows the icon of the theme a click switches to. */
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+.theme-toggle[hidden] {
+  display: none;
+}
+
+.theme-toggle__sun {
+  display: none;
+}
+
+[data-theme-applied="dark"] .theme-toggle__sun {
+  display: block;
+}
+
+[data-theme-applied="dark"] .theme-toggle__moon {
+  display: none;
+}
+
 /* Shared controls */
 .button-row {
   display: flex;
@@ -249,7 +343,7 @@ a:hover {
   align-items: center;
   height: 44px;
   padding-inline: 20px;
-  border: 1px solid rgb(255 255 255 / 0.1);
+  border: 1px solid var(--button-edge);
   border-radius: 4px;
   background: var(--surface-button);
   color: var(--text);
@@ -258,7 +352,7 @@ a:hover {
 }
 
 .button:hover {
-  border-color: rgb(255 255 255 / 0.25);
+  border-color: var(--button-edge-hover);
   color: var(--text);
 }
 
@@ -276,7 +370,7 @@ a:hover {
   left: 50%;
   width: 640px;
   height: 640px;
-  background: radial-gradient(circle, rgb(79 91 213 / 0.28), transparent 68%);
+  background: radial-gradient(circle, var(--glow-strong), transparent 68%);
   filter: blur(10px);
   transform: translateX(-50%);
   pointer-events: none;
@@ -293,9 +387,9 @@ a:hover {
 
 .hero__badge {
   padding: 7px 16px;
-  border: 1px solid rgb(255 182 72 / 0.35);
+  border: 1px solid color-mix(in srgb, var(--amber) 40%, transparent);
   border-radius: var(--radius-pill);
-  background: rgb(255 182 72 / 0.08);
+  background: color-mix(in srgb, var(--amber) 10%, transparent);
   color: var(--amber);
   font-size: 12.5px;
   font-weight: 600;
@@ -356,7 +450,7 @@ a:hover {
   padding: 6px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
-  background: rgb(255 255 255 / 0.05);
+  background: var(--surface-tint);
   color: var(--text-muted);
   font-size: 13px;
 }
@@ -370,7 +464,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: -40px;
-  background: radial-gradient(ellipse at center, rgb(98 111 232 / 0.22), transparent 70%);
+  background: radial-gradient(ellipse at center, var(--glow-soft), transparent 70%);
   filter: blur(6px);
   pointer-events: none;
 }
@@ -379,12 +473,12 @@ a:hover {
   position: relative;
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 40px 90px -30px rgb(0 0 0 / 0.7);
+  box-shadow: 0 40px 90px -30px var(--shadow-color);
 }
 
 /* Card sections (downloads, what's new) */
 .section {
-  padding-top: 64px;
+  padding-block: 64px;
 }
 
 .section__title {
@@ -409,16 +503,7 @@ a:hover {
   background: var(--surface);
 }
 
-.card--link {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: border-color 0.2s ease;
-}
 
-.card--link:hover {
-  border-color: var(--border-strong);
-}
 
 .card__heading {
   display: flex;
@@ -435,10 +520,6 @@ a:hover {
   text-wrap: pretty;
 }
 
-.card--link .card__title {
-  margin-bottom: 0;
-  font-size: 15px;
-}
 
 .card__body {
   flex: 1;
@@ -448,20 +529,8 @@ a:hover {
   text-wrap: pretty;
 }
 
-.card--link .card__body {
-  font-size: 12.5px;
-  line-height: 1.55;
-}
 
-.card__cta {
-  color: var(--link);
-  font-size: 12.5px;
-  font-weight: 600;
-}
 
-.card__cta::after {
-  content: " →";
-}
 
 .card__badge {
   display: inline-block;
@@ -469,7 +538,7 @@ a:hover {
   padding: 3px 10px;
   border-radius: var(--radius-pill);
   background: var(--amber);
-  color: var(--bg);
+  color: var(--on-amber);
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -478,6 +547,105 @@ a:hover {
 
 .card-grid--wide {
   grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+}
+
+/* Download heading */
+.download-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.download-intro__title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.4vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.download-intro__sub {
+  max-width: 480px;
+  color: var(--text-muted);
+  font-size: 15.5px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+/* Download options: one column per platform, a single primary action each */
+.download-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 16px;
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.platform__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.platform__note {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.button--primary {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.button--primary:hover {
+  border-color: var(--link-hover);
+  background: color-mix(in srgb, var(--brand) 82%, #fff);
+  color: #fff;
+}
+
+.alt-downloads {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin-top: 6px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.alt-downloads a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.alt-downloads__desc {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-dim);
+  font-size: 12.5px;
+  line-height: 1.5;
 }
 
 /* Point-form release notes: heading row first, then the list. */
@@ -518,30 +686,63 @@ a:hover {
   background: var(--indigo);
 }
 
-/* Features */
+/* Features: full-width bands. "base" matches the page theme, "flip" is the
+   opposite theme, "raised" is a lifted base surface, and "accent" is the brand
+   colour. Scoped color-scheme re-resolves every light-dark() token inside. */
+.band {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.band--raised {
+  background: var(--surface);
+}
+
+.band--flip {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .band--flip {
+    color-scheme: dark;
+  }
+}
+
+[data-theme="dark"] .band--flip {
+  color-scheme: light;
+}
+
+[data-theme="light"] .band--flip {
+  color-scheme: dark;
+}
+
+.band--accent {
+  --text: #fff;
+  --text-muted: rgb(255 255 255 / 0.92);
+  --indigo: #eef0ff;
+  --border: rgb(255 255 255 / 0.28);
+  --surface-code: rgb(255 255 255 / 0.16);
+  --shadow-color: rgb(10 14 70 / 0.45);
+  border-top-color: transparent;
+  background: var(--brand);
+}
+
 .features {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-  padding-block: 120px 40px;
+  padding-bottom: 0;
 }
 
-.feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-}
-
-.feature-list .feature {
+.feature-list .feature__inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 56px;
+  padding-block: 96px;
 }
 
 /* Alternate the media side on wide screens. Text stays first in the DOM,
    so when the row wraps on narrow screens the text always sits above. */
-.feature-list .feature:nth-child(even) {
+.feature-list .feature:nth-child(even) .feature__inner {
   flex-direction: row-reverse;
 }
 
@@ -578,10 +779,6 @@ a:hover {
   text-transform: uppercase;
 }
 
-.feature:nth-child(even) .feature__overline {
-  color: var(--amber);
-}
-
 .feature__title {
   font-family: var(--font-display);
   font-size: 30px;
@@ -604,6 +801,10 @@ a:hover {
   background: var(--surface-code);
   font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
   font-size: 0.92em;
+}
+
+.feature-band .container {
+  padding-block: 96px;
 }
 
 .feature-grid {
@@ -644,40 +845,6 @@ a:hover {
 
 .theme-cycle__frame.is-active {
   opacity: 1;
-}
-
-/* Closing call to action */
-.cta {
-  border-top: 1px solid var(--border-subtle);
-}
-
-.cta__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding-block: 96px;
-  text-align: center;
-}
-
-.cta__title {
-  font-family: var(--font-display);
-  font-size: clamp(26px, 3.4vw, 36px);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  text-wrap: balance;
-}
-
-.cta__sub {
-  max-width: 480px;
-  color: var(--text-muted);
-  font-size: 15.5px;
-  line-height: 1.6;
-  text-wrap: pretty;
-}
-
-.cta .button-row {
-  margin-top: 8px;
 }
 
 /* Footer */
@@ -739,8 +906,7 @@ a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .theme-cycle__frame,
-  .card--link {
+  .theme-cycle__frame {
     transition: none;
   }
 }

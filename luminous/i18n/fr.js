@@ -19,9 +19,7 @@ export default {
   "stats.noSubscription": "Sans abonnement",
   "stats.noDataCollection": "Aucune collecte de données",
 
-  "download.title": "Choisissez votre plateforme",
   "download.store.desc": "Windows 10 et 11 — s'installe et se met à jour automatiquement.",
-  "download.store.cta": "Voir dans le Store",
   "download.flatpak.desc": "Linux — ajoutez le dépôt esoltys.dev une fois, puis les mises à jour se font automatiquement.",
   "download.flatpak.cta": "Ajouter le dépôt et installer",
   "download.deb.title": "Paquet .deb",
@@ -99,7 +97,7 @@ export default {
   "features.organize.title": "Organisez vos fichiers, automatiquement.",
   "features.organize.body": "Pointez Luminous vers un dossier en désordre et il trie les fichiers en une structure claire artiste/album sur le disque, en les renommant au passage — votre bibliothèque reste organisée sans que vous n'ayez à y toucher.",
 
-  "cta.title": "Prêt quand vous l'êtes.",
+  "cta.title": "Obtenir Luminous",
   "cta.sub": "Téléchargez Luminous et transformez votre dossier de fichiers en une vraie bibliothèque musicale.",
 
   "footer.license": "Sous licence MIT.",
