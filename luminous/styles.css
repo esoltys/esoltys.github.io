@@ -686,30 +686,63 @@ a:hover {
   background: var(--indigo);
 }
 
-/* Features */
+/* Features: full-width bands. "base" matches the page theme, "flip" is the
+   opposite theme, "raised" is a lifted base surface, and "accent" is the brand
+   colour. Scoped color-scheme re-resolves every light-dark() token inside. */
+.band {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.band--raised {
+  background: var(--surface);
+}
+
+.band--flip {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .band--flip {
+    color-scheme: dark;
+  }
+}
+
+[data-theme="dark"] .band--flip {
+  color-scheme: light;
+}
+
+[data-theme="light"] .band--flip {
+  color-scheme: dark;
+}
+
+.band--accent {
+  --text: #fff;
+  --text-muted: rgb(255 255 255 / 0.92);
+  --indigo: #eef0ff;
+  --border: rgb(255 255 255 / 0.28);
+  --surface-code: rgb(255 255 255 / 0.16);
+  --shadow-color: rgb(10 14 70 / 0.45);
+  border-top-color: transparent;
+  background: var(--brand);
+}
+
 .features {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-  padding-block: 120px 40px;
+  padding-bottom: 0;
 }
 
-.feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-}
-
-.feature-list .feature {
+.feature-list .feature__inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 56px;
+  padding-block: 96px;
 }
 
 /* Alternate the media side on wide screens. Text stays first in the DOM,
    so when the row wraps on narrow screens the text always sits above. */
-.feature-list .feature:nth-child(even) {
+.feature-list .feature:nth-child(even) .feature__inner {
   flex-direction: row-reverse;
 }
 
@@ -746,10 +779,6 @@ a:hover {
   text-transform: uppercase;
 }
 
-.feature:nth-child(even) .feature__overline {
-  color: var(--amber);
-}
-
 .feature__title {
   font-family: var(--font-display);
   font-size: 30px;
@@ -772,6 +801,10 @@ a:hover {
   background: var(--surface-code);
   font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
   font-size: 0.92em;
+}
+
+.feature-band .container {
+  padding-block: 96px;
 }
 
 .feature-grid {
