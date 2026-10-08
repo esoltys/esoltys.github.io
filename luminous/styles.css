@@ -478,7 +478,7 @@ a:hover {
 
 /* Card sections (downloads, what's new) */
 .section {
-  padding-top: 64px;
+  padding-block: 64px;
 }
 
 .section__title {
