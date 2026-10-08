@@ -19,9 +19,7 @@ export default {
   "stats.noSubscription": "Sans abonnement",
   "stats.noDataCollection": "Aucune collecte de données",
 
-  "download.title": "Choisissez votre plateforme",
   "download.store.desc": "Windows 10 et 11 — s'installe et se met à jour automatiquement.",
-  "download.store.cta": "Voir dans le Store",
   "download.flatpak.desc": "Linux — ajoutez le dépôt esoltys.dev une fois, puis les mises à jour se font automatiquement.",
   "download.flatpak.cta": "Ajouter le dépôt et installer",
   "download.deb.title": "Paquet .deb",
