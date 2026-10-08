@@ -126,40 +126,6 @@
         </div>
       </section>
 
-      <!-- Download options -->
-      <section id="download" class="section container" aria-labelledby="download-title">
-        <h2 id="download-title" class="section__title" data-i18n="download.title">Choose your platform</h2>
-        <div class="download-options">
-          <div class="platform">
-            <h3 class="platform__label">
-              <!-- Simple Icons omits the Microsoft marks for trademark reasons, so a generic four-pane tile stands in. -->
-              <svg class="icon" width="20" height="20" viewBox="0 0 18 18" aria-hidden="true"><rect width="8" height="8" fill="#F25022"/><rect x="10" width="8" height="8" fill="#7FBA00"/><rect y="10" width="8" height="8" fill="#00A4EF"/><rect x="10" y="10" width="8" height="8" fill="#FFB900"/></svg>
-              Windows
-            </h3>
-            <a class="button button--primary" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_download" target="_blank" rel="noopener noreferrer" data-i18n="download.store.cta">View in Store</a>
-            <p class="platform__note" data-i18n="download.store.desc">Windows 10 &amp; 11 — installs and updates automatically.</p>
-          </div>
-          <div class="platform">
-            <h3 class="platform__label">
-              <img class="icon" src="./landing-assets/icons/flatpak.svg" alt="" width="20" height="20">
-              Linux
-            </h3>
-            <a class="button button--primary" href="https://esoltys.dev/flatpak/esoltys.flatpakrepo" target="_blank" rel="noopener noreferrer" data-i18n="download.flatpak.cta">Add repo &amp; install</a>
-            <p class="platform__note" data-i18n="download.flatpak.desc">Linux — add the esoltys.dev repo once, then updates automatically.</p>
-            <ul class="alt-downloads">
-              <li>
-                <a href="https://github.com/esoltys/luminous/releases/latest" target="_blank" rel="noopener noreferrer"><img class="icon" src="./landing-assets/icons/debian.svg" alt="" width="16" height="16"><span data-i18n="download.deb.title">.deb package</span></a>
-                <span class="alt-downloads__desc" data-i18n="download.deb.desc">Debian, Ubuntu, and derivatives. Updated via your package manager.</span>
-              </li>
-              <li>
-                <a href="https://github.com/esoltys/luminous/releases/latest" target="_blank" rel="noopener noreferrer"><img class="icon" src="./landing-assets/icons/fedora.svg" alt="" width="16" height="16"><span data-i18n="download.rpm.title">.rpm package</span></a>
-                <span class="alt-downloads__desc" data-i18n="download.rpm.desc">Fedora, openSUSE, and derivatives. Updated via your package manager.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <!-- What's new -->
       <section class="section container" aria-labelledby="whats-new-title">
         <h2 id="whats-new-title" class="section__title" data-i18n="whatsNew.title">What's New</h2>
@@ -323,6 +289,40 @@
         </div>
       </section>
 
+      <!-- Download options -->
+      <section id="download" class="section container" aria-labelledby="download-title">
+        <h2 id="download-title" class="section__title" data-i18n="download.title">Choose your platform</h2>
+        <div class="download-options">
+          <div class="platform">
+            <h3 class="platform__label">
+              <!-- Simple Icons omits the Microsoft marks for trademark reasons, so a generic four-pane tile stands in. -->
+              <svg class="icon" width="20" height="20" viewBox="0 0 18 18" aria-hidden="true"><rect width="8" height="8" fill="#F25022"/><rect x="10" width="8" height="8" fill="#7FBA00"/><rect y="10" width="8" height="8" fill="#00A4EF"/><rect x="10" y="10" width="8" height="8" fill="#FFB900"/></svg>
+              Windows
+            </h3>
+            <a class="button button--primary" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_download" target="_blank" rel="noopener noreferrer" data-i18n="download.store.cta">View in Store</a>
+            <p class="platform__note" data-i18n="download.store.desc">Windows 10 &amp; 11 — installs and updates automatically.</p>
+          </div>
+          <div class="platform">
+            <h3 class="platform__label">
+              <img class="icon" src="./landing-assets/icons/flatpak.svg" alt="" width="20" height="20">
+              Linux
+            </h3>
+            <a class="button button--primary" href="https://esoltys.dev/flatpak/esoltys.flatpakrepo" target="_blank" rel="noopener noreferrer" data-i18n="download.flatpak.cta">Add repo &amp; install</a>
+            <p class="platform__note" data-i18n="download.flatpak.desc">Linux — add the esoltys.dev repo once, then updates automatically.</p>
+            <ul class="alt-downloads">
+              <li>
+                <a href="https://github.com/esoltys/luminous/releases/latest" target="_blank" rel="noopener noreferrer"><img class="icon" src="./landing-assets/icons/debian.svg" alt="" width="16" height="16"><span data-i18n="download.deb.title">.deb package</span></a>
+                <span class="alt-downloads__desc" data-i18n="download.deb.desc">Debian, Ubuntu, and derivatives. Updated via your package manager.</span>
+              </li>
+              <li>
+                <a href="https://github.com/esoltys/luminous/releases/latest" target="_blank" rel="noopener noreferrer"><img class="icon" src="./landing-assets/icons/fedora.svg" alt="" width="16" height="16"><span data-i18n="download.rpm.title">.rpm package</span></a>
+                <span class="alt-downloads__desc" data-i18n="download.rpm.desc">Fedora, openSUSE, and derivatives. Updated via your package manager.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <!-- Closing call to action -->
       <section class="cta" aria-labelledby="cta-title">
         <div class="container cta__inner">
@@ -332,7 +332,6 @@
             <a class="store-badge" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi" target="_blank" rel="noopener noreferrer">
               <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" width="161" height="44" loading="lazy">
             </a>
-            <a class="button" href="#download" data-i18n="hero.moreOptions">More download options</a>
           </div>
         </div>
       </section>
