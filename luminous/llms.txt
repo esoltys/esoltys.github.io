@@ -1,6 +1,22 @@
 # Luminous
 
-> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 2.5.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 3.0, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+
+## What's New in 3.0
+- Seven languages: German, Spanish, Italian, Russian, and Ukrainian join English and French, with regional English (US, UK) and French (France) variants, a translated user guide, and the bundled Fira Sans font (including Cyrillic)
+- Love and rate: love a song (or dislike it with a right-click on the heart) and give it 1–5 stars independently; sign in with MusicBrainz to sync loves and ratings with ListenBrainz and CritiqueBrainz
+- Parametric EQ: up to 20 free-frequency bell or shelf bands you drag on the response graph or type exactly, AutoEq headphone profile import, and presets with response-curve previews
+- Lyrics: live lyrics in the miniplayer, word-by-word sync, timing offset, right-to-left text, and .srt/.vtt sidecar files
+- Info sidebar: the right panel follows what you're viewing — the selected song, album, or artist — and can be unpinned into a hover overlay
+- Pinned playlists, albums, and artists in the sidebar, grids instead of carousels, and a Cards/Rows toggle
+- Auto-organize: new files and tag changes are moved into your folder pattern as they arrive
+- Portable mode with a standalone Windows ZIP; library folders re-link when a drive letter changes
+- Much faster first and repeat WebDAV syncs for large libraries, with a report of files that failed to sync
+- fanart.tv logos, backgrounds, and disc art; opt-in sidecar artwork; upcoming concerts on artist pages
+- Auto Continue keeps playing similar music when the queue runs out
+- Online/Offline toggle that turns off every online source and service
+- Supporter add-on themes from the Microsoft Store, and setting Luminous as the default player on Windows
+- AppImage is back for Linux
 
 ## What's New in 2.5
 - OpenSubsonic streaming: connect Navidrome, Nextcloud Music, Gonic, LMS, or any Subsonic-compatible server and sync its library into Luminous
@@ -28,17 +44,23 @@
 
 ## Core Features
 - Local audio library indexing with instant search across artists, albums, and songs
+- Gapless playback for MP3, FLAC, Opus, WAV, and other formats
 - Remote sources: OpenSubsonic servers and WebDAV
+- Artist pages filled in automatically from MusicBrainz and fanart.tv: logos, artwork, bio, links, and upcoming concerts
+- Info sidebar with details for the song, album, or artist you're viewing
 - Smart and auto playlists (built around decades, genres, and BPM)
 - Custom genre hierarchies via drag-and-drop sub-genre organization
-- Compact, always-on-top miniplayer
+- Love and 1–5 star ratings, synced with ListenBrainz when signed in with MusicBrainz
+- Compact, always-on-top miniplayer with live lyrics
 - Predefined and dynamic (cover-art-driven) themes
-- Time-synced lyrics with inline editing
+- Time-synced lyrics, line by line or word by word, with inline editing
 - Advanced `field:value` search syntax (e.g. `genre:rock`), savable as smart playlists
 - Built-in tag editor for single or bulk metadata edits, with MusicBrainz Picard handoff
-- 10-band graphic EQ with genre presets, plus a 20-band parametric EQ
-- Automatic file organization into a clean artist/album folder structure
-- Available in English and French
+- 10-band graphic EQ with genre presets, plus a 20-band free-frequency parametric EQ with AutoEq headphone profiles
+- File organization into folders from your own naming template, automatically as new music arrives
+- Listening stats: streaks, top artists and albums, and time-of-day patterns
+- Portable mode for running from a USB drive
+- Available in English, French, German, Spanish, Italian, Russian, and Ukrainian
 
 ## Tech Stack & Architecture
 - Framework: Tauri v2 (native — no Electron)
@@ -50,6 +72,6 @@
 - Microsoft Store: https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi
 - GitHub Repository: https://github.com/esoltys/luminous
 - Flatpak repo (Linux, auto-updating): https://esoltys.dev/flatpak/esoltys.flatpakrepo
-- Releases (Linux .deb / .rpm and more): https://github.com/esoltys/luminous/releases/latest
+- Releases (Windows portable ZIP, Linux .deb / .rpm / AppImage, and more): https://github.com/esoltys/luminous/releases/latest
 - Issues: https://github.com/esoltys/luminous/issues
 - Discussions: https://www.reddit.com/r/LuminousMusicPlayer/

@@ -43,6 +43,13 @@
   --shadow-frame: 0 24px 60px -24px var(--shadow-color);
 }
 
+/* Expose has no Cyrillic glyphs; set Cyrillic pages' headings wholly in Inter
+   rather than mixing faces word by word. */
+:root:lang(ru),
+:root:lang(uk) {
+  --font-display: "Inter", system-ui, sans-serif;
+}
+
 [data-theme="light"] {
   color-scheme: light;
 }
@@ -264,21 +271,23 @@ a:hover {
   color: var(--text);
 }
 
-.lang-switch {
-  display: flex;
-  gap: 2px;
-  padding: 3px;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-pill);
+/* Language menu: a pill trigger showing the active code, opening a list of
+   native language names. Revealed and wired up by main.js. */
+.lang-menu {
+  position: relative;
 }
 
-.lang-switch[hidden] {
+.lang-menu[hidden] {
   display: none;
 }
 
-.lang-switch__button {
-  padding: 6px 12px;
-  border: none;
+.lang-menu__button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px 0 11px;
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-pill);
   background: transparent;
   color: var(--text-muted);
@@ -286,9 +295,71 @@ a:hover {
   cursor: pointer;
 }
 
-.lang-switch__button[aria-pressed="true"] {
-  background: var(--text);
-  color: var(--bg);
+.lang-menu__button:hover,
+.lang-menu__button[aria-expanded="true"] {
+  color: var(--text);
+}
+
+.lang-menu__chevron {
+  transition: transform 0.15s ease;
+}
+
+.lang-menu__button[aria-expanded="true"] .lang-menu__chevron {
+  transform: rotate(180deg);
+}
+
+.lang-menu__list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+  display: grid;
+  min-width: 168px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: 0 16px 40px -16px var(--shadow-color);
+}
+
+.lang-menu__list[hidden] {
+  display: none;
+}
+
+.lang-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-nav);
+  font: 500 14px var(--font-body);
+  text-align: start;
+  cursor: pointer;
+}
+
+.lang-menu__item:hover,
+.lang-menu__item:focus-visible {
+  outline: none;
+  background: var(--surface-tint);
+  color: var(--text);
+}
+
+.lang-menu__item[aria-checked="true"] {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.lang-menu__item[aria-checked="true"]::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
 }
 
 /* Theme toggle: main.js sets data-theme-applied to the theme in effect and the
@@ -830,7 +901,7 @@ a:hover {
 /* Dynamic-theme slideshow: frames are stacked and cross-faded by main.js */
 .theme-cycle {
   position: relative;
-  aspect-ratio: 646 / 480;
+  aspect-ratio: 1440 / 900;
 }
 
 .theme-cycle__frame {
@@ -898,6 +969,16 @@ a:hover {
   :root {
     --gutter: 20px;
     --header-height: 128px;  /* the header wraps onto two rows */
+  }
+
+  /* Keep the nav, language menu and theme toggle on one 375px-wide row. */
+  .site-header__actions,
+  .site-nav {
+    gap: 14px;
+  }
+
+  .site-nav__link .icon {
+    display: none;
   }
 
   .feature-grid {
