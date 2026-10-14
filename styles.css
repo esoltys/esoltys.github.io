@@ -571,7 +571,7 @@ a:focus-visible {
 .featured-project-artwork {
   position: relative;
   width: 100%;
-  aspect-ratio: 646 / 480;
+  aspect-ratio: 1440 / 900;
   overflow: hidden;
   border-radius: var(--border-radius-md);
   border: var(--border-width) solid var(--surface);

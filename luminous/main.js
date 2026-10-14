@@ -1,13 +1,18 @@
 // Progressive enhancement for the Luminous landing page. The English page is
-// complete without this script; it adds the EN/FR switch and the theme slideshow.
+// complete without this script; it adds the language menu and the theme slideshow.
 
+import de from "./i18n/de.js";
+import es from "./i18n/es.js";
 import fr from "./i18n/fr.js";
+import it from "./i18n/it.js";
+import ru from "./i18n/ru.js";
+import uk from "./i18n/uk.js";
 
 const STORAGE_KEY = "luminous-lang";
 const THEME_CYCLE_INTERVAL_MS = 2600;
 
 // English lives in the markup, so it is the fallback for any missing key.
-const TRANSLATIONS = { fr };
+const TRANSLATIONS = { fr, de, es, it, ru, uk };
 const SUPPORTED_LANGS = ["en", ...Object.keys(TRANSLATIONS)];
 
 /**
@@ -16,6 +21,7 @@ const SUPPORTED_LANGS = ["en", ...Object.keys(TRANSLATIONS)];
  *   data-i18n="key" data-i18n-attr="alt"  replaces the named attribute instead
  *   data-i18n-html="key"                  replaces innerHTML (trusted, author-written strings only)
  *   data-localized-src                    swaps the "-EN." suffix in src for the active language
+ *                                         (e.g. home-EN.webp -> home-DE.webp)
  *
  * The English originals are read from the DOM once so switching back needs no
  * separate English dictionary.
@@ -81,28 +87,76 @@ function initialLang() {
   return browser ?? "en";
 }
 
+// A menu button: the trigger shows the active code; the list holds one
+// menuitemradio per language, navigable with the arrow keys.
 function initLanguageSwitch() {
   const applyLang = createTranslator(document);
-  const switcher = document.querySelector(".lang-switch");
-  const buttons = [...switcher.querySelectorAll("[data-lang]")];
+  const menu = document.querySelector(".lang-menu");
+  const trigger = menu.querySelector(".lang-menu__button");
+  const current = menu.querySelector(".lang-menu__current");
+  const list = menu.querySelector(".lang-menu__list");
+  const items = [...list.querySelectorAll("[data-lang]")];
 
   const setLang = (lang) => {
     applyLang(lang);
-    for (const button of buttons) {
-      button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+    current.textContent = lang.toUpperCase();
+    for (const item of items) {
+      item.setAttribute("aria-checked", String(item.dataset.lang === lang));
     }
   };
 
-  switcher.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-lang]");
-    if (!button) return;
-    saveLang(button.dataset.lang);
-    setLang(button.dataset.lang);
+  const isOpen = () => !list.hidden;
+  const open = (focusIndex) => {
+    list.hidden = false;
+    trigger.setAttribute("aria-expanded", "true");
+    const checked = items.findIndex((item) => item.getAttribute("aria-checked") === "true");
+    items[focusIndex ?? Math.max(checked, 0)].focus();
+  };
+  const close = ({ restoreFocus = false } = {}) => {
+    if (!isOpen()) return;
+    list.hidden = true;
+    trigger.setAttribute("aria-expanded", "false");
+    if (restoreFocus) trigger.focus();
+  };
+
+  trigger.addEventListener("click", () => (isOpen() ? close() : open()));
+  trigger.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      open(event.key === "ArrowUp" ? items.length - 1 : undefined);
+    }
+  });
+
+  list.addEventListener("click", (event) => {
+    const item = event.target.closest("[data-lang]");
+    if (!item) return;
+    saveLang(item.dataset.lang);
+    setLang(item.dataset.lang);
+    close({ restoreFocus: true });
+  });
+
+  list.addEventListener("keydown", (event) => {
+    const index = items.indexOf(document.activeElement);
+    const focusAt = (i) => items[(i + items.length) % items.length].focus();
+    switch (event.key) {
+      case "ArrowDown": focusAt(index + 1); break;
+      case "ArrowUp": focusAt(index - 1); break;
+      case "Home": focusAt(0); break;
+      case "End": focusAt(items.length - 1); break;
+      case "Escape": close({ restoreFocus: true }); break;
+      case "Tab": close(); return;
+      default: return;
+    }
+    event.preventDefault();
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!menu.contains(event.target)) close();
   });
 
   const lang = initialLang();
   if (lang !== "en") setLang(lang);
-  switcher.hidden = false;
+  menu.hidden = false;
 }
 
 // Cross-fades the stacked frames. Skipped for reduced-motion users, and paused
