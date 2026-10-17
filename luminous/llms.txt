@@ -1,6 +1,12 @@
 # Luminous
 
-> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 3.0, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 3.1, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+
+## What's New in 3.1
+- ASIO output on Windows: stream directly to external DACs and audio interfaces through a pure-Rust ASIO backend, with native sample rate switching
+- Audio device and backend selection in Settings → System (shared system audio or Direct Hardware ASIO), with access to the driver's own control panel; output recovers automatically when devices are plugged in or removed
+- Song and Artist Radio: right-click any song or artist and choose Start Song Radio or Start Artist Radio for a 25-song queue built entirely from your local library's metadata and play history — no cloud services
+- Faster startup and smoother Albums grid scrolling on large libraries, plus many stability fixes
 
 ## What's New in 3.0
 - Seven languages: German, Spanish, Italian, Russian, and Ukrainian join English and French, with regional English (US, UK) and French (France) variants, a translated user guide, and the bundled Fira Sans font (including Cyrillic)
@@ -51,11 +57,13 @@
 - Smart and auto playlists (built around decades, genres, and BPM)
 - Custom genre hierarchies via drag-and-drop sub-genre organization
 - Love and 1–5 star ratings, synced with ListenBrainz when signed in with MusicBrainz
+- Song and Artist Radio: instant queues built from your local library
 - Compact, always-on-top miniplayer with live lyrics
 - Predefined and dynamic (cover-art-driven) themes
 - Time-synced lyrics, line by line or word by word, with inline editing
 - Advanced `field:value` search syntax (e.g. `genre:rock`), savable as smart playlists
 - Built-in tag editor for single or bulk metadata edits, with MusicBrainz Picard handoff
+- ASIO output on Windows for external DACs and audio interfaces
 - 10-band graphic EQ with genre presets, plus a 20-band free-frequency parametric EQ with AutoEq headphone profiles
 - File organization into folders from your own naming template, automatically as new music arrives
 - Listening stats: streaks, top artists and albums, and time-of-day patterns
