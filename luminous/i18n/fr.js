@@ -6,7 +6,7 @@ export default {
   "meta.description": "Un lecteur performant pour la musique que vous possédez déjà.",
   "langSwitch.label": "Langue",
 
-  "hero.badge": "Version 3.0",
+  "hero.badge": "Version 3.1",
   "hero.title": "Un lecteur performant pour la musique que vous possédez déjà.",
   "hero.sub": "Luminous est un lecteur rapide et local pour votre propre musique — sur votre disque, un partage réseau ou votre propre serveur.",
   "hero.getStarted": "Pour commencer",
@@ -34,7 +34,9 @@ export default {
 
   "whatsNew.title": "Quoi de neuf",
   "whatsNew.badge": "Nouveau",
-  "whatsNew.v30.title": "Version 3.0",
+  "whatsNew.v3.title": "Versions 3.0 et 3.1",
+  "whatsNew.v31.asio": "Sortie ASIO sous Windows, directement vers votre DAC ou votre interface audio",
+  "whatsNew.v31.radio": "Radio de la chanson ou de l'artiste : une file d'attente instantanée tirée de votre bibliothèque",
   "whatsNew.v30.languages": "Sept langues : anglais, français, allemand, espagnol, italien, russe et ukrainien",
   "whatsNew.v30.loveRate": "Aimer et noter ensemble, synchronisé avec ListenBrainz quand vous vous connectez avec MusicBrainz",
   "whatsNew.v30.eq": "Égaliseur paramétrique à fréquences libres avec profils de casque AutoEq",

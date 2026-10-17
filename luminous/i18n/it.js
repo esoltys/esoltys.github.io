@@ -7,7 +7,7 @@ export default {
   "meta.description": "Una casa ad alte prestazioni per la musica che possiedi già.",
   "langSwitch.label": "Lingua",
 
-  "hero.badge": "Versione 3.0",
+  "hero.badge": "Versione 3.1",
   "hero.title": "Una casa ad alte prestazioni per la musica che possiedi già.",
   "hero.sub": "Luminous è un player veloce e locale per la tua musica: sul tuo disco, in una cartella di rete o sul tuo server.",
   "hero.getStarted": "Inizia",
@@ -35,7 +35,9 @@ export default {
 
   "whatsNew.title": "Novità",
   "whatsNew.badge": "Nuovo",
-  "whatsNew.v30.title": "Versione 3.0",
+  "whatsNew.v3.title": "Versioni 3.0 e 3.1",
+  "whatsNew.v31.asio": "Uscita ASIO su Windows, diretta al tuo DAC o alla tua interfaccia audio",
+  "whatsNew.v31.radio": "Radio del brano o dell'artista: una coda istantanea creata dalla tua libreria",
   "whatsNew.v30.languages": "Sette lingue: inglese, francese, tedesco, spagnolo, italiano, russo e ucraino",
   "whatsNew.v30.loveRate": "Cuore e valutazione insieme, sincronizzati con ListenBrainz quando accedi con MusicBrainz",
   "whatsNew.v30.eq": "Equalizzatore parametrico a frequenze libere con profili per cuffie AutoEq",
