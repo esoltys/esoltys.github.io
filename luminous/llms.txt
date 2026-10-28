@@ -1,6 +1,13 @@
 # Luminous
 
-> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 3.1, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 3.2, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+
+## What's New in 3.2
+- Missing drive protection: when a large share of a folder's songs vanish at once (an unplugged external drive or a renamed folder), Luminous keeps them in your library and asks before removing anything
+- Stutter-free remote streaming on WebDAV and Subsonic, with read-ahead buffering, pooled connections, and faster track starts
+- Sharper artist portraits out of the box: a built-in fanart.tv key, with Deezer and Wikidata fallbacks
+- Lyrics source badge showing where the current lyrics came from: embedded tags, a sidecar file, an online provider, your own edits, or the local cache
+- No startup freeze on very large libraries, plus AppImage delta updates via .zsync on Linux
 
 ## What's New in 3.1
 - ASIO output on Windows: stream directly to external DACs and audio interfaces through a pure-Rust ASIO backend, with native sample rate switching

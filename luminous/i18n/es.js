@@ -7,7 +7,7 @@ export default {
   "meta.description": "Un hogar de alto rendimiento para la música que ya tienes.",
   "langSwitch.label": "Idioma",
 
-  "hero.badge": "Versión 3.1",
+  "hero.badge": "Versión 3.2",
   "hero.title": "Un hogar de alto rendimiento para la música que ya tienes.",
   "hero.sub": "Luminous es un reproductor rápido y local para tu propia música: en tu disco, en una carpeta de red o en tu propio servidor.",
   "hero.getStarted": "Empieza",
@@ -35,7 +35,8 @@ export default {
 
   "whatsNew.title": "Novedades",
   "whatsNew.badge": "Nuevo",
-  "whatsNew.v3.title": "Versiones 3.0 y 3.1",
+  "whatsNew.v3.title": "Versiones 3.0 a 3.2",
+  "whatsNew.v32.missingDrive": "Protección ante discos ausentes: si desconectas un disco externo, tus canciones siguen en la biblioteca hasta que tú decidas",
   "whatsNew.v31.asio": "Salida ASIO en Windows, directa a tu DAC o interfaz de audio",
   "whatsNew.v31.radio": "Radio de la canción o del artista: una cola instantánea creada desde tu biblioteca",
   "whatsNew.v30.languages": "Siete idiomas: inglés, francés, alemán, español, italiano, ruso y ucraniano",

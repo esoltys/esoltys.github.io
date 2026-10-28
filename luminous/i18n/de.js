@@ -7,7 +7,7 @@ export default {
   "meta.description": "Ein leistungsstarkes Zuhause für die Musik, die du schon besitzt.",
   "langSwitch.label": "Sprache",
 
-  "hero.badge": "Version 3.1",
+  "hero.badge": "Version 3.2",
   "hero.title": "Ein leistungsstarkes Zuhause für die Musik, die du schon besitzt.",
   "hero.sub": "Luminous ist ein schneller, lokaler Player für deine eigene Musik – auf deiner Festplatte, einer Netzwerkfreigabe oder deinem eigenen Server.",
   "hero.getStarted": "Loslegen",
@@ -35,7 +35,8 @@ export default {
 
   "whatsNew.title": "Neuigkeiten",
   "whatsNew.badge": "Neu",
-  "whatsNew.v3.title": "Versionen 3.0 und 3.1",
+  "whatsNew.v3.title": "Versionen 3.0 bis 3.2",
+  "whatsNew.v32.missingDrive": "Schutz bei fehlenden Laufwerken: Ist eine externe Festplatte getrennt, bleiben deine Titel in der Mediathek, bis du entscheidest",
   "whatsNew.v31.asio": "ASIO-Ausgabe unter Windows, direkt an deinen DAC oder dein Audio-Interface",
   "whatsNew.v31.radio": "Titel- und Interpret-Radio: eine sofortige Warteschlange aus deiner Mediathek",
   "whatsNew.v30.languages": "Sieben Sprachen: Englisch, Französisch, Deutsch, Spanisch, Italienisch, Russisch und Ukrainisch",
