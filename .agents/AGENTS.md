@@ -30,6 +30,8 @@ Useful local commands:
   - `bunx html-validate index.html luminous/index.html`
 - Luminous consistency checks (translation keys in every language, exact-case localized screenshots, shared `SoftwareApplication` JSON-LD and release version):
   - `bun scripts/check-site.ts`
+- Local links and assets (external URLs skipped; install with `winget install lycheeverse.lychee`):
+  - `lychee --offline --no-progress --root-dir "$PWD" index.html luminous/index.html luminous/llms.txt`
 - Optional link/accessibility/browser checks should be run manually in a browser because this is a static page with external services and CDN assets.
 
 ## Deployment
