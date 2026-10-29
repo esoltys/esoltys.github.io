@@ -15,7 +15,7 @@ Primary files:
 
 ## Commands
 
-There is currently no install/build/test pipeline.
+There is no install or build step. `.github/workflows/checks.yml` runs on every pull request and push to `main`: html-validate (config in `.htmlvalidate.json`; `void-style` is off because the home page self-closes void tags), `scripts/check-site.ts`, and an offline lychee check of local links and assets.
 
 Useful local commands:
 
@@ -27,8 +27,11 @@ Useful local commands:
 - Find project references quickly:
   - `rg "search text" index.html styles.css script.js`
 - HTML validation:
-  - `bunx html-validate index.html` (preferred)
-  - `npx --yes html-validate index.html` (fallback if bun is not available)
+  - `bunx html-validate index.html luminous/index.html`
+- Luminous consistency checks (translation keys in every language, exact-case localized screenshots, shared `SoftwareApplication` JSON-LD and release version):
+  - `bun scripts/check-site.ts`
+- Local links and assets (external URLs skipped; install with `winget install lycheeverse.lychee`):
+  - `lychee --offline --no-progress --root-dir "$PWD" index.html luminous/index.html luminous/llms.txt`
 - Optional link/accessibility/browser checks should be run manually in a browser because this is a static page with external services and CDN assets.
 
 ## Deployment
@@ -99,7 +102,7 @@ When changing Luminous copy:
 - Every translatable element needs a key: `data-i18n="key"` (text), plus `data-i18n-attr="alt"` to target an attribute, or `data-i18n-html="key"` for trusted markup such as `<code>`. Add the string under the same key in every `i18n/<lang>.js`; a missing key falls back to English and logs a console warning.
 - Localized screenshots take `data-localized-src`; the script swaps `-EN.` for `-<LANG>.` in `src`, so all seven files must exist with matching names. Each screenshot is a `shot-dark` / `shot-light` pair; a missing light file falls back to its dark twin.
 - Keep `luminous/llms.txt` and the `SoftwareApplication` JSON-LD (in both `luminous/index.html` and the home page, which share `@id` `https://esoltys.dev/luminous/#app`) in step with release notes.
-- Run `bunx html-validate luminous/index.html`.
+- Run `bunx html-validate luminous/index.html` and `bun scripts/check-site.ts`.
 
 ## External dependencies and services
 
