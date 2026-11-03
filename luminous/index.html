@@ -30,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="preconnect" href="https://get.microsoft.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=expose@500,700&display=swap">
     <script>
@@ -40,6 +41,7 @@
       } catch {}
     </script>
     <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
     <script type="module" src="./main.js"></script>
 
     <script type="application/ld+json">
@@ -128,9 +130,17 @@
           <div class="get-started">
             <h2 class="get-started__title" data-i18n="hero.getStarted">Get Started</h2>
             <div class="button-row">
-              <a class="store-badge" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi" target="_blank" rel="noopener noreferrer">
-                <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" width="161" height="44">
-              </a>
+              <ms-store-badge
+                productid="9pnq2nfsq7xw"
+                productname="Luminous Music Player"
+                cid="website_cta_psi"
+                window-mode="direct"
+                theme="auto"
+                size="small">
+                <a class="store-badge store-badge-fallback" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_psi" target="_blank" rel="noopener noreferrer">
+                  <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" width="161" height="44">
+                </a>
+              </ms-store-badge>
               <a class="button" href="#download" data-i18n="hero.moreOptions">More download options</a>
             </div>
             <p class="get-started__caption" data-i18n="hero.caption">Free and open source. Made in Canada 🍁 Available in seven languages.</p>
@@ -372,9 +382,17 @@
               <svg class="icon" width="20" height="20" viewBox="0 0 18 18" aria-hidden="true"><rect width="8" height="8" fill="#F25022"/><rect x="10" width="8" height="8" fill="#7FBA00"/><rect y="10" width="8" height="8" fill="#00A4EF"/><rect x="10" y="10" width="8" height="8" fill="#FFB900"/></svg>
               Windows
             </h3>
-            <a class="store-badge" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_download" target="_blank" rel="noopener noreferrer">
-              <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" width="161" height="44" loading="lazy">
-            </a>
+            <ms-store-badge
+              productid="9pnq2nfsq7xw"
+              productname="Luminous Music Player"
+              cid="website_cta_download"
+              window-mode="direct"
+              theme="auto"
+              size="small">
+              <a class="store-badge store-badge-fallback" href="https://get.microsoft.com/installer/download/9PNQ2NFSQ7XW?cid=website_cta_download" target="_blank" rel="noopener noreferrer">
+                <img src="./landing-assets/microsoft-store-badge.svg" alt="Get it from Microsoft Store" width="161" height="44" loading="lazy">
+              </a>
+            </ms-store-badge>
             <p class="platform__note" data-i18n="download.store.desc">Windows 10 &amp; 11 — installs and updates automatically.</p>
             <ul class="alt-downloads">
               <li>
