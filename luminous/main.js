@@ -103,6 +103,9 @@ function initLanguageSwitch() {
     for (const item of items) {
       item.setAttribute("aria-checked", String(item.dataset.lang === lang));
     }
+    for (const badge of document.querySelectorAll("ms-store-badge")) {
+      badge.setAttribute("language", lang);
+    }
   };
 
   const isOpen = () => !list.hidden;
@@ -155,7 +158,7 @@ function initLanguageSwitch() {
   });
 
   const lang = initialLang();
-  if (lang !== "en") setLang(lang);
+  setLang(lang);
   menu.hidden = false;
 }
 
@@ -201,8 +204,13 @@ function initThemeToggle() {
 
   const applied = () => root.dataset.theme ?? (systemLight.matches ? "light" : "dark");
   const sync = () => {
-    root.dataset.themeApplied = applied();
-    button.setAttribute("aria-pressed", String(applied() === "light"));
+    const currentTheme = applied();
+    root.dataset.themeApplied = currentTheme;
+    button.setAttribute("aria-pressed", String(currentTheme === "light"));
+    const isDark = currentTheme === "dark";
+    for (const badge of document.querySelectorAll("ms-store-badge")) {
+      badge.setAttribute("theme", root.dataset.theme ? (isDark ? "light" : "dark") : "auto");
+    }
   };
 
   button.addEventListener("click", () => {

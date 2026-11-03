@@ -409,6 +409,21 @@ a:hover {
   display: inline-flex;
 }
 
+ms-store-badge {
+  display: inline-flex;
+  vertical-align: middle;
+  height: 44px;
+}
+
+ms-store-badge::part(img) {
+  height: 44px;
+  width: auto;
+}
+
+ms-store-badge:defined > .store-badge-fallback {
+  display: none;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
