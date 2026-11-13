@@ -106,7 +106,7 @@ When changing Luminous copy:
 - Tabler Icons webfont via jsDelivr CDN.
 - Google Fonts for typography.
 - GoatCounter analytics: `https://esoltys.goatcounter.com/count` loaded from `//gc.zgo.at/count.js`.
-- External profile/music links to LinkedIn, GitHub, Substack, Instagram, Threads, Bluesky, Mastodon, YouTube Music, Spotify, Apple Music, Bandcamp, and !earshot.
+- External profile/music links to LinkedIn, GitHub, Substack, Instagram, Threads, Bluesky, Mastodon, YouTube Music, Spotify, Apple Music, Bandcamp, Unstream, and !earshot.
 
 Be careful when editing external URLs: preserve exact playlist/profile IDs and use HTTPS where available.
 
