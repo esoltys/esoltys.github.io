@@ -516,7 +516,7 @@ ms-store-badge:defined > .store-badge-fallback {
 
 .get-started__title {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -525,23 +525,6 @@ ms-store-badge:defined > .store-badge-fallback {
   font-size: 13.5px;
   line-height: 1.6;
   text-wrap: pretty;
-}
-
-.stat-pills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 8px;
-}
-
-.stat-pills li {
-  padding: 6px 14px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  background: var(--surface-tint);
-  color: var(--text-muted);
-  font-size: 13px;
 }
 
 .hero__screenshot {
