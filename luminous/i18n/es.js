@@ -105,6 +105,7 @@ export default {
 
   "cta.title": "Consigue Luminous",
   "cta.sub": "Descarga Luminous y convierte tu carpeta de archivos en una verdadera biblioteca musical.",
+  "cta.support": "Luminous es gratuito y de código abierto. Si ya forma parte de tu escucha diaria, considera apoyar su desarrollo.",
 
   "footer.license": "Con licencia MIT.",
 };
