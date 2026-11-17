@@ -27,6 +27,11 @@ export default {
   "download.appImage.title": "AppImage",
   "download.appImage.desc": "Fonctionne sur la plupart des distributions — téléchargez, rendez exécutable et écoutez.",
 
+  "reviews.title": "Avis du Microsoft Store",
+  "reviews.willians": "Willians, Chili",
+  "reviews.fury": "Fury, Guatemala",
+  "reviews.lui": "Lui, Salvador",
+  "reviews.julian": "Julian, États-Unis",
   "whatsNew.title": "Quoi de neuf",
   "whatsNew.badge": "Nouveau",
   "whatsNew.v3.title": "Version 3.x",
