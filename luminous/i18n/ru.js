@@ -28,6 +28,11 @@ export default {
   "download.appImage.title": "AppImage",
   "download.appImage.desc": "Работает в большинстве дистрибутивов — скачайте, сделайте исполняемым и слушайте.",
 
+  "reviews.title": "Отзывы из Microsoft Store",
+  "reviews.willians": "Willians, Чили",
+  "reviews.fury": "Fury, Гватемала",
+  "reviews.lui": "Lui, Сальвадор",
+  "reviews.julian": "Julian, США",
   "whatsNew.title": "Что нового",
   "whatsNew.badge": "Новое",
   "whatsNew.v3.title": "Версия 3.x",

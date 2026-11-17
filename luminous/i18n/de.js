@@ -28,6 +28,11 @@ export default {
   "download.appImage.title": "AppImage",
   "download.appImage.desc": "Läuft auf den meisten Distributionen – herunterladen, ausführbar machen, abspielen.",
 
+  "reviews.title": "Microsoft-Store-Bewertungen",
+  "reviews.willians": "Willians, Chile",
+  "reviews.fury": "Fury, Guatemala",
+  "reviews.lui": "Lui, El Salvador",
+  "reviews.julian": "Julian, USA",
   "whatsNew.title": "Neuigkeiten",
   "whatsNew.badge": "Neu",
   "whatsNew.v3.title": "Version 3.x",

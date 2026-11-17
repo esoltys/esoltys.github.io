@@ -28,6 +28,11 @@ export default {
   "download.appImage.title": "AppImage",
   "download.appImage.desc": "Funziona sulla maggior parte delle distribuzioni: scaricalo, rendilo eseguibile e ascolta.",
 
+  "reviews.title": "Recensioni di Microsoft Store",
+  "reviews.willians": "Willians, Cile",
+  "reviews.fury": "Fury, Guatemala",
+  "reviews.lui": "Lui, El Salvador",
+  "reviews.julian": "Julian, Stati Uniti",
   "whatsNew.title": "Novità",
   "whatsNew.badge": "Nuovo",
   "whatsNew.v3.title": "Versione 3.x",

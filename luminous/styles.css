@@ -621,6 +621,73 @@ ms-store-badge:defined > .store-badge-fallback {
   grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
 }
 
+/* Reviews: a compact row of short quotes, not boxed in cards. */
+.reviews-section {
+  padding-block: 40px;
+}
+
+.reviews__title {
+  max-width: 960px;
+  margin: 0 auto 36px;
+}
+
+.reviews__title::after {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 14px;
+  border-radius: var(--radius-pill);
+  background: var(--indigo);
+  content: "";
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px 64px;
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.review,
+.review__quote {
+  margin: 0;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review__title {
+  margin-bottom: 6px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.review__quote p:not(.review__title) {
+  max-width: 62ch;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.review__author {
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .reviews {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
 /* Download heading */
 .download-intro {
   display: flex;
