@@ -796,6 +796,33 @@ ms-store-badge:defined > .store-badge-fallback {
   line-height: 1.5;
 }
 
+.support-callout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  max-width: 820px;
+  margin: 24px auto 0;
+  padding: 20px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.support-callout__text {
+  flex: 1 1 280px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.kofi-widget {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* Point-form release notes: heading row first, then the list. */
 .card > .card__heading {
   margin-bottom: 14px;
