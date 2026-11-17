@@ -29,6 +29,7 @@ export default {
   "download.appImage.desc": "Работает в большинстве дистрибутивов — скачайте, сделайте исполняемым и слушайте.",
 
   "reviews.title": "Отзывы из Microsoft Store",
+  "reviews.subtitle": "Нравится любителям музыки более чем в 90 странах",
   "reviews.willians": "Willians, Чили",
   "reviews.fury": "Fury, Гватемала",
   "reviews.lui": "Lui, Сальвадор",

@@ -28,6 +28,7 @@ export default {
   "download.appImage.desc": "Fonctionne sur la plupart des distributions — téléchargez, rendez exécutable et écoutez.",
 
   "reviews.title": "Avis du Microsoft Store",
+  "reviews.subtitle": "Apprécié par les amoureux de la musique dans plus de 90 pays",
   "reviews.willians": "Willians, Chili",
   "reviews.fury": "Fury, Guatemala",
   "reviews.lui": "Lui, Salvador",

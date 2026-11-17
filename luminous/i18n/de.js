@@ -29,6 +29,7 @@ export default {
   "download.appImage.desc": "Läuft auf den meisten Distributionen – herunterladen, ausführbar machen, abspielen.",
 
   "reviews.title": "Microsoft-Store-Bewertungen",
+  "reviews.subtitle": "Von Musikliebhabern in mehr als 90 Ländern geliebt",
   "reviews.willians": "Willians, Chile",
   "reviews.fury": "Fury, Guatemala",
   "reviews.lui": "Lui, El Salvador",
