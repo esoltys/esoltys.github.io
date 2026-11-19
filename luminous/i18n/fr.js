@@ -36,7 +36,6 @@ export default {
   "whatsNew.title": "Quoi de neuf",
   "whatsNew.badge": "Nouveau",
   "whatsNew.v4.title": "Version 4.x",
-  "whatsNew.v40.calm": "Un Luminous plus calme : des en-têtes plus discrets, des libellés plus simples et un lecteur qui s'illumine aux couleurs de vos pochettes",
   "whatsNew.v40.sync": "Emportez votre musique : synchronisez albums, artistes et listes de lecture vers un lecteur USB ou un appareil Android, avec un aperçu de chaque changement avant toute copie",
   "whatsNew.v40.files": "Parcourez vos dossiers, serveurs multimédias et appareils côte à côte dans la nouvelle vue Fichiers",
   "whatsNew.v40.provenance": "Sachez d'où vient votre musique : repérez les faux FLAC et les fichiers endommagés, et consultez chaque modification d'étiquette avec une restauration en un clic",

@@ -37,7 +37,6 @@ export default {
   "whatsNew.title": "Neuigkeiten",
   "whatsNew.badge": "Neu",
   "whatsNew.v4.title": "Version 4.x",
-  "whatsNew.v40.calm": "Ein ruhigeres Luminous: dezentere Kopfbereiche, schlichtere Beschriftungen und eine Wiedergabeleiste, die in den Farben deiner Albumcover leuchtet",
   "whatsNew.v40.sync": "Nimm deine Musik mit: Synchronisiere Alben, Interpreten und Playlists auf einen USB-Player oder ein Android-Gerät, mit Vorschau auf jede Änderung, bevor etwas kopiert wird",
   "whatsNew.v40.files": "Durchstöbere Ordner, Medienserver und Geräte nebeneinander in der neuen Ansicht „Dateien“",
   "whatsNew.v40.provenance": "Wisse, woher deine Musik stammt: Erkenne gefälschte FLACs und beschädigte Dateien und sieh jede Tag-Änderung mit Wiederherstellung per Klick",

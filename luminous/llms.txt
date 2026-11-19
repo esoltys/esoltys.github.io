@@ -3,7 +3,6 @@
 > Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 4.0, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
 
 ## What's New in 4.0
-- A calmer Luminous: quieter headers, plainer wording, and a play dock that glows with your album art
 - Take your music with you: sync albums, artists, and playlists to a USB player or Android device, with a preview of every change before anything is copied
 - Files view: browse your folders, media servers, and devices side by side
 - Know where your music came from: spot fake FLACs and damaged files, and see every tag change with a one-click restore
