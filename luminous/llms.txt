@@ -1,6 +1,16 @@
 # Luminous
 
-> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 3.2, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 4.0, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+
+## What's New in 4.0
+- A calmer Luminous: quieter headers, plainer wording, and a play dock that glows with your album art
+- Take your music with you: sync albums, artists, and playlists to a USB player or Android device, with a preview of every change before anything is copied
+- Files view: browse your folders, media servers, and devices side by side
+- Know where your music came from: spot fake FLACs and damaged files, and see every tag change with a one-click restore
+- Curation shelf: compare and merge duplicates, find albums missing art or tracks, and clear out tag clutter
+- Last.fm scrobbling, with loved songs kept in step
+- Playback at any speed, plus bit-perfect output with WASAPI exclusive mode, direct ALSA on Linux, and hardware volume
+- Smarter genres and tags: genre aliases, tempo and key detection, artist countries, and more smart playlist rules
 
 ## What's New in 3.2
 - Missing drive protection: when a large share of a folder's songs vanish at once (an unplugged external drive or a renamed folder), Luminous keeps them in your library and asks before removing anything
