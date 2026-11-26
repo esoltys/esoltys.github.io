@@ -7,7 +7,7 @@ export default {
   "meta.description": "La tua casa per la musica che già possiedi.",
   "langSwitch.label": "Lingua",
 
-  "hero.badge": "Versione 4.0",
+  "hero.badge": "Versione 4.1",
   "hero.title": "La tua casa per la musica che già possiedi.",
   "hero.sub": "Pensato per chi vuole la comodità di un'app di streaming moderna senza rinunciare a possedere la propria musica.",
   "hero.getStarted": "Inizia",
@@ -103,4 +103,16 @@ export default {
   "cta.support": "Luminous è gratuito e open source. Se è diventato parte del tuo ascolto quotidiano, valuta di sostenerne lo sviluppo.",
 
   "footer.license": "Distribuito con licenza MIT.",
+
+  "whatsNew.v41.radio": "Radio Internet: sfoglia, cerca e ascolta stazioni in diretta da Radio Browser, aggiungi URL personalizzati e riproduci flussi HLS e HE-AAC",
+  "whatsNew.v41.visualizers": "Visualizzatori integrati: Spettro voxel, Cascata, Logo voxel, Vettorscopio stereo, VU Meter Yamaha K-550 e Risalita dei salmoni interattiva",
+  "whatsNew.v41.filePlaylists": "Playlist di file sincronizzate nei due sensi importate dalla tua libreria",
+  "whatsNew.v41.fastScans": "Scansioni più veloci delle librerie invariate e opzione per le verifiche di integrità in background",
+  "whatsNew.v41.fullscreen": "Modalità a schermo intero (Ctrl+Maiusc+F / F11) con copertina immersiva scalata allo schermo",
+  "features.radio.title": "Ascolta la radio in diretta, accanto alla tua libreria.",
+  "features.radio.body": "Sfoglia e cerca oltre 50.000 stazioni nella directory Radio Browser, aggiungi i tuoi URL di streaming, importa playlist di stazioni e ascolta flussi HLS e HE-AAC con metadati in diretta.",
+  "features.radio.alt": "Stazioni salvate della radio Internet",
+  "features.visualizers.title": "Guarda la tua musica prendere vita.",
+  "features.visualizers.body": "Passa tra sei visualizzatori integrati nella barra di riproduzione o nella vista immersiva: Spettro voxel, Cascata, Logo voxel, Vettorscopio stereo, VU Meter Yamaha K-550 e Risalita dei salmoni interattiva.",
+  "features.visualizers.alt": "Visualizzatori musicali integrati",
 };

@@ -7,7 +7,7 @@ export default {
   "meta.description": "Dein persönliches Zuhause für die Musik, die du schon besitzt.",
   "langSwitch.label": "Sprache",
 
-  "hero.badge": "Version 4.0",
+  "hero.badge": "Version 4.1",
   "hero.title": "Dein persönliches Zuhause für die Musik, die du schon besitzt.",
   "hero.sub": "Gemacht für alle, die den Komfort einer modernen Streaming-App wollen, ohne ihre Musik aus der Hand zu geben.",
   "hero.getStarted": "Loslegen",
@@ -103,4 +103,16 @@ export default {
   "cta.support": "Luminous ist kostenlos und Open Source. Wenn es Teil deines täglichen Musikhörens geworden ist, unterstütze gern die Entwicklung.",
 
   "footer.license": "Lizenziert unter der MIT-Lizenz.",
+
+  "whatsNew.v41.radio": "Internetradio: Live-Sender aus dem Radio-Browser-Verzeichnis durchsuchen und abspielen, eigene URLs hinzufügen sowie HLS und HE-AAC streamen",
+  "whatsNew.v41.visualizers": "Integrierte Visualizer: Voxel-Spektrum, Wasserfall, Voxel-Logo, Stereo-Vektorskop, Yamaha K-550 VU-Meter und interaktiver Lachslauf",
+  "whatsNew.v41.filePlaylists": "Zweiseitig synchronisierte Datei-Playlists aus deiner Bibliothek",
+  "whatsNew.v41.fastScans": "Schnellere Scans unveränderter Bibliotheken plus Option für Hintergrund-Integritätsprüfungen",
+  "whatsNew.v41.fullscreen": "Vollbildmodus (Strg+Umschalt+F / F11) mit bildschirmgroßer Cover-Ansicht",
+  "features.radio.title": "Live-Radio hören, direkt neben deiner Bibliothek.",
+  "features.radio.body": "Durchstöbere und suche über 50.000 Sender im Radio-Browser-Verzeichnis, füge eigene Stream-URLs hinzu, importiere Senderlisten und streame HLS sowie HE-AAC mit Live-Titelanzeige.",
+  "features.radio.alt": "Gespeicherte Internetradiosender",
+  "features.visualizers.title": "Sieh zu, wie deine Musik lebendig wird.",
+  "features.visualizers.body": "Wechsle in der Wiedergabeleiste oder der Vollbildansicht zwischen sechs integrierten Visualizern – Voxel-Spektrum, Wasserfall, Voxel-Logo, Stereo-Vektorskop, Yamaha K-550 VU-Meter und interaktivem Lachslauf.",
+  "features.visualizers.alt": "Integrierte Musik-Visualizer",
 };

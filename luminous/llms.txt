@@ -1,6 +1,13 @@
 # Luminous
 
-> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 4.0, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+> Luminous is a free, open-source, native desktop music player for the audio library you already own — local-first, no streaming, no subscriptions, no cloud. Currently at version 4.1, available in English, French, German, Spanish, Italian, Russian, and Ukrainian.
+
+## What's New in 4.1
+- Internet Radio: browse, search, and play live stations from the Radio Browser directory, add custom stream URLs, import station playlists, and stream HLS and HE-AAC with live now-playing metadata
+- Built-in Visualizers: immersive visualizer view and playbar mini-view with Voxel Spectrum, Waterfall, Voxel Logo, Stereo Vectorscope, Yamaha K-550 VU Meter, and interactive Salmon Run presets
+- Two-way synced File playlists imported from your library
+- Faster unchanged scans on large libraries, plus an opt-in toggle for background integrity and provenance checks
+- Fullscreen mode (Ctrl+Shift+F / F11) with a screen-scaled immersive cover view
 
 ## What's New in 4.0
 - Take your music with you: sync albums, artists, and playlists to a USB player or Android device, with a preview of every change before anything is copied
