@@ -104,7 +104,7 @@ export default {
   "footer.license": "Sous licence MIT.",
 
   "whatsNew.v41.radio": "Radio Internet : parcourez, recherchez et écoutez des stations en direct depuis l'annuaire Radio Browser, ajoutez des URL personnalisées et écoutez des flux HLS et HE-AAC",
-  "whatsNew.v41.visualizers": "Visualiseurs intégrés : Spectre voxel, Cascade, Logo voxel, Vectorscope stéréo, VU-mètre Yamaha K-550 et Montée du saumon interactif",
+  "whatsNew.v41.visualizers": "Visualiseurs intégrés : Spectre voxel, Cascade, Logo voxel, Vectorscope stéréo, VU-mètre classique et Montée du saumon apaisant",
   "whatsNew.v41.filePlaylists": "Listes de fichiers synchronisées dans les deux sens importées depuis votre bibliothèque",
   "whatsNew.v41.fastScans": "Analyses plus rapides des bibliothèques inchangées et option pour activer ou non les vérifications d'intégrité en arrière-plan",
   "whatsNew.v41.fullscreen": "Mode plein écran (Ctrl+Maj+F / F11) avec pochette immersive adaptée à l'écran",
@@ -112,6 +112,6 @@ export default {
   "features.radio.body": "Parcourez et recherchez plus de 50 000 stations dans l'annuaire Radio Browser, ajoutez vos propres URL de flux, importez des listes de stations et écoutez des flux HLS et HE-AAC avec les métadonnées en direct.",
   "features.radio.alt": "Stations enregistrées de la radio Internet",
   "features.visualizers.title": "Regardez votre musique prendre vie.",
-  "features.visualizers.body": "Passez d'un visualiseur intégré à l'autre dans la barre de lecture ou en vue immersive — Spectre voxel, Cascade, Logo voxel, Vectorscope stéréo, VU-mètre Yamaha K-550 et Montée du saumon interactif.",
+  "features.visualizers.body": "Passez d'un visualiseur intégré à l'autre dans la barre de lecture ou en vue immersive — Spectre voxel, Cascade, Logo voxel, Vectorscope stéréo, VU-mètre classique et Montée du saumon apaisant.",
   "features.visualizers.alt": "Visualiseurs de musique intégrés",
 };
