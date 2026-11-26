@@ -4,7 +4,7 @@
 
 ## What's New in 4.1
 - Internet Radio: browse, search, and play live stations from the Radio Browser directory, add custom stream URLs, import station playlists, and stream HLS and HE-AAC with live now-playing metadata
-- Built-in Visualizers: immersive visualizer view and playbar mini-view with Voxel Spectrum, Waterfall, Voxel Logo, Stereo Vectorscope, Yamaha K-550 VU Meter, and interactive Salmon Run presets
+- Built-in Visualizers: immersive visualizer view and playbar mini-view with Voxel Spectrum, Waterfall, Voxel Logo, Stereo Vectorscope, Classic VU Meter, and relaxing Salmon Run presets
 - Two-way synced File playlists imported from your library
 - Faster unchanged scans on large libraries, plus an opt-in toggle for background integrity and provenance checks
 - Fullscreen mode (Ctrl+Shift+F / F11) with a screen-scaled immersive cover view
