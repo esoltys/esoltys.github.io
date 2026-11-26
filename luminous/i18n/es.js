@@ -7,7 +7,7 @@ export default {
   "meta.description": "Tu hogar personal para la música que ya tienes.",
   "langSwitch.label": "Idioma",
 
-  "hero.badge": "Versión 4.0",
+  "hero.badge": "Versión 4.1",
   "hero.title": "Tu hogar personal para la música que ya tienes.",
   "hero.sub": "Pensado para quienes quieren la comodidad de una app de streaming moderna sin renunciar a ser dueños de su música.",
   "hero.getStarted": "Empieza",
@@ -103,4 +103,16 @@ export default {
   "cta.support": "Luminous es gratuito y de código abierto. Si ya forma parte de tu escucha diaria, considera apoyar su desarrollo.",
 
   "footer.license": "Con licencia MIT.",
+
+  "whatsNew.v41.radio": "Radio por Internet: explora, busca y reproduce emisoras en directo desde Radio Browser, añade URL personalizadas y escucha HLS y HE-AAC",
+  "whatsNew.v41.visualizers": "Visualizadores integrados: Espectro vóxel, Cascada, Logotipo vóxel, Vectorscopio estéreo, Vúmetro Yamaha K-550 y Carrera del salmón interactiva",
+  "whatsNew.v41.filePlaylists": "Listas de archivos sincronizadas en ambos sentidos importadas desde tu biblioteca",
+  "whatsNew.v41.fastScans": "Análisis más rápidos en bibliotecas sin cambios y opción para las comprobaciones de integridad en segundo plano",
+  "whatsNew.v41.fullscreen": "Modo pantalla completa (Ctrl+Mayús+F / F11) con vista inmersiva de carátula adaptada a la pantalla",
+  "features.radio.title": "Sintoniza radio en directo, junto a tu biblioteca.",
+  "features.radio.body": "Explora y busca más de 50 000 emisoras en el directorio Radio Browser, añade tus propias URL de transmisión, importa listas de emisoras y escucha HLS y HE-AAC con metadatos en vivo.",
+  "features.radio.alt": "Emisoras guardadas de radio por Internet",
+  "features.visualizers.title": "Mira cobrar vida a tu música.",
+  "features.visualizers.body": "Cambia entre seis visualizadores integrados en la barra de reproducción o la vista inmersiva: Espectro vóxel, Cascada, Logotipo vóxel, Vectorscopio estéreo, Vúmetro Yamaha K-550 y Carrera del salmón interactiva.",
+  "features.visualizers.alt": "Visualizadores de música integrados",
 };

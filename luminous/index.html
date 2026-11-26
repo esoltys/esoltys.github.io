@@ -55,7 +55,7 @@
       "image": "https://esoltys.dev/luminous/luminous-social.png",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Windows, Linux",
-      "softwareVersion": "4.0",
+      "softwareVersion": "4.1",
       "inLanguage": ["en", "fr", "de", "es", "it", "ru", "uk"],
       "sameAs": "https://github.com/esoltys/luminous",
       "downloadUrl": "https://github.com/esoltys/luminous/releases/latest",
@@ -123,7 +123,7 @@
       <!-- Hero -->
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero__intro">
-          <p class="hero__badge" data-i18n="hero.badge">Version 4.0</p>
+          <p class="hero__badge" data-i18n="hero.badge">Version 4.1</p>
           <h1 id="hero-title" class="hero__title" data-i18n="hero.title">Your personal home for the music you already own.</h1>
           <p class="hero__sub" data-i18n="hero.sub">Built for anyone who wants the convenience of a modern streaming app without giving up ownership of their music.</p>
 
@@ -163,6 +163,11 @@
               <span class="card__badge" data-i18n="whatsNew.badge">New</span>
             </div>
             <ul class="release-list">
+              <li data-i18n="whatsNew.v41.radio">Internet Radio: browse, search, and play live stations from the Radio Browser directory, add custom URLs, and stream HLS and HE-AAC</li>
+              <li data-i18n="whatsNew.v41.visualizers">Built-in Visualizers: Voxel Spectrum, Waterfall, Voxel Logo, Stereo Vectorscope, Yamaha K-550 VU Meter, and interactive Salmon Run</li>
+              <li data-i18n="whatsNew.v41.filePlaylists">Two-way synced File playlists imported from your library</li>
+              <li data-i18n="whatsNew.v41.fastScans">Faster unchanged scans on large libraries, plus an opt-in toggle for background integrity checks</li>
+              <li data-i18n="whatsNew.v41.fullscreen">Fullscreen mode (Ctrl+Shift+F / F11) with a screen-scaled immersive cover view</li>
               <li data-i18n="whatsNew.v40.sync">Take your music with you: sync albums, artists, and playlists to a USB player or Android device, with a preview of every change before anything is copied</li>
               <li data-i18n="whatsNew.v40.files">Browse your folders, media servers, and devices side by side in the new Files view</li>
               <li data-i18n="whatsNew.v40.provenance">Know where your music came from: spot fake FLACs and damaged files, and see every tag change with a one-click restore</li>
@@ -380,6 +385,37 @@
               <div class="feature__media">
                 <img class="frame shot-dark" src="./landing-assets/device-sync-EN.webp" alt="Portable player sync view" width="1440" height="900" loading="lazy" decoding="async" data-localized-src data-i18n="features.sync.alt" data-i18n-attr="alt">
                 <img class="frame shot-light" src="./landing-assets/device-sync-light-EN.webp" alt="Portable player sync view" width="1440" height="900" loading="lazy" decoding="async" data-localized-src data-i18n="features.sync.alt" data-i18n-attr="alt">
+              </div>
+            </div>
+          </article>
+
+          <article class="feature band band--base">
+            <div class="container feature__inner">
+              <div class="feature__text">
+                <h3 class="feature__title" data-i18n="features.radio.title">Tune in to live radio, right beside your library.</h3>
+                <p class="feature__body" data-i18n="features.radio.body">Browse and search over 50,000 stations from the Radio Browser directory, add your own stream URLs, import station playlists, and stream HLS and HE-AAC with live now-playing metadata.</p>
+              </div>
+              <div class="feature__media">
+                <img class="frame shot-dark" src="./landing-assets/radio-my-stations-EN.webp" alt="Internet Radio saved stations" width="1440" height="900" loading="lazy" decoding="async" data-localized-src data-i18n="features.radio.alt" data-i18n-attr="alt">
+                <img class="frame shot-light" src="./landing-assets/radio-my-stations-light-EN.webp" alt="Internet Radio saved stations" width="1440" height="900" loading="lazy" decoding="async" data-localized-src data-i18n="features.radio.alt" data-i18n-attr="alt">
+              </div>
+            </div>
+          </article>
+
+          <article class="feature band band--flip">
+            <div class="container feature__inner">
+              <div class="feature__text">
+                <h3 class="feature__title" data-i18n="features.visualizers.title">Watch your music come alive.</h3>
+                <p class="feature__body" data-i18n="features.visualizers.body">Switch between six built-in visualizers in the playbar or immersive view — Voxel Spectrum, Waterfall, Voxel Logo, Stereo Vectorscope, Yamaha K-550 VU Meter, and interactive Salmon Run.</p>
+              </div>
+              <!-- Frames cross-fade via main.js; only the first carries alt text so screen readers announce one image. -->
+              <div class="feature__media frame theme-cycle" data-theme-cycle>
+                <img class="theme-cycle__frame is-active" src="./landing-assets/visualizer-01.webp" alt="Built-in music visualizers" width="1440" height="900" loading="lazy" decoding="async" data-i18n="features.visualizers.alt" data-i18n-attr="alt">
+                <img class="theme-cycle__frame" src="./landing-assets/visualizer-02.webp" alt="" width="1440" height="900" loading="lazy" decoding="async">
+                <img class="theme-cycle__frame" src="./landing-assets/visualizer-03.webp" alt="" width="1440" height="900" loading="lazy" decoding="async">
+                <img class="theme-cycle__frame" src="./landing-assets/visualizer-04.webp" alt="" width="1440" height="900" loading="lazy" decoding="async">
+                <img class="theme-cycle__frame" src="./landing-assets/visualizer-05.webp" alt="" width="1440" height="900" loading="lazy" decoding="async">
+                <img class="theme-cycle__frame" src="./landing-assets/visualizer-06.webp" alt="" width="1440" height="900" loading="lazy" decoding="async">
               </div>
             </div>
           </article>
